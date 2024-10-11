@@ -1,0 +1,14 @@
+span {
+    color: red;
+}
+
+div {
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+}
+
+input:checked + div, span {
+    background-color: red;
+    color: blue;
+}

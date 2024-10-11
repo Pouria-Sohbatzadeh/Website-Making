@@ -1,0 +1,21 @@
+.small-box {
+    background-color: red;
+    border: 2px solid black;
+    height: 120px;
+    width: 120px;
+    display: flex;
+
+}
+
+.big-box {
+    background-color: blue;
+    width: 150px;
+    flex-basis: 150px;
+    flex-shrink: 1;
+}
+
+.big-box--yellow {
+    background-color: yellow;
+    flex-basis: 150px; 
+    flex-shrink: 0.7;
+}

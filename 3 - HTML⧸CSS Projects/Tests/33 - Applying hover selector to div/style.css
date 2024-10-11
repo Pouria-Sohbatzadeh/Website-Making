@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+}
+
+div {
+    background-color: crimson;
+    height: 20px;
+    width: 50%;
+}
+
+div:hover  {
+    background-color: blue;
+    /* You have to connect the :hover to the div tag (or Divs class or id) In order for it to work. */
+}

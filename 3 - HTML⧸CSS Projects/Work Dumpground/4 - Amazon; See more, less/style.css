@@ -1,0 +1,84 @@
+/* Holds all the hidden details and their trigger */
+/* .product__detail-rows-div-hold {
+    position: relative;
+}
+
+.product__detail-rows-input {
+    position: absolute;
+    width: 0;
+    opacity: 0;
+} */
+
+/* .product__detail-rows-trigger {
+    display: inline-block;
+    width: 70px; /* Limiting the width to pervent the user opening and closing the details by accident */
+    /* cursor: pointer; */ /* Making the user awar of the clickability */
+    
+/* } */
+
+/* .product__detail-rows-input:checked ~ .product__detail-rows-trigger {
+    display: none;
+}
+
+.product__detail-rows-trigger::before {
+    position: absolute;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; /* Required for solid icons */
+/* color: var(--triangle-grey); */
+    /* top: 0%;/ */   /* * Aligning the added part to our tag. */
+    /* left: 0%; */ /* Aligning the added part to our tag.
+} */
+    
+
+
+
+/* .product__detail-rows-trigger:hover {
+    /* color: var(--magnificent-red);  */
+    /* Change the color of ::after on hover */
+/* } */
+
+/* .product__detail-rows-hidden {
+    display: none;/* To make the hidden detail's existance not affect anything while hidden  */
+    /* flex-direction: column; */
+    /* gap: 10px 0px; */
+    /* Distancing every row of hidden categories and names from each other */
+    
+/* } */
+
+/* .product__detail-rows-input:checked ~ .product__detail-rows-hidden {
+    display: flex;
+}
+
+.product__hidden-detail-rows {
+    display: flex;
+    justify-content: space-between;
+    /* aligning Categories and names in every row */
+/* }   */
+
+
+.button-label {
+    position: relative;
+}
+
+.button-label__input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.button-label__button {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: gold;
+}
+
+.button-label__button::before {
+    content: "Add to Cart";
+}
+
+.button-label__input:checked ~ .button-label__button::before {
+    content: "Remove from cart";
+}

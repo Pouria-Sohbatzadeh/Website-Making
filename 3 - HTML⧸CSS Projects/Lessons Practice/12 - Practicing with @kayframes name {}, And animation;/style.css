@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+}
+
+.square {
+    height: 4cm;
+    width: 4cm;
+    background-color: gold;
+    animation: moving 5s ease-out 0s infinite normal;
+}
+
+@keyframes moving {
+    0% {
+        margin-left: 0;
+    }
+
+    50% {
+        margin-left: 7cm;
+    }
+
+    100% {
+        margin-left: 0cm;
+        margin-top: 2cm;
+        background-color: red;
+    }
+}

@@ -1,0 +1,2475 @@
+/*
+! tailwindcss v3.4.6 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+html,
+:host {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-feature-settings: normal;
+  /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  letter-spacing: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden] {
+  display: none;
+}
+
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.ml-\[3cm\] {
+  margin-left: 3cm;
+}
+
+.mt-\[120px\] {
+  margin-top: 120px;
+}
+
+.mt-\[20px\] {
+  margin-top: 20px;
+}
+
+.mt-\[2cm\] {
+  margin-top: 2cm;
+}
+
+.mt-\[30px\] {
+  margin-top: 30px;
+}
+
+.mt-\[5cm\] {
+  margin-top: 5cm;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-\[100\%\] {
+  height: 100%;
+}
+
+.h-\[185\.13px\] {
+  height: 185.13px;
+}
+
+.h-\[388\.31px\] {
+  height: 388.31px;
+}
+
+.h-\[44px\] {
+  height: 44px;
+}
+
+.h-\[50px\] {
+  height: 50px;
+}
+
+.h-\[514px\] {
+  height: 514px;
+}
+
+.h-\[606\.13px\] {
+  height: 606.13px;
+}
+
+.h-\[60px\] {
+  height: 60px;
+}
+
+.h-\[62px\] {
+  height: 62px;
+}
+
+.h-\[655\.13px\] {
+  height: 655.13px;
+}
+
+.h-\[702\.13px\] {
+  height: 702.13px;
+}
+
+.h-\[767\.31px\] {
+  height: 767.31px;
+}
+
+.h-\[80px\] {
+  height: 80px;
+}
+
+.h-\[88px\] {
+  height: 88px;
+}
+
+.w-\[1\.5cm\] {
+  width: 1.5cm;
+}
+
+.w-\[100\%\] {
+  width: 100%;
+}
+
+.w-\[107\.88px\] {
+  width: 107.88px;
+}
+
+.w-\[136\.95px\] {
+  width: 136.95px;
+}
+
+.w-\[167\.86px\] {
+  width: 167.86px;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
+.w-\[350px\] {
+  width: 350px;
+}
+
+.w-\[4cm\] {
+  width: 4cm;
+}
+
+.w-\[50px\] {
+  width: 50px;
+}
+
+.w-\[65\%\] {
+  width: 65%;
+}
+
+.w-\[70\%\] {
+  width: 70%;
+}
+
+.w-\[70px\] {
+  width: 70px;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-\[83\%\] {
+  width: 83%;
+}
+
+.w-\[83\.31px\] {
+  width: 83.31px;
+}
+
+.w-\[85\%\] {
+  width: 85%;
+}
+
+.w-\[850px\] {
+  width: 850px;
+}
+
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.gap-\[1\.5cm\] {
+  gap: 1.5cm;
+}
+
+.gap-\[10px\] {
+  gap: 10px;
+}
+
+.gap-\[12px\] {
+  gap: 12px;
+}
+
+.gap-\[15cm\] {
+  gap: 15cm;
+}
+
+.gap-\[15px\] {
+  gap: 15px;
+}
+
+.gap-\[1cm\] {
+  gap: 1cm;
+}
+
+.gap-\[20px\] {
+  gap: 20px;
+}
+
+.gap-\[25px\] {
+  gap: 25px;
+}
+
+.gap-\[27px\] {
+  gap: 27px;
+}
+
+.gap-\[2cm\] {
+  gap: 2cm;
+}
+
+.gap-\[30px\] {
+  gap: 30px;
+}
+
+.gap-\[35px\] {
+  gap: 35px;
+}
+
+.gap-\[40px\] {
+  gap: 40px;
+}
+
+.gap-\[5cm\] {
+  gap: 5cm;
+}
+
+.gap-\[5px\] {
+  gap: 5px;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.self-baseline {
+  align-self: baseline;
+}
+
+.rounded-\[12px\] {
+  border-radius: 12px;
+}
+
+.rounded-\[200px\] {
+  border-radius: 200px;
+}
+
+.rounded-\[20px\] {
+  border-radius: 20px;
+}
+
+.border-\[1px\] {
+  border-width: 1px;
+}
+
+.border-b-\[2px\] {
+  border-bottom-width: 2px;
+}
+
+.border-r-\[2px\] {
+  border-right-width: 2px;
+}
+
+.border-t-\[1px\] {
+  border-top-width: 1px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.border-\[\#E7E6E6\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(231 230 230 / var(--tw-border-opacity));
+}
+
+.border-\[\#FBE1D6\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(251 225 214 / var(--tw-border-opacity));
+}
+
+.border-t-\[\#E7E6E6\] {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(231 230 230 / var(--tw-border-opacity));
+}
+
+.bg-\[\#EB662B\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(235 102 43 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#F5F5F5\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#FEF7F4\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 247 244 / var(--tw-bg-opacity));
+}
+
+.bg-\[white\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.p-\[10px\] {
+  padding: 10px;
+}
+
+.pl-\[10px\] {
+  padding-left: 10px;
+}
+
+.pl-\[20px\] {
+  padding-left: 20px;
+}
+
+.pl-\[30px\] {
+  padding-left: 30px;
+}
+
+.pr-\[10px\] {
+  padding-right: 10px;
+}
+
+.pr-\[2\.4cm\] {
+  padding-right: 2.4cm;
+}
+
+.pt-\[5px\] {
+  padding-top: 5px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-\[12\.29px\] {
+  font-size: 12.29px;
+}
+
+.text-\[12\.49px\] {
+  font-size: 12.49px;
+}
+
+.text-\[12\.59px\] {
+  font-size: 12.59px;
+}
+
+.text-\[13\.23px\] {
+  font-size: 13.23px;
+}
+
+.text-\[13\.67px\] {
+  font-size: 13.67px;
+}
+
+.text-\[13\.89px\] {
+  font-size: 13.89px;
+}
+
+.text-\[14\.18px\] {
+  font-size: 14.18px;
+}
+
+.text-\[14\.3px\] {
+  font-size: 14.3px;
+}
+
+.text-\[14\.41px\] {
+  font-size: 14.41px;
+}
+
+.text-\[14\.53px\] {
+  font-size: 14.53px;
+}
+
+.text-\[14\.5px\] {
+  font-size: 14.5px;
+}
+
+.text-\[14\.65px\] {
+  font-size: 14.65px;
+}
+
+.text-\[14\.77px\] {
+  font-size: 14.77px;
+}
+
+.text-\[14\.88px\] {
+  font-size: 14.88px;
+}
+
+.text-\[15\.25px\] {
+  font-size: 15.25px;
+}
+
+.text-\[15\.75px\] {
+  font-size: 15.75px;
+}
+
+.text-\[15\.88px\] {
+  font-size: 15.88px;
+}
+
+.text-\[15px\] {
+  font-size: 15px;
+}
+
+.text-\[16\.2px\] {
+  font-size: 16.2px;
+}
+
+.text-\[17\.3px\] {
+  font-size: 17.3px;
+}
+
+.text-\[17\.58px\] {
+  font-size: 17.58px;
+}
+
+.text-\[17\.72px\] {
+  font-size: 17.72px;
+}
+
+.text-\[19\.53px\] {
+  font-size: 19.53px;
+}
+
+.text-\[19\.69px\] {
+  font-size: 19.69px;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
+}
+
+.text-\[29\.3px\] {
+  font-size: 29.3px;
+}
+
+.text-\[29\.53px\] {
+  font-size: 29.53px;
+}
+
+.text-\[29\.65px\] {
+  font-size: 29.65px;
+}
+
+.text-\[29\.88px\] {
+  font-size: 29.88px;
+}
+
+.text-\[39\.53px\] {
+  font-size: 39.53px;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
+}
+
+.text-\[69\.73px\] {
+  font-size: 69.73px;
+}
+
+.font-\[400\] {
+  font-weight: 400;
+}
+
+.font-\[500\] {
+  font-weight: 500;
+}
+
+.font-\[600\] {
+  font-weight: 600;
+}
+
+.font-\[700\] {
+  font-weight: 700;
+}
+
+.leading-\[17\.87px\] {
+  line-height: 17.87px;
+}
+
+.leading-\[19\.6px\] {
+  line-height: 19.6px;
+}
+
+.leading-\[24\.38px\] {
+  line-height: 24.38px;
+}
+
+.leading-\[24px\] {
+  line-height: 24px;
+}
+
+.leading-\[27px\] {
+  line-height: 27px;
+}
+
+.leading-\[28\.13px\] {
+  line-height: 28.13px;
+}
+
+.leading-\[30px\] {
+  line-height: 30px;
+}
+
+.leading-\[37\.5px\] {
+  line-height: 37.5px;
+}
+
+.leading-\[45px\] {
+  line-height: 45px;
+}
+
+.leading-\[52px\] {
+  line-height: 52px;
+}
+
+.leading-\[64px\] {
+  line-height: 64px;
+}
+
+.text-\[\#05073C\] {
+  --tw-text-opacity: 1;
+  color: rgb(5 7 60 / var(--tw-text-opacity));
+}
+
+.text-\[\#4A43C4\] {
+  --tw-text-opacity: 1;
+  color: rgb(74 67 196 / var(--tw-text-opacity));
+}
+
+.text-\[\#717171\] {
+  --tw-text-opacity: 1;
+  color: rgb(113 113 113 / var(--tw-text-opacity));
+}
+
+.text-\[\#757575\] {
+  --tw-text-opacity: 1;
+  color: rgb(117 117 117 / var(--tw-text-opacity));
+}
+
+.text-\[\#EB662B\] {
+  --tw-text-opacity: 1;
+  color: rgb(235 102 43 / var(--tw-text-opacity));
+}
+
+.text-\[black\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-\[white\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-orange-600 {
+  --tw-text-opacity: 1;
+  color: rgb(234 88 12 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media only screen and (max-width: 450px) {
+  /* <div class="menu-and-logo flex flex-row justify-center items-center h-[88px] gap-[15cm]">
+        <!-- This is the holder of the Logo and text on the left -->
+        <div class="website flex flex-row items-center gap-[2cm]">
+            <!-- This is the Logo -->
+            <div class="website-logo">
+                <img src="Assets/Image/viatours Logo.png" alt="">
+            </div>
+            <!-- This is the text. -->
+            <div class="website-name text-[14.77px] text-[#757575] leading-[17.87px] font-[500]">
+                <span>Search destinations or activities</span>
+            </div>
+    </div> */
+
+  .menu-and-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 54px;
+    gap: 20px;
+    width: 90%;
+    position: absolute;
+    left: 20px;
+  }
+
+  .website {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+  }
+
+  .website-name {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  /* <div class="menu flex flex-row items-center gap-[1.5cm] text-[14.77px] font-[500] leading-[28.13px]">
+            <a href=""><span>Destination</span></a>
+            <a href=""><span>Activities</span></a>
+            <a href=""><span>USD</span></a>
+            <a href=""><span>Sign Up</span></a>
+            <div class="log-in flex flex-row justify-center items-center rounded-[200px] text-[white] h-[44px] w-[83.31px] bg-[#EB662B] ">
+                <a href=""><span>Log in</span></a>
+            </div>
+    </div> */
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    font-size: 10px;
+    line-height: 14.6px;
+    text-align: center;
+  }
+
+  .log-in {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 22px;
+    width: 62.25px;
+  }
+
+  /* / */
+
+  /* <div class="planning flex flex-row justify-center relative h-[702.13px] items-center">
+        <img src="Assets/Image/destination.png" alt="" class="planning-image absolute z-1">
+
+        <div class="planning-words absolute flex flex-col z-10 gap-[30px]">
+            <div class="planning-offer leading-[64px] flex flex-col ga items-center">
+                <span class="planning-offer-1 text-[69.73px] text-white font-[600]">Your world of joy</span>
+                <span class="planning-offer-2 text-[white] text-[14.65px] font-[400]">From local escapes to far-flung adventures, find what makes you happy anytime, anywhere</span>
+            </div>
+
+            <!-- This is the where, when and type box. -->
+            <div class="planning-schedule h-[80px] w-[850px] bg-white rounded-[12px] flex flex-row justify-center items-center">
+                <!-- This is the holder for all the where, when and type boxes -->
+                <div class="planning-schedule-all flex flex-row gap-[20px]">
+                    <!-- This is the where box. -->
+                    <div class="planning-schedule-where flex flex-row items-center gap-[10px]">
+                        <div class="planning-schedule-where-box h-[50px] w-[50px] rounded-[12px] border-[#E7E6E6] border-solid border-[1px]">
+
+                        </div>
+                        <div class="planning-schedule-where-text flex flex-col leading-[19.6px] text-[13.67px] font-[400]">
+                            <span>Where</span>
+                            <span class="text-[#717171]">Search destinations</span>
+                        </div>
+                    </div>
+
+                    <!-- This is the when box. -->
+                    <div class="planning-schedule-when flex flex-row items-center gap-[10px]">
+                        <div class="planning-schedule-when-box h-[50px] w-[50px] rounded-[12px] border-[#E7E6E6] border-solid border-[1px]">
+
+                        </div>
+                        <div class="planning-schedule-text flex flex-col leading-[19.6px] text-[13.67px] font-[400]">
+                            <span>When</span>
+                            <span class="text-[#717171]">February 05 ~ March 14</span>
+                        </div>
+                    </div>
+
+                    <!-- This is the type box. -->
+                    <div class="planning-schedule-type flex flex-row items-center gap-[10px]">
+                        <div class="planning-schedule-type-box h-[50px] w-[50px] rounded-[12px] border-[#E7E6E6] border-solid border-[1px]">
+
+                        </div>
+                        <div class="planning-schedule-type-text flex flex-col leading-[19.6px] text-[13.67px] font-[400]">
+                            <span>Tour Type</span>
+                            <span class="text-[#717171]">All tour</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- This is for the search -->
+                 <form action="">
+                    <input type="text" placeholder="Search" class="planning-searcher h-[60px] w-[136.95px] rounded-[12px] bg-[#EB662B] pl-[30px] ml-[3cm] placeholder:text-[white]">
+                 </form>
+
+            </div>
+        </div>
+    </div> */
+
+  /* <div class="planning flex flex-row justify-center relative h-[702.13px] items-center">
+        <img src="Assets/Image/destination.png" alt="" class="planning-image absolute z-1">
+
+        <div class="planning-words absolute flex flex-col z-10 gap-[30px]">
+            <div class="planning-offer leading-[64px] flex flex-col ga items-center">
+                <span class="planning-offer-1 text-[69.73px] text-white font-[600]">Your world of joy</span>
+                <span class="planning-offer-2 text-[white] text-[14.65px] font-[400]">From local escapes to far-flung adventures, find what makes you happy anytime, anywhere</span>
+    </div> */
+
+  .planning {
+    position: relative;
+    top: 1.5cm;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    gap: 18px;
+  }
+
+  .planning-image {
+    position: static;
+    width: 100%;
+  }
+
+  .planning-words {
+    text-align: center;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .planning-offer {
+    line-height: 30px;
+  }
+
+  .planning-offer-1 {
+    font-size: 35px;
+    color: #EB662B;
+  }
+
+  .planning-offer-2 {
+    font-size: 9px;
+    font-weight: bolder;
+    color: black;
+  }
+
+  /* <div class="planning-schedule h-[80px] w-[850px] bg-white rounded-[12px] flex flex-row justify-center items-center">
+                <!-- This is the holder for all the where, when and type boxes -->
+                <div class="planning-schedule-all flex flex-row gap-[20px]">
+                    <!-- This is the where box. -->
+                    <div class="planning-schedule-where flex flex-row items-center gap-[10px]">
+                        <div class="planning-schedule-where-box h-[50px] w-[50px] rounded-[12px] border-[#E7E6E6] border-solid border-[1px]">
+
+                        </div>
+                        <div class="planning-schedule-where-text flex flex-col leading-[19.6px] text-[13.67px] font-[400]">
+                            <span>Where</span>
+                            <span class="text-[#717171]">Search destinations</span>
+                        </div>
+                    </div>
+
+                    <!-- This is the when box. -->
+                    <div class="planning-schedule-when flex flex-row items-center gap-[10px]">
+                        <div class="planning-schedule-when-box h-[50px] w-[50px] rounded-[12px] border-[#E7E6E6] border-solid border-[1px]">
+
+                        </div>
+                        <div class="planning-schedule-when-text flex flex-col leading-[19.6px] text-[13.67px] font-[400]">
+                            <span>When</span>
+                            <span class="text-[#717171]">February 05 ~ March 14</span>
+                        </div>
+                    </div>
+
+                    <!-- This is the type box. -->
+                    <div class="planning-schedule-type flex flex-row items-center gap-[10px]">
+                        <div class="planning-schedule-type-box h-[50px] w-[50px] rounded-[12px] border-[#E7E6E6] border-solid border-[1px]">
+
+                        </div>
+                        <div class="planning-schedule-type-text flex flex-col leading-[19.6px] text-[13.67px] font-[400]">
+                            <span>Tour Type</span>
+                            <span class="text-[#717171]">All tour</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- This is for the search -->
+                 <form action="">
+                    <input type="text" placeholder="Search" class="planning-searcher h-[60px] w-[136.95px] rounded-[12px] bg-[#EB662B] pl-[30px] ml-[3cm] placeholder:text-[white]">
+                 </form>
+
+            </div> */
+
+  .planning-schedule {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 4.2cm;
+    width: 98%;
+    border: 3px solid #EB662B;
+  }
+
+  .planning-schedule-all {
+    display: flex;
+    width: 98%;
+  }
+
+  .planning-schedule-where-box {
+    height: 50px;
+    width: 60px;
+    border: 3px solid rgb(184, 184, 184);
+  }
+
+  .planning-schedule-where-text {
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .planning-schedule-when-box {
+    height: 50px;
+    width: 70px;
+    border: 3px solid rgb(184, 184, 184);
+  }
+
+  .planning-schedule-when-text {
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .planning-schedule-type-box {
+    height: 50px;
+    width: 60px;
+    border: 3px solid rgb(184, 184, 184);
+  }
+
+  .planning-schedule-type-text {
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 12px;
+    gap: 5px;
+  }
+
+  .planning-searcher {
+    width: 80%;
+    position: relative;
+    right: 2cm;
+  }
+
+  /* / */
+
+  /* <div class="benefits flex flex-row w-[100%] justify-center mt-[2cm]">
+        <div class="benefits-all flex flex-col w-[70%] items-center gap-[30px]">
+            <div class="benefits-general text-[29.3px] font-[700] self-baseline leading-[45px]">
+                <span>Why choose Tourz</span>
+            </div>
+            
+
+            <div class="benefits-details flex flex-row justify-between w-[100%]">
+                <div class="benefits-details-flex flex flex-col items-start gap-[15px]">
+                    <img src="Assets/Image/ticket 1.png" alt="">
+                    <div class="benefits-details-flex-organazer flex flex-col gap-[5px]">
+                        <span class="benefits-details-flex-big-text font-[500] text-[17.72px] text-[#05073C]">Ultimate flexibility</span>
+                        <div class="benefits-details-flex-small-texts flex flex-col text-[#05073C] text-[14.88px]">
+                            <span>You're in control, with free</span>
+                            <span>cancellation and payment options to</span>
+                            <span>satisfy any plan or budget.</span>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="benefits-details-experiences flex flex-col items-start gap-[15px]">
+                    <img src="Assets/Image/hot-air-balloon 2.png" alt="">
+                    <div class="benefits-details-experiences flex flex-col gap-[5px]">
+                        <span class="benefits-details-experiences-big-text font-[500] text-[17.72px] text-[#05073C]">Memorable experiences</span>
+                        <div class="benefits-details-experiences-small-text flex flex-col text-[#05073C] text-[14.88px]">
+                            <span>Browse and book tours and activities</span>
+                            <span>so incredible, you'll want to tell your</span>
+                            <span>friends.</span>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="benefits-details-quality flex flex-col items-start gap-[15px]">
+                    <img src="Assets/Image/diamond 3.png" alt="">
+                    <div class="flex flex-col gap-[5px]">
+                        <span class="benefits-details-quality-big-text font-[500] text-[17.72px] text-[#05073C]">Quality at our core</span>
+                        <div class="benefits-details-quality-small-text flex flex-col text-[#05073C] text-[14.88px]">
+                            <span>High-quality standards. Millions of</span>
+                            <span>reviews. A tourz company.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="benefits-details-award flex flex-col items-start gap-[15px]">
+                    <img src="Assets/Image/medal 4.png" alt="">
+                    <div class="benefits-details-award flex flex-col gap-[5px]">
+                        <span class="benefits-details-award-big-text font-[500] text-[17.72px] text-[#05073C]">Award-winning support</span>
+                        <div class="benefits-details-award-small-text flex flex-col text-[#05073C] text-[14.88px]">
+                            <span>New price? New plan? No problem.</span>
+                            <span>We're here to help, 24/7.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> */
+
+  .benefits-all {
+    width: 95%;
+    text-align: center;
+  }
+
+  .benefits-general {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .benefits-details {
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  .benefits-details-big-text {
+    font-weight: bold;
+  }
+
+  .benefits-details-small-text {
+  }
+
+  .benefits-details-experiences, .benefits-details-flex, .benefits-details-award, .benefits-details-quality {
+    align-items: center;
+  }
+
+  /* / */
+
+  /*     <div class="tour-holder w-[100%] flex flex-row justify-center text-[#05073C] mt-[120px]">
+            <div class="tour-holder-aligner flex flex-col w-[70%] items-center gap-[1cm]">
+                <div class="tour-button flex flex-row w-[100%] justify-between items-center">
+                    <span class="tour-button-1 text-[29.88px] font-[700] leading-[45px]">Trending destinations</span>
+                    <a href=""><span class="tour-button-2 text-[14.3px] leading-[28.13px] font-[400]">See all</span></a>
+                </div>
+
+                <div class="tour-destinations flex flex-row justify-between items-center w-[100%]">
+                    <div class="tour-destination-1 flex flex-col items-center gap-[20px]">
+                        <img src="Assets/Image/landmark 1.png" alt="">
+                        <div class="flex flex-col items-center">
+                            <span class="tour-destination-bg-text text-[15.25px] font-[500]">Paris</span>
+                            <span class="tour-destination-small-text font-[400] text-[13.23px]">100+ Tours</span>
+                        </div>
+                    </div>
+
+                    <div class="tour-destination-2 flex flex-col items-center gap-[20px]">
+                        <img src="Assets/Image/landmark 2.png" alt="">
+                        <div class="flex flex-col items-center">
+                            <span class="tour-destination-bg-text tour-destination-small-text text-[15.25px] font-[500]">Singapore</span>
+                            <span class="tour-destination-bg-text tour-destination-small-text font-[400] text-[13.23px]">300+ Tours</span>
+                        </div>
+                    </div>
+
+                    <div class="tour-destination-3 flex flex-col items-center gap-[20px]">
+                        <img src="Assets/Image/landmark 3.png" alt="">
+                        <div class="flex flex-col items-center">
+                            <span class="tour-destination-bg-text tour-destination-small-text text-[15.25px] font-[500]">Roma</span>
+                            <span class="tour-destination-bg-text tour-destination-small-text font-[400] text-[13.23px]">400+ Tours</span>
+                        </div>
+                    </div>
+
+                    <div class="tour-destination-4 flex flex-col items-center gap-[20px]">
+                        <img src="Assets/Image/landmark 4.png" alt="">
+                        <div class="flex flex-col items-center">
+                            <span class="tour-destination-bg-text tour-destination-small-text text-[15.25px] font-[500]">Bangkok</span>
+                            <span class="tour-destination-bg-text tour-destination-small-text font-[400] text-[13.23px]">100+ Tours</span>
+                        </div>
+                    </div>
+
+                    <div class="tour-destination-invisible flex flex-col items-center gap-[20px]">
+                        <img src="Assets/Image/landmark 5.png" alt="">
+                        <div class="flex flex-col items-center">
+                            <span class="tour-destination-bg-text tour-destination-small-text text-[15.25px] font-[500]">Ball</span>
+                            <span class="tour-destination-bg-text tour-destination-small-text font-[400] text-[13.23px]">600+ Tours</span>
+                        </div>
+                    </div>
+
+                    <div class="tour-destination-invisible flex flex-col items-center gap-[20px]">
+                        <img src="Assets/Image/landmark 6.png" alt="">
+                        <div class="flex flex-col items-center">
+                            <span class="tour-destination-bg-text tour-destination-small-text text-[15.25px] font-[500]">Phuket</span>
+                            <span class="tour-destination-bg-text tour-destination-small-text font-[400] text-[13.23px]">200+ Tours</span>
+                        </div>
+                    </div>
+
+                    <div class="tour-destination-invisible flex flex-col items-center gap-[20px]">
+                        <img src="Assets/Image/landmark 7.png" alt="">
+                        <div class="flex flex-col items-center">
+                            <span class="tour-destination-bg-text tour-destination-small-text text-[15.25px] font-[500]">Tokyo</span>
+                            <span class="tour-destination-bg-text tour-destination-small-text font-[400] text-[13.23px]">700+ Tours</span>
+                        </div>
+                    </div>
+
+                    <div class="tour-destination-invisible flex flex-col items-center gap-[20px]">
+                        <img src="Assets/Image/landmark 8.png" alt="">
+                        <div class="flex flex-col items-center">
+                            <span class="tour-destination-bg-text tour-destination-small-text text-[15.25px] font-[500]">Cappadocia</span>
+                            <span class="tour-destination-bg-text tour-destination-small-text font-[400] text-[13.23px]">900+ Tours</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href=""><img src="Assets/Image/more.PNG" alt="" class="more w-[70px]"></a>
+            </div>
+    </div>
+ */
+
+  .tour-holder-aligner {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .tour-button {
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .tour-button a {
+    padding-top: 10px;
+  }
+
+  .tour-destinations {
+    width: 90%;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  .tour-destination-invisible {
+    display: none;
+  }
+
+  .more {
+    width: 50px;
+  }
+
+  /* / */
+
+  /*  <div class="popular-tours-holder w-[100%] flex flex-row justify-center text-[#05073C] mt-[120px]"> */
+
+  .popular-tours-holder {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /* <div class="popular-tours-holder-aligner flex flex-col w-[70%] gap-[40px]"> */
+
+  .popular-tours-holder-aligner {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 20px;
+  }
+
+  /* <div class="popular-tours-all-choices flex flex-row justify-between items-center">
+                <span class="popular-tours-all-choices-1 font-[700] text-[29.88px] leading-[45px]">Find Popular Tours</span>
+                <a href=""><span class="popular-tours-all-choices-2 text-[14.3px] leading-[28.13px] font-[400]">See all</span></a>
+            </div> */
+
+  .popular-tours-all-choices-2 {
+    position: relative;
+    top: 5px;
+  }
+
+  /* <!-- These are all the destinations -->
+            /* <div class="popular-tours-all-destinations flex flex-col w-[100%] gap-[20px]"> */
+
+  .popular-tours-all-destinations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+  }
+
+  /* <!-- These are the top destinations -->
+                /* <div class="popular-tours-top-destination flex flex-row justify-between"> */
+
+  .popular-tours-top-destination {
+    width: 10cm;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* <!-- The 1st top destination -->
+                    /* <div class="popular-tours-top-destination-1 flex flex-col h-[388.31px] w-[300px] rounded-[12px] items-center justify-evenly border-[#E7E6E6] border-solid border-[1px]">
+                        <img src="Assets/Image/destination 1.png" alt="" class="popular-tours-top-destination-1-image">
+
+                        <div class="popular-tours-top-destination-1-introduction flex flex-col gap-[5px]">
+                            <span class="popular-tours-top-destination-1-introduction-city text-[12.29px] font-[400] pl-[10px] leading-[24.38px] text-[#717171]">Paris, France</span>
+                            <div class="popular-tours-top-destination-1-introduction-city-tour flex flex-col text-[15.88px] font-[500]">
+                                <span class="popular-tours-top-destination-1-introduction-city-tour-text-1 leading-[24px]">Centipede Tour - Guided Arizona</span>
+                                <span class="popular-tours-top-destination-1-introduction-city-tour-text-2 leading-[24px]">Desert Tour by ATV</span>
+                            </div>
+                            <span class="disappear-text text-[12.49px] leading-[24px] font-[400] self-center">4.8 (243)</span>
+                        </div>
+
+                        <div class="popular-tours-top-destination-1-duration-and-price flex flex-row justify-evenly w-[80%] text-[12.59px] font-[500] border-t-[#E7E6E6] border-solid border-t-[1px] pt-[5px]">
+                            <span>4 days</span>
+                            <span>From <span class="popular-tours-top-destination-1-price text-[14.5px]">$189.25</span></span>
+                        </div>
+                    </div> */
+
+  .popular-tours-top-destination-1 {
+    align-items: center;
+  }
+
+  .popular-tours-top-destination-1-introduction {
+    align-items: center;
+  }
+
+  .popular-tours-top-destination-1-introduction-city-tour {
+    text-align: center;
+  }
+
+  .popular-tours-top-destination-1-duration-and-price {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .popular-tours-top-destination-2 {
+    align-items: center;
+  }
+
+  .popular-tours-top-destination-2-introduction {
+    align-items: center;
+  }
+
+  .popular-tours-top-destination-2-introduction-city-tour {
+    text-align: center;
+  }
+
+  .popular-tours-top-destination-2-duration-and-price {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .popular-tours-top-destination-3 {
+    align-items: center;
+  }
+
+  .popular-tours-top-destination-3-introduction {
+    align-items: center;
+  }
+
+  .popular-tours-top-destination-3-introduction-city-tour {
+    text-align: center;
+  }
+
+  .popular-tours-top-destination-3-duration-and-price {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* /* <!-- The 2nd top destination -->
+                    <div class="popular-tours-top-destination-2 flex flex-col h-[388.31px] w-[300px] rounded-[12px] items-center justify-evenly border-[#E7E6E6] border-solid border-[1px]">
+                        <img src="Assets/Image/destination 2.png" alt="" class="popular-tours-top-destination-2-image rounded-[20px] p-[10px]">
+
+                        <div class="popular-tours-top-destination-2-introduction flex flex-col gap-[5px]">
+                            <span class="popular-tours-top-destination-2-introduction-city text-[12.29px] font-[400] pl-[10px] leading-[24.38px] text-[#717171]">New York, USA</span>
+                            <div class="popular-tours-top-destination-2-introduction-city-tour flex flex-col text-[15.88px] font-[500] leading-[24px]">
+                                <span class="popular-tours-top-destination-2-introduction-city-tour-text-1 leading-[24px]">Molokini and Turtle Town</span>
+                                <span class="popular-tours-top-destination-2-introduction-city-tour-text-2 leading-[24px]">Snorkeling Adventure Aboard</span>
+                            </div>
+                            <span class="disappear-text text-[12.49px] leading-[24px] font-[400] self-center">4.8 (243)</span>
+                        </div>
+
+                        <div class="popular-tours-top-destination-2-duration-and-price flex flex-row justify-evenly w-[80%] text-[12.59px] font-[500] border-t-[#E7E6E6] border-solid border-t-[1px] pt-[5px]">
+                            <span>4 days</span>
+                            <span>From <span class="popular-tours-top-destination-2-price text-[14.5px]">$225</span></span>
+                        </div>
+                    </div> */
+
+  .popular-tours-top-destination-2-image {
+    padding: 10px;
+    top: 7px;
+    position: relative;
+    border-radius: 25px;
+  }
+
+  /* <!-- The 3rd top destination -->
+                    <div class="popular-tours-top-destination-3 flex flex-col h-[388.31px] w-[300px] rounded-[12px] items-center justify-evenly border-[#E7E6E6] border-solid border-[1px]">
+                        <img src="Assets/Image/destination 3.png" alt="" class="popular-tours-top-destination-3-image">
+
+                        <div class="popular-tours-top-destination-3-introduction flex flex-col gap-[5px]">
+                            <span class="popular-tours-top-destination-3-introduction-city text-[12.29px] font-[400] pl-[10px] leading-[24.38px] text-[#717171]">London, UK</span>
+                            <div class="popular-tours-top-destination-3-introduction-city-tour flex flex-col text-[15.88px] font-[500] leading-[24px]">
+                                <span class="popular-tours-top-destination-3-introduction-city-tour-text-1 leading-[24px]">Westminster Walking Tour &</span>
+                                <span class="popular-tours-top-destination-3-introduction-city-tour-text-2 leading-[24px]">Westminster Abbey Entry</span>
+                            </div>
+                            <span class="disappear-text text-[12.49px] leading-[24px] font-[400] self-center">4.8 (243)</span>
+                        </div>
+
+                        <div class="popular-tours-top-destination-3-duration-and-price flex flex-row justify-evenly w-[80%] text-[12.59px] font-[500] border-t-[#E7E6E6] border-solid border-t-[1px] pt-[5px]">
+                            <span>4 days</span>
+                            <span>From <span class="popular-tours-top-destination-3-price text-[14.5px]">$043</span></span>
+                        </div>
+                    </div> */
+
+  /* /* <!-- The 4th top destination -->
+                    <div class="disappear-this flex flex-col h-[388.31px] w-[300px] rounded-[12px] items-center justify-evenly border-[#E7E6E6] border-solid border-[1px]">
+                        <img src="Assets/Image/destination 4.png" alt="">
+
+                        <div class="flex flex-col gap-[5px]">
+                            <span class="text-[12.29px] font-[400] pl-[10px] leading-[24.38px] text-[#717171]">New York, USA</span>
+                            <div class="flex flex-col text-[15.88px] font-[500] leading-[24px]">
+                                <span class="leading-[24px]">All Inclusive Ultimate Circle Island</span>
+                                <span class="leading-[24px]">Day Tour with Lunch</span>
+                            </div>
+                            <span class="text-[12.49px] leading-[24px] font-[400] self-center">4.8 (243)</span>
+                        </div>
+
+                        <div class="flex flex-row justify-evenly w-[80%] text-[12.59px] font-[500] border-t-[#E7E6E6] border-solid border-t-[1px] pt-[5px]">
+                            <span>4 days</span>
+                            <span>From<span class=" text-[14.5px]">$771</span></span>
+                        </div>
+                    </div> */
+
+  .disappear-this {
+    display: none;
+  }
+
+  /* </div> */
+
+  /* <!-- These are the bottom destinations -->
+                <div class="popular-tours-bottom-destinations flex flex-row justify-between">
+                    <!-- The 1st bottom destination -->
+                    <div class="popular-tours-bottom-destination-1 flex flex-col h-[388.31px] w-[300px] rounded-[12px] items-center justify-evenly border-[#E7E6E6] border-solid border-[1px]">
+                        <img src="Assets/Image/destination 5.png" alt="" class="popular-tours-bottom-destination-1-image">
+
+                        <div class="popular-tours-bottom-destination-1-introduction flex flex-col gap-[5px]">
+                            <span class="popular-tours-bottom-destination-1-introduction-city text-[12.29px] font-[400] pl-[10px] leading-[24.38px] text-[#717171]">Paris, France</span>
+                            <div class="popular-tours-bottom-destination-1-introduction-city-tour flex flex-col text-[15.88px] font-[500] leading-[24px]">
+                                <span class="popular-tours-bottom-destination-1-introduction-city-tour-text-1 leading-[24px]">Space Center Houston Admission</span>
+                                <span class="popular-tours-bottom-destination-1-introduction-city-tour-text-2 leading-[24px]">Ticket</span>
+                            </div>
+                            <span class="disappear-text text-[12.49px] leading-[24px] font-[400] self-center">4.8 (243)</span>
+                        </div>
+
+                        <div class="popular-tours-bottom-destination-1-duration-and-price flex flex-row justify-evenly w-[80%] text-[12.59px] font-[500] border-t-[#E7E6E6] border-solid border-t-[1px] pt-[5px]">
+                            <span>4 days</span>
+                            <span>From<span class="popular-tours-bottom-destination-1-price text-[14.5px]">$189.25</span></span>
+                        </div>
+                    </div>
+
+                    <!-- The 2nd bottom destination -->
+                    <div class="popular-tours-bottom-destination-2 flex flex-col h-[388.31px] w-[300px] rounded-[12px] items-center justify-evenly border-[#E7E6E6] border-solid border-[1px]">
+                        <img src="Assets/Image/destination 6.png" alt="" class="popular-tours-bottom-destination-2-image">
+
+                        <div class="popular-tours-bottom-destination-2-introduction flex flex-col gap-[5px]">
+                            <span class="popular-tours-bottom-destination-2-introduction-city text-[12.29px] font-[400] pl-[10px] leading-[24.38px] text-[#717171]">New York, USA</span>
+                            <div class="popular-tours-bottom-destination-2-introduction-city-tour flex flex-col text-[15.88px] font-[500] leading-[24px]">
+                                <span class="popular-tours-bottom-destination-2-introduction-city-tour-text-1 leading-[24px]">Clear Kayak Tour of Shell Key</span>
+                                <span class="popular-tours-bottom-destination-2-introduction-city-tour-text-2 leading-[24px]">Preserve and Tampa Bay Area</span>
+                            </div>
+                            <span class="disappear-text text-[12.49px] leading-[24px] font-[400] self-center">4.8 (243)</span>
+                        </div>
+
+                        <div class="popular-tours-bottom-destination-2-duration-and-price flex flex-row justify-evenly w-[80%] text-[12.59px] font-[500] border-t-[#E7E6E6] border-solid border-t-[1px] pt-[5px]">
+                            <span>4 days</span>
+                            <span>From<span class="popular-tours-bottom-destination-2-price text-[14.5px]">$225</span></span>
+                        </div>
+                    </div>
+
+                    <!-- The 3rd bottom destination -->
+                    <div class="popular-tours-bottom-destination-3 flex flex-col h-[388.31px] w-[300px] rounded-[12px] items-center justify-evenly border-[#E7E6E6] border-solid border-[1px]">
+                        <img src="Assets/Image/destination 7.png" alt="" class="popular-tours-bottom-destination-3-image">
+
+                        <div class="popular-tours-bottom-destination-3-introduction flex flex-col gap-[5px]">
+                            <span class="popular-tours-bottom-destination-3-introduction-city text-[12.29px] font-[400] pl-[10px] leading-[24.38px] text-[#717171]">London, UK</span>
+                            <div class="popular-tours-bottom-destination-3-introduction-city-tour flex flex-col text-[15.88px] font-[500] leading-[24px]">
+                                <span class="popular-tours-bottom-destination-3-introduction-city-tour-text-1 leading-[24px]">History and Hauntings of Salem</span>
+                                <span class="popular-tours-bottom-destination-3-introduction-city-tour-text-1 leading-[24px]">Guided Walking Tour</span>
+                            </div>
+                            <span class="disappear-text text-[12.49px] leading-[24px] font-[400] self-center">4.8 (243)</span>
+                        </div>
+
+                        <div class="popular-tours-bottom-destination-3-duration-and-price flex flex-row justify-evenly w-[80%] text-[12.59px] font-[500] border-t-[#E7E6E6] border-solid border-t-[1px] pt-[5px]">
+                            <span>4 days</span>
+                            <span>From<span class="popular-tours-bottom-destination-3-price text-[14.5px]">$043</span></span>
+                        </div>
+                    </div>
+
+                    <!-- The 4th bottom destination -->
+                    <div class="disappear-this flex flex-col h-[388.31px] w-[300px] rounded-[12px] items-center justify-evenly border-[#E7E6E6] border-solid border-[1px]">
+                        <img src="Assets/Image/destination 8.png" alt="">
+
+                        <div class="flex flex-col gap-[5px]">
+                            <span class="text-[12.29px] font-[400] pl-[10px] leading-[24.38px] text-[#717171]">New York, USA</span>
+                            <div class="flex flex-col text-[15.88px] font-[500] leading-[24px]">
+                                <span class="leading-[24px]">Mauna Kea Summit Sunset and</span>
+                                <span class="leading-[24px]">Stars Free Astro Photos Hilo Kona</span>
+                                <span class="leading-[24px]">Waikoloa Pick Up</span>
+                            </div>
+                            <span class="text-[12.49px] leading-[24px] font-[400] self-center">4.8 (243)</span>
+                        </div>
+
+                        <div class="flex flex-row justify-evenly w-[80%] text-[12.59px] font-[500] border-t-[#E7E6E6] border-solid border-t-[1px] pt-[5px]">
+                            <span>4 days</span>
+                            <span >From <span class=" text-[14.5px]">$771</span></span>
+                        </div>
+                    </div>
+                /* </div> */
+
+  .popular-tours-bottom-destinations {
+    width: 10cm;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .popular-tours-bottom-destination-1 {
+    align-items: center;
+  }
+
+  .popular-tours-bottom-destination-1-introduction {
+    align-items: center;
+  }
+
+  .popular-tours-bottom-destination-1-introduction-city-tour {
+    text-align: center;
+  }
+
+  .popular-tours-bottom-destination-1-duration-and-price {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .popular-tours-bottom-destination-2 {
+    align-items: center;
+  }
+
+  .popular-tours-bottom-destination-2-introduction {
+    align-items: center;
+  }
+
+  .popular-tours-bottom-destination-2-introduction-city-tour {
+    text-align: center;
+  }
+
+  .popular-tours-bottom-destination-2-duration-and-price {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .popular-tours-bottom-destination-3 {
+    align-items: center;
+  }
+
+  .popular-tours-bottom-destination-3-introduction {
+    align-items: center;
+  }
+
+  .popular-tours-bottom-destination-3-introduction-city-tour {
+    text-align: center;
+  }
+
+  .popular-tours-bottom-destination-3-duration-and-price {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* </div>
+        </div>
+    </div>*/
+
+  /* / */
+
+  /* /*  <div class="ad-holder flex flex-row justify-center mt-[120px] relative h-[606.13px] w-[100%]"> */
+
+  .ad-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0px;
+    position: relative;
+    height: 606.13px;
+    width: 100%;
+    height: auto;
+  }
+
+  /* <div class="ad-all-text absolute w-[65%] flex flex-col justify-center h-[100%] z-10 gap-[20px]"> */
+
+  .ad-all-text {
+    margin-top: 3cm;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* <div class="ad-big-text flex flex-col text-[40px] font-[700] text-[#05073C]">
+                <span class="ad-big-text-1 leading-[52px]">Grab up to <span class="text-orange-600">35% off</span></span>
+                <span class="ad-big-text-2 leading-[52px]">on your favorite</span>
+                <span class="ad-big-text-3 leading-[52px]">Destination</span>
+                
+            </div>
+
+            <span class="ad-small-text text-[14.77px] font-[400]">Limited time offer, don't miss the opportunity</span>
+
+            <div class="ad-button bg-[#EB662B] h-[62px] w-[167.86px] flex flex-row justify-center items-center text-[white] rounded-[12px]">
+                <a href=""><span>Book Now</span></a>
+            </div>
+        </div> */
+
+  /* <img src="Assets/Image/ad.png" alt="" class="ad-image absolute z-1"> */
+
+  .ad-image {
+    display: none;
+  }
+
+  /* </div>  */
+
+  /* / */
+
+  /*  <div class="popular-activities-holder flex flex-row w-[100%] justify-center mt-[120px] text-[#05073C]"> */
+
+  /* <div class="popular-activities-aligner flex flex-col w-[70%] gap-[30px] bg-"> */
+
+  .popular-activities-aligner {
+    width: 95%;
+    gap: 20px;
+    align-items: center;
+  }
+
+  /* <div class="popular-activities-aligner-text flex flex-row w-[100%] items-center justify-between"> */
+
+  .popular-activities-aligner-text {
+    justify-content: space-around;
+  }
+
+  /* <span class="popular-activities-aligner-text-1 font-[700] text-[29.88px] leading-[45px]">Popular things to do</span>
+                <a href=""><span class="popular-activities-aligner-text-2 text-[14.3px] leading-[28.13px] font-[400]">See all</span></a>
+            </div> */
+
+  /* <div class="popular-activities-all-images flex flex-row gap-[10px] justify-between"> */
+
+  .popular-activities-all-images {
+    justify-content: space-between;
+    width: 380px;
+    flex-direction: column;
+  }
+
+  /* <div class="popular-activities-left-images flex flex-col gap-[25px]">
+                    <a href=""><img src="Assets/Image/Ad 1.png" alt="" class="popular-activities-left-images-top"></a>
+                    <a href=""><img src="Assets/Image/Ad 2.png" alt="" class="popular-activities-left-images-bottom"></a>
+                </div> */
+
+  .popular-activities-left-images {
+    display: none;
+  }
+
+  /* <div class="popular-activities-center-images">
+                    <a href=""><img src="Assets/Image/Ad 3.png" alt=""></a>
+                /* </div> */
+
+  .popular-activities-center-images {
+    display: none;
+  }
+
+  /* <div class="popular-activities-right-images flex flex-col gap-[27px]">
+                    <a href=""><img src="Assets/Image/Ad 4.png" alt="" class="popular-activities-right-images-top"></a> */
+
+  /* <div class="popular-activities-right-images-bottom flex flex-row items-center gap-[27px]"> */
+
+  .popular-activities-right-images-bottom {
+    gap: 10px;
+  }
+
+  /* <a href=""><img src="Assets/Image/Ad 5.png" alt="" class="popular-activities-right-images-bottom-1"></a>
+                        <a href=""><img src="Assets/Image/Ad 6.png" alt="" class="popular-activities-right-images-bottom-2"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> */
+
+  /* / */
+
+  /*     <div class="trending-holder w-[100%] flex flex-row justify-center">
+        /* <div class="trending-holder-box flex flex-row justify-center bg-[#F5F5F5] h-[767.31px] w-[80%] mt-[120px] items-center rounded-[12px]"> */
+
+  .trending-holder {
+  }
+
+  .trending-holder-box {
+    margin-top: 30px;
+    height: 1350px;
+    width: 95%;
+  }
+
+  .trending-holder-aligner {
+    width: 95%;
+  }
+
+  .trending-destinations-top {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .trending-destinations-top-2-image {
+    border-radius: 5px;
+  }
+
+  .trending-destinations-top-3-image {
+    padding-bottom: 25px;
+  }
+
+  .trending-tour-1-duration-and-price, .trending-tour-2-duration-and-price, .trending-tour-3-duration-and-price {
+    flex-direction: column;
+  }
+
+  .customer {
+  }
+
+  /* <div class="trending-holder-aligner flex flex-col w-[83%] gap-[30px]">
+                <div class="trending-manu flex flex-row w-[100%] items-center justify-between">
+                    <span class="font-[700] text-[29.88px] leading-[45px]">Top Trending</span>
+                    <a href=""><span class="text-[14.3px] leading-[28.13px] font-[400]">See all</span></a>
+                </div>
+
+            <!-- These are all the destinations -->
+            <div class="trending-destinations flex flex-col w-[100%]">
+                <!-- These are the top destinations -->
+                <div class="trending-destinations-top flex flex-row justify-between gap-[30px]">
+                    <!-- The 1st top destination -->
+                    <div class="trending-destinations-top-1 flex flex-col h-[388.31px] w-[300px] rounded-[12px] relative items-center justify-evenly border-[#E7E6E6] border-solid border-[1px]">
+                        <img src="Assets/Image/destination 1.png" alt="" class="trending-destinations-top-1-image">
+                        <div></div>
+                        <div class="trending-destinations-top-1-text-holder flex flex-col gap-[5px]">
+                            <span class="trending-destinations-top-1-city text-[12.29px] font-[400] pl-[10px] leading-[24.38px] text-[#717171]">Paris, France</span>
+                            <div class="trending-destinations-top-1-city-tour flex flex-col text-[15.88px] font-[500] leading-[24px]">
+                                <span class="leading-[24px]">Centipede Tour - Guided Arizona</span>
+                                <span class="leading-[24px]">Desert Tour by ATV</span>
+                            </div>
+                            <span class="disappear-text text-[12.49px] leading-[24px] font-[400] self-center">4.8 (243)</span>
+                        </div>
+
+                        <div class="trending-tour-1-duration-and-price flex flex-row justify-evenly w-[80%] text-[12.59px] font-[500] border-t-[#E7E6E6] border-solid border-t-[1px] pt-[5px]">
+                            <span>4 days</span>
+                            <span >From <span class=" text-[14.5px]">$189.25</span></span>
+                        </div>
+                    </div>
+
+                    <!-- The 2nd top destination -->
+                    <div class="trending-destinations-top-2 flex flex-col h-[388.31px] w-[300px] relative rounded-[12px] items-center justify-evenly border-[#E7E6E6] border-solid border-[1px]">
+                        <img src="Assets/Image/destination 2.png" alt="" class="trending-destinations-top-2-image">
+
+                        <div class="trending-destinations-top-2-text-holder flex flex-col gap-[5px]">
+                            <span class="trending-destinations-top-2-city text-[12.29px] font-[400] pl-[10px] leading-[24.38px] text-[#717171]">New York, USA</span>
+                            <div class="trending-destinations-top-2-city-tour flex flex-col text-[15.88px] font-[500] leading-[24px]">
+                                <span class="leading-[24px]">Molokini and Turtle Town</span>
+                                <span class="leading-[24px]">Snorkeling Adventure Aboard</span>
+                            </div>
+                            <span class="disappear-text text-[12.49px] leading-[24px] font-[400] self-center">4.8 (243)</span>
+                        </div>
+
+                        <div class="trending-tour-2-duration-and-price flex flex-row justify-evenly w-[80%] text-[12.59px] font-[500] border-t-[#E7E6E6] border-solid border-t-[1px] pt-[5px]">
+                            <span>4 days</span>
+                            <span >From <span class=" text-[14.5px]">$225</span></span>
+                        </div>
+                    </div>
+
+                    <!-- The 3rd top destination -->
+                    <div class="trending-destinations-top-3 flex flex-col h-[388.31px] w-[300px] relative rounded-[12px] items-center justify-evenly border-[#E7E6E6] border-solid border-[1px]">
+                        <img src="Assets/Image/destination 3.png" alt="" class="trending-destinations-top-3-image">
+
+                        <div class="trending-destinations-top-3-text-holder flex flex-col gap-[5px]">
+                            <span class="trending-destinations-top-3-city text-[12.29px] font-[400] pl-[10px] leading-[24.38px] text-[#717171]">London, UK</span>
+                            <div class="trending-destinations-top-3-city-tour flex flex-col text-[15.88px] font-[500] leading-[24px]">
+                                <span class="leading-[24px]">Westminster Walking Tour &</span>
+                                <span class="leading-[24px]">Westminster Abbey Entry</span>
+                            </div>
+                            <span class="disappear-text text-[12.49px] leading-[24px] font-[400] self-center">4.8 (243)</span>
+                        </div>
+
+                        <div class="trending-tour-3-duration-and-price flex flex-row justify-evenly w-[80%] text-[12.59px] font-[500] border-t-[#E7E6E6] border-solid border-t-[1px] pt-[5px]">
+                            <span>4 days</span>
+                            <span >From<span class=" text-[14.5px]">$043</span></span>
+                        </div>
+                    </div>
+
+                    <!-- The 4th top destination -->
+                    <div class="disappear-this flex flex-col h-[388.31px] w-[300px] relative rounded-[12px] items-center justify-evenly border-[#E7E6E6] border-solid border-[1px]">
+                        <img src="Assets/Image/destination 4.png" alt="">
+
+                        <div class="flex flex-col gap-[5px]">
+                            <span class="text-[12.29px] font-[400] pl-[10px] leading-[24.38px] text-[#717171]">New York, USA</span>
+                            <div class="flex flex-col text-[15.88px] font-[500] leading-[24px]">
+                                <span class="leading-[24px]">All Inclusive Ultimate Circle Island</span>
+                                <span class="leading-[24px]">Day Tour with Lunch</span>
+                            </div>
+                            <span class="text-[12.49px] leading-[24px] font-[400] self-center">4.8 (243)</span>
+                        </div>
+
+                        <div class="flex flex-row justify-evenly w-[80%] text-[12.59px] font-[500] border-t-[#E7E6E6] border-solid border-t-[1px] pt-[5px]">
+                            <span>4 days</span>
+                            <span >From <span class=" text-[14.5px]">$771</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            
+        </div>
+    </div>
+ */
+
+  /* / */
+
+  .travel {
+    width: 90%;
+  }
+
+  .travel-articles {
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  /* / */
+
+  /*  <div class="bg-[#6d15b6] discount-holder w-[100%] flex flex-row justify-center mt-[5cm]">
+        /* <div class="discount-aligner w-[80%] h-[514px] flex flex-row justify-center items-center relative"> */
+
+  .discount-aligner {
+    width: 100%;
+  }
+
+  /* <div class="discount-text-aligner flex flex-col absolute z-10 w-[80%] gap-[2cm] text-[white]"> */
+
+  .discount-text-aligner {
+    color: #4A43C5;
+    gap: 20px;
+    justify-content: center;
+    width: 92%;
+    text-align: center;
+  }
+
+  /* <div class="discount-upper-text-aligner flex flex-col gap-[10px]">
+                        <div class="discount-upper-big-text-aligner flex flex-col text-[39.53px] font-[700]">
+                            <span class="discount-upper-big-text-aligner-1 leading-[52px]">Get 5% off your 1st</span>
+                            <span class="discount-upper-big-text-aligner-2 leading-[52px]">app booking</span>
+                        </div>
+                        <div class="discount-upper-small-text-aligner flex flex-col text-[14.53px] font-[400]">
+                            <span class="leading-[28.13px]">Booking's better on the app. Use promo</span>
+                            <span class="leading-[28.13px]">code "TourBooking" to save!</span>
+                        </div>
+                    </div> */
+
+  .discount-upper-small-text-aligner {
+    color: black;
+    font-weight: 600;
+  }
+
+  /* <div class="email-aligner flex flex-col gap-[10px]">
+                        <span class="email-text text-[17.58px] font-[400]">Get a magic link sent to your email</span>
+                        /* <form class="email-user flex flex-row gap-[12px]"> */
+
+  .email-user {
+    justify-content: center;
+  }
+
+  /*  <div class="text-[black]">
+                                <input type="email" placeholder="Email" class="email-user-box placeholder:text-[14.77px] text-[14.77px] font-[400] placeholder:font-[400] rounded-[12px] pl-[20px] placeholder:text-[#757575] h-[60px] w-[350px] outline-none">
+                            </div> */
+
+  .email-user-box {
+    width: 250px;
+    border: 3px solid #4A43C5;
+  }
+
+  /*  <div class="text-[#4A43C4] ">
+                                <input type="submit" value="Send" class="email-user-send h-[60px] w-[107.88px] bg-[white]  rounded-[12px]">
+                                <!-- Input not working seems to have something to do with position absolute. -->
+                            /* </div> */
+
+  .email-user-send {
+    background-color: #4A43C5;
+    color: white;
+  }
+
+  /* </form>
+                    </div>
+            </div>
+            <img src="Assets/Image/purple background.png" alt="" class="absolute disappear-this">
+        </div> */
+
+  /*  </div> */
+
+  /* / */
+
+  /*  <div class="footer-holder flex flex-row justify-center w-[100%] mt-[30px] text-[#05073C]">
+        <div class="footer-holder-background flex flex-row justify-center w-[90%] bg-[#FEF7F4] h-[655.13px]">
+            /* <div class="footer-aligner flex flex-col items-center w-[80%] gap-[20px]"> */
+
+  .footer-holder {
+    background-color: #FEF7F4;
+    border-radius: 20px;
+  }
+
+  .footer-aligner {
+    width: 99%;
+  }
+
+  /* <div class="communication flex flex-row w-[85%] h-[185.13px] items-center justify-between border-b-[2px] border-solid border-[#FBE1D6]">
+                        <span class="communication-text-1 text-[19.69px] font-[500]">Speak to our expert at <span class="text-[#EB662B]">1-800-453-6744</span></span>
+                        <span class="communication-text-2 text-[16.2px] font-[500]">Follow Us</span>
+                    </div> */
+
+  .communication {
+    width: 100%;
+  }
+
+  .communication-text-1, .communication-text-2 {
+    font-size: 14.2px;
+    font-weight: 700;
+  }
+
+  /* <div class="ways-to-connect flex flex-row w-[100%] justify-around gap-[5cm]"> */
+
+  .ways-to-connect {
+    justify-content: space-between;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  /* <div class="ways-to-connect-contact flex flex-col gap-[10px] ">
+                        <span class="text-[20px] font-[500] leading-[30px]">Contact</span>
+                        <div class="flex flex-col">
+                            <span class="leading-[28.13px] text-[14.41px] font-[400]">328 Queensberry Street, North Melbourne VIC3051,</span>
+                            <span class="leading-[28.13px] text-[14.41px] font-[400]">Australia.</span>
+                        </div>
+                        <span class="text-[14.88px] font-[400]">hi@viatours.com</span>
+                    </div>
+
+                    /* <div class="ways-to-connect-support-company-newsletter flex flex-row gap-[5cm]"> */
+
+  .ways-to-connect-support-company-newsletter {
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  /* <div class="flex flex-col gap-[30px] ">
+                            <span class="text-[20px] font-[500] leading-[30px]">Company</span>
+                            <div class="flex flex-col gap-[10px]">
+                                <a href="" class="leading-[28.13px] text-[14.65px] font-[500]"><span>About Us</span></a>
+                                <a href="" class="leading-[28.13px] text-[14.18px] font-[500]"><span>Tourz Reviews</span></a>
+                                <a href="" class="leading-[28.13px] text-[14.18px] font-[500]"><span>Contact Us</span></a>
+                                <a href="" class="leading-[28.13px] text-[14.18px] font-[500]"><span>Travel Guides</span></a>
+                                <a href="" class="leading-[28.13px] text-[14.18px] font-[500]"><span>Data Policy</span></a>
+                                <a href="" class="leading-[28.13px] text-[14.18px] font-[500]"><span>Cookie Policy</span></a>
+                                <a href="" class="leading-[28.13px] text-[14.18px] font-[500]"><span>Legal</span></a>
+                                <a href="" class="leading-[28.13px] text-[14.18px] font-[500]"><span>Sitemap</span></a>
+                            </div>
+                        </div>
+    
+                        <div class="flex flex-col gap-[30px] ">
+                            <span class="text-[20px] font-[500] leading-[30px]">Support</span>
+                            <div class="flex flex-col gap-[10px]">
+                                <a href="" class="leading-[28.13px] text-[14.65px] font-[500]"><span>Get in Touch</span></a>
+                                <a href="" class="leading-[28.13px] text-[14.18px] font-[500]"><span>Help center</span></a>
+                                <a href="" class="leading-[28.13px] text-[14.18px] font-[500]"><span>Live chat</span></a>
+                                <a href="" class="leading-[28.13px] text-[14.18px] font-[500]"><span>How it works</span></a>
+                            </div>
+                            
+                        </div>
+    
+                        <div class="flex flex-col gap-[40px]">
+                            <div class="flex flex-col gap-[30px]">
+                                <span class="text-[20px] font-[500] leading-[30px]">Newsletter</span>
+                                <form action="" class="flex flex-col gap-[10px]">
+                                    <div class="flex flex-col text-[14.65px] font-[400]">
+                                        <label for="" class="leading-[28.13px]">Subscribe to the free newsletter and stay</label>
+                                        <label for="" class="leading-[28.13px]">up to date</label>    
+                                    </div>
+                                    
+                                    <div class="w-[300px] h-[60px] flex flex-row justify-around border-[#E7E6E6] border-solid border-[1px] bg-[white] rounded-[12px] items-center">
+                                        <input type="email" placeholder="Your email address" class="outline-none h-[60px] bg-[white] placeholder:text-[#757575]">
+                                        <input type="submit" value="Send" class="h-[60px] w-[1.5cm]">
+                                    </div>
+                                </form>
+                            </div>
+                            
+                            
+                            <div>
+                                <div class="flex flex-col text-[15px] gap-[10px] font-[400]">
+                                    <span class="text-[20px] font-[500] leading-[30px]">Mobile Apps</span>
+                                    <span class="pl-[20px]">iOS App</span>
+                                    <span class="pl-[20px]">Android App</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> */
+
+  /* / */
+
+  /*  <div class="brands-holder flex flex-row w-[100%] justify-center mt-[20px] text-[#05073C]"> */
+
+  /* <div class="brands-aligner w-[70%] flex flex-row justify-between"> */
+
+  .brands-aligner {
+    width: 100%;
+    gap: 15px;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .brands-images {
+    gap: 5px;
+    justify-content: space-between;
+  }
+
+  /* <span class="brands-text text-[14.53px] font-[400]">© Copyright Viatours 2024</span>
+            
+            <div class="brands-images flex flex-row justify-evenly">
+                <img src="Assets/Image/images.png" alt="" class="brands-image-1">
+                <img src="Assets/Image/images 1.png" alt="" class="brands-image-2">
+                <img src="Assets/Image/images 2.png" alt="" class="brands-image-3">
+                <img src="Assets/Image/images 3.png" alt="" class="brands-image-4">
+                <img src="Assets/Image/images 4.png" alt="" class="brands-image-5">
+                <img src="Assets/Image/images 5.png" alt="" class="brands-image-6">
+            </div>
+        </div>
+    </div>   */
+}
+
+.placeholder\:text-\[14\.77px\]::-moz-placeholder {
+  font-size: 14.77px;
+}
+
+.placeholder\:text-\[14\.77px\]::placeholder {
+  font-size: 14.77px;
+}
+
+.placeholder\:font-\[400\]::-moz-placeholder {
+  font-weight: 400;
+}
+
+.placeholder\:font-\[400\]::placeholder {
+  font-weight: 400;
+}
+
+.placeholder\:text-\[\#757575\]::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(117 117 117 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-\[\#757575\]::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(117 117 117 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-\[white\]::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-\[white\]::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}

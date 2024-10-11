@@ -1,0 +1,34 @@
+.shape {
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 2000px;
+}
+
+.front, .back {
+    height: 3cm;
+    width: 3cm;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front {
+    background-color: gold;
+}
+
+.back {
+    background-color: silver;
+    transform: rotateY(-180deg);
+}
+
+.shape:hover .front {
+    transform: rotateY(-360deg);
+    transition: transform 2s;
+}
+
+.shape:hover .back {
+    transform: rotateY(-540deg);
+    transition: transform 2s;
+}

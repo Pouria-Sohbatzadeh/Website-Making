@@ -1,0 +1,26 @@
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 1cm;
+}
+
+input {
+    height: 3cm;
+    width: 8cm;
+    background-color: crimson;
+    color: white;
+    /* Any text centered attributes aonly effect the user's content. */
+    font-size: 1cm;
+    padding-left: 1cm;
+    /* If I do not use padding and instead gor for flex... */
+
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+    /* It flat doesn't work. */
+}
+
+input::placeholder {
+    color: rgb(1, 58, 163);
+}
+

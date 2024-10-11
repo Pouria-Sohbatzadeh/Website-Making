@@ -1,0 +1,13 @@
+@import "./reset.css";
+
+img {
+    height: 2cm;
+}
+
+div {
+    height: 2cm;
+    width: 2cm;
+    background-color: rgb(219, 40, 40);
+    border: 5px solid rgb(0, 52, 121);
+    opacity: 0.0;
+}

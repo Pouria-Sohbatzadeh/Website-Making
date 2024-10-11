@@ -1,0 +1,10 @@
+.scrapped-together {
+    background-image: url(./published\ \(1\).jpg);
+    height: 300px;
+    width: 500px;
+    background-size: 500px auto;
+    /* The 1s value determines the width, And the second the size of the background-image. Much like the scale: */
+    background-position: 0px 0px;
+    /* The 1st value in background image change the location of the background image left to right (positive value) or right to left (negative value), The 2nd changes the 
+    location top to bottom (positive value) and bottom to top (negative value). */
+}

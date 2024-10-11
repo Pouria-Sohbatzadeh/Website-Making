@@ -1,0 +1,50 @@
+body {
+    margin: 0px;
+}
+
+.Menu {
+    background-color: red;
+    border-bottom: 5px solid black;
+    position: fixed;
+}
+
+ul, li {
+    display: inline-block;
+}
+
+ul {
+    margin-left: 9cm;
+}
+
+li {
+    margin-left: 2cm;
+}
+
+.Home :hover{
+    color: darkred;
+    background-color: white;
+}
+
+.middle {
+    background-color: darkblue;
+    margin-top: 1cm;
+    margin-left: 3.5cm;
+    width: 80%;
+    text-align: center;
+    height: 82cm;
+}
+
+.Name {
+    background-color: yellow;
+    width: 60%;
+    margin-left: -0.5cm;
+    margin-top: 1cm;
+    display: inline-block;
+    
+}
+
+.writing {
+    background-color: white;
+    width: 60%;
+    margin-left: 5.5cm;
+}

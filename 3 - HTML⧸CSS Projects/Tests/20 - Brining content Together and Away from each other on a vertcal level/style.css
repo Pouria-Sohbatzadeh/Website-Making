@@ -1,0 +1,34 @@
+body {
+    margin: 0px;
+}
+
+.class-rooms {
+    background-color: green;
+    display: inline-block;
+    height: 50cm;
+    width: 10cm;
+    margin-left: 40%;
+    margin-top: 20%;
+}
+
+.class-1 {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    width: 10cm;
+}
+
+.class-2 {
+    display: inline-block;
+    background-color: rgb(14, 179, 151);
+    color: red;
+}
+
+.class-1, .class-2 {
+    margin-top: 10cm;
+}
+
+.members {
+    display: inline-block;
+   
+}

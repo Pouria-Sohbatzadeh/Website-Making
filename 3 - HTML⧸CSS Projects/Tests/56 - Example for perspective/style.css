@@ -1,0 +1,17 @@
+.three-d-maker {
+    transform-style: preserve-3d;
+    perspective: 10000000000cm;
+    width: 100%;
+}
+
+.shape {
+    height: 2cm;
+    width: 2cm;
+    background-color: blue;
+    margin-left: 5CM;
+}
+
+.three-d-maker:hover .shape {
+    transform: rotateY(360deg);
+    transition: transform 2s linear;
+}

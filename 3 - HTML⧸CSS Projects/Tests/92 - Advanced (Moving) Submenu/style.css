@@ -1,0 +1,50 @@
+.container {
+    position: relative;
+  }
+  
+
+  .toggle-checkbox {
+    display: none; /* Hide the checkbox */
+  }
+
+  .toggle-label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .toggle-label-text {
+    position: relative;
+  }
+
+
+  /* Just adding my icon */
+  .toggle-label-text::before {
+    position: absolute;
+    right: 30px;
+    content: "\f0c9";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; /* Required for solid icons */
+  }
+  
+  .content {
+    opacity: 0; /* Start invisible */
+    transform: translateX(-100%); /* Move off the screen to the left */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transition for both opacity and transform */
+    pointer-events: none; /* Make sure content is not interactive when hidden */
+  }
+  
+  .toggle-checkbox:checked + .toggle-label + .content {
+    opacity: 1; /* Make it visible */
+    transform: translateX(0); /* Move to its original position */
+    pointer-events: auto; /* Enable interaction when visible */
+  }
+  

@@ -1,0 +1,285 @@
+/* product__order section begins */
+.container {
+    /* max-width: 1500px;   */
+    padding: 6px 10px;
+    margin: 0 auto;
+}
+
+.product__order {
+    width: 364.5px;
+    /* border: 2px solid var(--category-hover); */
+    border: 2px solid black;
+    border-radius: .25rem;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+}
+
+/* The top half of the buy box */
+.product__order-buy {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.product__order-buyPrice {
+    display: flex;
+}
+
+.product__order-buy-statments {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__buy-circle {
+    background-color: transparent;
+    height: 15px;
+    width: 15px;
+    border: 4px solid rgb(40,137,151);
+    border-radius: 100%;
+}
+
+.product__buyPrice-icon, .product__buyPrice-cent {
+    font-size: 13px;
+    align-self: flex-start;
+}
+
+.product__buyPrice-dollar--bold {
+    font-weight: 700;
+    font-size: 21px;
+}
+/* The top section of product__order ends */
+
+.product__order-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0px;
+    font-size: 14px;
+}
+
+.product__order-delivery {
+    width: 60%;
+    display: inline-block;
+}
+
+.product__order-date--bold {
+    font-weight: 700;
+}
+
+.product__order-deliveryII {
+    display: flex;
+    align-items: center;
+    gap: 0px 5px;
+}
+
+.product__order-deliveryII-icon {
+    color: var(--slashed-grey);
+}
+
+.product__order-deliveryII-location:hover {
+    text-decoration: none;
+}
+
+.product__order-request {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0px;
+}
+
+.product__order-availability {
+    color: rgb(0 118 0);
+    font-size: 21px;
+}
+
+.product__order-request-confirm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product__order-quantity {
+    width: 40%;
+    border-radius: .25rem;
+    font-size: 13px;
+    padding: 5px 0px;
+    outline: none;
+    box-shadow: 0 1px 2px 0 var(--shadow);
+    cursor: pointer;
+
+}
+
+.product__order-quantity:focus {
+    border: 1.5px solid var(--amazon-path-blue);
+}
+
+.product__order-confirm {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    /* The given value is based on the width of .product__order-confirm-input */
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--button-yellow);
+    box-shadow: 0 1px 2px 0 var(--shadow);
+    border-radius: 30px;
+}
+
+.product__order-confirm::before {
+    content: "Add to Cart";
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50% , -50%);
+}
+
+.product__order-confirm:focus:before {
+    content: "Remove to Cart";
+}
+
+.product__order-confirm:hover {
+    background-color: var(--button-hover-yellow);
+}
+
+.product__order-last-parts {
+    display: flex;
+    flex-direction: column;
+    gap: 3px 0px;
+}
+
+.product__order-shipping, .product__order-sold, .product__order-returns {
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__order-returns-explain {
+    width: 75px;
+}
+
+.product__order-returns-explain:hover, .product__order-more:hover, .product__support-hidden-textsII:hover {
+    text-decoration: none;
+}
+
+.product__order-support {
+    position: relative;
+    height: auto;
+}
+
+.product__order-support-input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.product__order-support-input:checked ~ .product__order-more {
+    display: none;
+}
+
+.product__order-supprt-hidden {
+    display: flex;
+    height: 0;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.product__support-hidden-texts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__support-hidden-textsII {
+    width: 75px;
+}
+
+.product__order-support-input:checked ~ .product__order-supprt-hidden {
+    height: auto;
+}
+
+
+
+
+/* product__order section ends */
+
+
+/* Computer/Laptop version for product-showcase */
+@media only screen and (min-width: 1024px) {
+
+    .product {
+        flex-direction: row;
+        padding: 6px 10px;
+        /* Puts the product__picture-div, product__explaination and product__order in the horizantal axis */
+    }
+
+    .product__picture-div {
+        width: 336px;
+        align-self: flex-end;/* Sending the image to the top of the parent product__explaination  tag */
+        position: sticky;
+        bottom: 60%;
+        z-index: 30;
+    }
+
+    .product__explaination {
+        display: flex;
+        width: 70%;
+    }
+        
+    .product__row-one-headline {
+        font-size: 44px;
+    }
+
+    .product__row-one-utility {
+        font-size: 18px;
+    }
+
+    .product__rowII-benefits {
+        flex-direction: column;/* building for both a computer and laptop cuases the alignemnt to be out of sync, Turn this to row when building for ONLY a computer */
+        align-items: center;
+        gap: 4px 0px;
+        width: 380px;
+    }
+
+    .product__rowII-benefits-saving {
+        align-self: flex-start; /* Put in with the flex-direction: column applied to product__rowII-benefits, Remove this once building for ONLY a computer screen size. */
+    }
+
+    .product__rowII-benefits-offer {
+        align-self: flex-start; /* Put in with the flex-direction: column applied to product__rowII-benefits, Remove this once building for ONLY a computer screen size. */
+    }
+
+
+    .product__order {
+        width: 227px;
+        height: auto;    /* Lets it grow dynamically.... It would if it somehow asn't bugged! */
+        /* It's supposed to be 540px when see more is not expanded, And 580px wen expanded, I TRIED max-height min-height:  but they do not adjust the size of the box
+        When the see more box epands */
+        /* For now I will just write something for visuals sake */
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .product__order-delivery {
+        width: 100%;
+    }
+
+    .product__order-request-confirm {
+        flex-direction: column;
+        /* Cuases the product__order-quantity and product__order-confirm tags to end on the vertical axis  */
+        gap: 10px 0px;
+        /* Causes the same dstance between the afromentioned tag as the distance between all the other lower tags in product__order */
+    }
+
+    .product__order-quantity {
+        width: 100%;
+    }
+    
+    .product__order-confirm {
+        width: 100%;
+    }
+
+
+
+}

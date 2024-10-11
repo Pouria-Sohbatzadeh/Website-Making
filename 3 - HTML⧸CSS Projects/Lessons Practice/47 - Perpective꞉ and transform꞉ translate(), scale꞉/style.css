@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: burlywood;
+}
+
+.envelope {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+
+    perspective: 230px;/* To give my text depth */
+    
+}
+
+.envelope__letter {
+    transform: translateZ(220px);
+    /* The amount we move our content forward can't be more the the depth we give with perpective: */
+    /* AKA, The value in transform: translateZ() can't be more than perpective. It has to be less */
+}
+
+.envelopeII {
+    margin-top: 200px;/* To distance the second <div> from the first.  */
+
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+
+    perspective: 130px;/* To give my text depth */
+
+    
+}
+
+/* Now we shall test scale */
+
+.envelope__letter-sender {
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    border-radius: 100%;
+    /* Mimicking a seal shape */
+    display: inline-block;
+    scale: 4 3 7;
+    /* Doesn't seem to have a noticable effect, However normally putting the 3rd number in scale would've 
+    just disabled the multiplying of our content height and width */
+    transform: rotateX(30deg);
+}

@@ -1,0 +1,41 @@
+.letter {
+    height: auto;
+    width: 150px;
+    border: 1px solid red;
+    background-color: black;
+    color: white;
+    padding: 15px 15px;
+}
+
+.letter__input {
+    display: inline-block;
+}
+
+.letter__words--hide {
+    display: none;
+}
+
+.letter__input:checked ~ .letter__words--hide {
+    display: inline-block;
+}
+
+.knife {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    height: 30px;
+    width: 90px;
+    border: 1px solid white;
+}
+
+.letter__input:checked ~ .knife {
+    display: none;
+}
+
+/* It seems I need to do the summoning with ~ from now on, It worked where + didn't */
+
+.letter__closer {
+    background-color: blue;
+    margin-left: 50px;
+}

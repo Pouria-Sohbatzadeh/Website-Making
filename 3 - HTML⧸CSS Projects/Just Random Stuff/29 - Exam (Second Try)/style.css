@@ -1,0 +1,71 @@
+body {
+    background-color: crimson;
+    margin: 0;
+    
+
+.all-people {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* height: 23cm;
+    width: 45cm;
+    gap: 10cm; */
+    /* You can fix the overlapping problem (Thanks to Position: absolute) By distancing from each other with gap.
+    The align-items:center doesn't work because you didn't set a height:  you dummy. */
+}
+
+.person {
+    display: inline-block;
+    position: relative;
+}
+
+.Duck {
+    position: absolute;
+}
+
+.text {
+    position: absolute;
+    display: inline-block;
+    height: 2.5cm;
+    width: 2.5cm;
+    z-index: -1;
+    backface-visibility: hidden;
+}
+
+.person:hover .text {
+    transform: translate(30px, 1cm);
+}
+
+.person:hover .Duck {
+    transform: translate(-30px, -1cm);
+}
+
+.person-2:hover .Duck {
+    transform: translate(-30px, -1cm);
+}
+
+.person-2:hover .text {
+    transform: translate(30px, 1cm);
+}
+
+
+.person-3:hover .text {
+    transform: translate(30px, 1cm);
+}
+
+.person-3:hover .Duck {
+    transform: translate(-30px, -1cm);
+}
+
+
+.person-2 {
+    display: inline-block;
+    position: relative;
+    
+}
+
+.person-3 {
+    display: inline-block;
+    position: relative;
+}

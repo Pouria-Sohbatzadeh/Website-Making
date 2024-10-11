@@ -1,0 +1,43 @@
+/* Top-bar */
+
+.top-bar {
+    background-color: #f0f2f7;
+    padding: 2rem 1.5rem;
+  }
+  .top-bar__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .top-bar__right {
+    font-size: 1.4rem;
+  }
+  .top-bar__list {
+    display: flex;
+    gap: 20px;
+  }
+  .top-bar__link {
+    transition: all 400ms ease;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+  }
+  .top-bar__left {
+    display: flex;
+    gap: 20px;
+  }
+  .top-bar__phone,
+  .top-bar__email {
+    display: flex;
+    gap: 10px;
+  }
+  .top-bar__phone-text,
+  .top-bar__email-text {
+    font-size: 1.4rem;
+  }
+  .top-bar__phone-icon,
+  .top-bar__email-icon {
+    color: var(--primary-color);
+  }
+  

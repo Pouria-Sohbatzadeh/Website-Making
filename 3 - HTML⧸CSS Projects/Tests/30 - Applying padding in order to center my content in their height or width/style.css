@@ -1,0 +1,31 @@
+body {
+    margin: 0cm;
+}
+
+div {
+    /* Now I apply to the div the height and width. */
+    width: 5cm;
+    height: 2cm;
+    background-color: red;
+    display: inline-block;
+
+}
+
+span {
+    display: inline-block;
+    /* Let me test margin first */
+    /* margin-left: 2cm;
+    margin-top: 0.8cm; */
+    /* It didn't work. */
+    width: 3cm;
+    height: 1.2cm;
+    padding-left: 2cm;
+    padding-top: 0.8cm;
+    background-color: blue;
+    /* The padding needs works but it is promising. */
+}
+
+div :hover {
+    background-color: crimson;
+    color: white;
+}

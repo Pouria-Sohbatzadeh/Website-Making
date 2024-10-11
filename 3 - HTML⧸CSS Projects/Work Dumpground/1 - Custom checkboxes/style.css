@@ -1,0 +1,69 @@
+@import "./variables\ \(colors\).css";
+
+.different-uses-of-form__right-radio {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px 0px;
+    color: var(--article-grey);
+    border-radius: 100%;
+}
+
+.different-uses-of-form__all-radio {
+    display: flex;
+    flex-direction: column;
+    gap: 27px 0px;
+}
+
+.different-uses-of-form__radio-one {
+    display: flex;
+    /* gap: 100px; */
+    justify-content: space-between;
+}
+
+.different-uses-of-form__radio-one-label {
+    position: relative;
+}
+
+.different-uses-of-form__radio-one-input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.different-uses-of-form__radio-one-span {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 3px solid var(--article-grey);
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+}
+
+.different-uses-of-form__radio-one-input:checked + .different-uses-of-form__radio-one-span {
+    border: 5px solid var(--percent-semi-red);
+    height: 5px;
+    width: 5px;
+}
+
+.different-uses-of-form__radio-input--pink {
+    height: 16px;
+    width: 16px;
+    accent-color: var(--percent-semi-red);
+}
+
+.different-uses-of-form__radio-input--black {
+    height: 16px;
+    width: 16px;
+    accent-color: var(--checkbox-black);
+}
+
+
+.different-uses-of-form__radio-input--not-allowed {
+    cursor: not-allowed;
+}
+

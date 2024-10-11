@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <header class="mobile-header">
+        <div class="mobile-header__page-navigation">
+            <input type="checkbox" id="pages-reveal" class="mobile-header__navigation-input">
+           
+            <!-- interactable is a utility class name. -->
+
+            <label for="pages-reveal" class="mobile-header__navigation-label interactable"><i class="fa-solid fa-bars"></i></label>
+        
+            <ul class="mobile-header__navigation-allPages container">
+                <div class="mobile-header__navigation-mainPages">
+                    <li><a href="#" class="allPages-headline"><span>Tropes</span></a></li>
+                    <li><a href="#" class="allPages-headline"><span>Media</span></a></li>
+                    <li><a href="#" class="allPages-headline"><span>Browse</span></a></li>
+                    <li><a href="#" class="allPages-headline"><span>Popular</span></a></li>
+                    <li><a href="#" class="allPages-headline"><span>Indexes</span></a></li>
+                    <li><a href="#" class="allPages-headline"><span>Forums</span></a></li>
+                    <li><a href="#" class="allPages-headline"><span>Videos</span></a></li>
+                </div>
+            </ul>
+        </div>
+
+        <div class="mobile-header__right">
+            <div class="mobile-header__right-random-trope">
+                <label for="trope" class="mobile-header__right-random-tropeLabel">Random Trope</label>
+                <button id="trope" class="mobile-header__right-random-tropeButton"></button>
+            </div>
+
+            <div class="mobile-header__right-random-media">
+                <label for="media" class="mobile-header__right-random-mediaLabel">Random Media</label>
+                <button id="media" class="mobile-header__right-random-mediaButton"></button>
+            </div>
+
+            <div class="mobile-header__user">
+                <input type="checkbox" id="account" class="mobile-header__user-input">
+                <label for="account" class="mobile-header__user-label"><i class="fa-solid fa-user"></i></label>
+            
+            </div>
+        </div>
+    </header>
+
+    <header class="header container">
+        <div class="header__logo-and-navigation">
+            <div class="header__tablet-navigation">
+                <input type="checkbox" id="tablet-menu-reveal" class="header__tablet-navigation-input">
+                
+                <label for="tablet-menu-reveal" class="header__tablet-navigation-label interactable"><i class="fa-solid fa-bars"></i></label>
+                <ul class="header__navigation-tablet-menu">
+                    <li class="interactable"><a href="#" class="header__tablet-menu-options header__menu-options-tropes">Tropes</a></li>
+
+                    <li class="interactable"><a href="#" class="header__tablet-menu-options">Media</a></li>
+
+                    <li class="interactable"><a href="#" class="header__tablet-menu-options">Browse</a></li>
+
+                    <li class="interactable"><a href="#" class="header__tablet-menu-options">Popular</a></li>
+
+                    <li class="interactable"><a href="#" class="header__tablet-menu-options">Forums</a></li>
+
+                    <li class="interactable"><a href="#" class="header__tablet-menu-options">Videos</a></li>
+                </ul>
+            </div>
+
+            <a href="#" class="header__logo">
+                <img src="./assets/images/website-logo/tvtropes-logo.png" alt="Tvtropes Logo not found" class="header__logo-img">
+            </a>
+
+            <ul class="header__navigation-menu">
+                
+                <li class="interactable"><a href="#" class="header__navigation-menu-options">Tropes</a></li>
+
+                <li class="interactable"><a href="#" class="header__navigation-menu-options">Media</a></li>
+
+                <li class="interactable"><a href="#" class="header__navigation-menu-options">Browse</a></li>
+
+                <li class="interactable"><a href="#" class="header__navigation-menu-options">Popular</a></li>
+
+                <li class="interactable"><a href="#" class="header__navigation-menu-options">Forums</a></li>
+
+                <li class="interactable"><a href="#" class="header__navigation-menu-options">Videos</a></li>
+
+            </ul>
+        </div>
+
+        <div class="header__right">
+            <div class="header__right-search-types">
+                <div class="header__right-search-random">
+
+                </div>
+
+                <div class="header__right-search-media">
+
+                </div>
+
+                <div class="header__right-search-form">
+                    <label for="site-search" class="header__search-form-label"><i class="fa-solid fa-magnifying-glass"></i></label>
+                    <input type="text" placeholder="Search" class="header__search-form-input" id="site-search">
+                </div>
+
+            </div>
+
+            <div class="header__right-join-login">
+
+            </div>
+        </div>
+    </header>
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+</body>
+</html>

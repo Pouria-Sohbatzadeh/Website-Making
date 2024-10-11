@@ -1,0 +1,48 @@
+@import url(reset.css);
+@import url(responsive.css);
+@import url(colors.css);
+@import url(utilities.css);
+
+.all-boxes {
+    background-color: gold;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    max-width: 1800px;
+    align-items: flex-start;/* In order to pervent the uneeded increasing of height thanks to align-items: stretch */
+    gap: 0px 30px;
+}
+
+.boxes {
+    width: 300px;
+    flex-basis: 300px;
+    height: 99.39%;
+    /* The size of the boxes */
+    
+    flex-grow: 0.1;/* I don't want the content to fill ALL the empty space, I want some empty space left */
+/* While a percent measuring unit might be able to partly do the job of flex-grow: , The percent value has to be the same value across all the responsive sizes,
+for it to be viable, If it's not we have to manually change the value, which isn't worth applying it without flex-grow:  to make the content automaticly fill the empty space. */
+
+    flex-shrink: 1;
+/* For flex-shrink:  and percent, There's the same problem, It PARTLY does the job, But there are occasions where we have to 
+manually change the value for our content to look good, Unlike flex-shrink:  which ONLY shrinks our content as much as needed. */
+    
+
+    
+}
+
+.all-boxes__box-1--red {
+    background-color: var(--decent-red);
+}
+
+.all-boxes__box-2--blue {
+    background-color: var(--beautiful-blue);
+}
+
+.all-boxes__box-3--black {
+    background-color: #000;
+}
+
+.all-boxes__box-4--white {
+    background-color: #fff;
+}

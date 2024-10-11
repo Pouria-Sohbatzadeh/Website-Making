@@ -1,0 +1,74 @@
+label {
+    position: relative;
+}
+
+.switch {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    z-index: 5;
+    position: absolute;
+}
+
+.switch-2 {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    z-index: 6;
+    position: absolute;
+    /* I tried putting the input in the exact same spot as the button one so the change occurs at the same time, But it didn't work, Probably because of z-index, And Having them be affected by
+    the same input also didn't work.....*/
+}
+
+.webpage {
+    background-color: rgb(52, 0, 194);
+    height: 2cm;
+    width: 100%;
+}
+
+.button {
+    position: absolute;
+    display: inline-block;
+    height: 30px;
+    width: 2cm;
+    background-color: white;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    border: 5px solid grey;
+    border-radius: 10cm;
+    transition: 1s;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    height: 15px;
+    width: 15px;
+    background-color: blue;
+    border-radius: 50%;
+    transition: all 1s linear;
+
+}
+
+input[type="checkbox"]:checked + .button {
+    background-color: black;
+    border: 5px solid red;
+    transition: all 1s linear;
+}
+
+input[type="checkbox"]:checked + .button::before{
+    left: 50px;
+    background-color: blueviolet;
+    transition: all 1s linear;
+
+}
+
+.switch-2[type="checkbox"]:checked + .webpage {
+    background-color: crimson;
+    
+}

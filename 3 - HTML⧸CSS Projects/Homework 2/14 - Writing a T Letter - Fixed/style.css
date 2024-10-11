@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+}
+
+.letter-t {
+    float: left;
+    font-size: 2cm;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.word {
+   position: relative;
+   top: 20px;
+   font-size: 20px;
+}

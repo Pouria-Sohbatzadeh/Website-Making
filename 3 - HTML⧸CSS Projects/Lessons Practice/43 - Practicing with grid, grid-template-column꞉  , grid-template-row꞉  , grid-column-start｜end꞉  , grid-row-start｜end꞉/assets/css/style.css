@@ -1,0 +1,102 @@
+@import url(reset.css);
+@import url(colors.css);
+@import url(utilities.css);
+
+.header {
+    
+    background-color: var(--major-parts-blue);
+    height: 68px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center; /* Grid SUCKS with vertical aligning, So here I'm going for flex */    
+    padding: 10px 150px;
+}
+
+.header__icon-and-optionsHolder {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0px 25px;
+}
+
+.header__site-icon-a {
+    width: 130px;
+}
+
+.header__site-icon-img {
+    width: 100%;
+}
+
+.header__all-pages {
+    font-size: 20px;
+    font-weight: 500;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 0px 25px;
+}
+
+.header__all-pagesA {
+    color: var(--pages-grey);
+}
+
+
+.header__all-pagesA:hover {
+    color: #fff;
+}
+
+
+.header__search-and-account {
+    display: grid;
+    grid-template-columns: auto 2px auto;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+
+}
+
+
+.header__search {
+    height: 100%;
+    position: relative;
+}
+
+.header__search-button {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: var(--major-parts-blue);
+}
+
+.header__search-input {
+    height: 100%;
+    font-size: 22px;
+    padding-left: 40px;
+    outline: none;
+    border: none;
+    flex-shrink: 1;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.171);
+}
+
+.header__search-input::placeholder {
+    color: var(--major-parts-blue);
+}
+
+.header__search-input:hover, .header__search-input:focus {
+    background-color: #fff;
+}
+
+.header__search-and-account-seperator {
+    height: 100%;
+    border-right: 1px solid var(--input-seperator-color);
+}
+
+.header__account {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0px 10px;
+}

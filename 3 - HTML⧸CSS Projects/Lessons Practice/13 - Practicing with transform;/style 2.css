@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    position: absolute;
+    display: inline-block;
+}
+
+.clock {
+    height: 5cm;
+    width: 5cm;
+    background-color: rgb(190, 190, 190);
+    border: 10px solid black;
+    border-radius: 100%;
+
+}
+
+.pointer {
+    height: 2.5cm;
+    width: 20px;
+    background-color: red;
+    left: 2.2cm;
+    top: 0px;
+    
+}
+
+/* .pointer {
+    height: 2.5cm;
+    width: 20px;
+    background-color: red;
+    left: 3cm;
+    top: 0.6cm;
+    transform: rotateZ(50deg);
+    /* When creating an Animation, Be sure to make a copy of the summons, So you can animate each step easier with the change. */
+ 
+
+.clock:hover .pointer {
+    left: 3cm;
+    top: 0.6cm;
+    transform: rotateZ(50deg);
+    transition: all 1s linear 0s;
+    /* When creating an Animation, Be sure to make a */
+}

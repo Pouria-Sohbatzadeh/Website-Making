@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+.words {
+    background-color: rgb(70, 27, 2);
+    height: 2cm;
+    width: 8cm;
+    margin-top: 4cm;
+    margin-left: 20cm;
+}
+
+.countinue, .start{
+    display: inline-block;
+}
+
+.start {
+    /* 4 - I give them enough width to occupy the whole line. */
+    width: 302px;
+    background-color: crimson;
+}
+
+span {
+    color: white;
+    width: 8cm;
+}

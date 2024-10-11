@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+
+.main-menu {
+    background-color: lightcoral;
+    
+}
+
+ul {
+    display: inline-block;
+    margin-left: 420px;
+}
+li {
+    display: inline-block;
+    margin-left: 50px;
+    color: white;
+}
+
+#Main-page {
+    height: 20px;
+    width: 40PX;
+}
+#Main-page :hover{
+    color: red;
+    background-color: white;
+    
+}
+

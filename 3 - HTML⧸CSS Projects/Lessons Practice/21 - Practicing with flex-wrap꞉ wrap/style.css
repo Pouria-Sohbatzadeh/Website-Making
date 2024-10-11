@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(90, 90, 90);
+}
+/* For the love of god do not appyly style attributes to the <body> tag, This is just for the sake of convinience of practice. */
+
+.boxes {
+    background-color: gold;
+    height: 10cm;
+    width: 7cm;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-wrap: wrap puts opur content into different rows of the vertical axis based on whther their size is too much to fit into on row. */
+
+    /* Now let's see how the other flex related style attributes respond. */
+    justify-content: space-between;
+    /* justify-content:  works normaly! */
+
+    align-items: center;
+    /* align-items:  also works normaly */
+
+    align-content: space-between;
+    /* It seems that align-content: attribute takes priority over align-items:  a rather good suprise given its wider range of special texts. */
+}
+
+.boxes__box-1 {
+    /* Now to see align-self:  */
+    align-self: flex-end;
+    /* align-self:  ceases to function entirely when flex-wrap: wrap is applied. */
+    /* If it worked normaly, The red box would've taken the place of the grey box. */
+}
+
+.boxes__box-1--red {
+    background-color: red;
+    height: 3cm;
+    width: 3cm;
+
+    
+    
+}
+
+.boxes__box-2--blue {
+    background-color: blue;
+    height: 3cm;
+    width: 3cm;
+}
+
+.boxes__box-3--grey {
+    background-color: grey;
+    height: 3cm;
+    width: 3cm;
+}
+
+
+.boxes__box-4--white {
+    background-color: white;
+    height: 3cm;
+    width: 3cm;
+}

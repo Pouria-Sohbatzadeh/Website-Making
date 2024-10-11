@@ -1,0 +1,67 @@
+.names {
+    display: grid;
+    border: 5px solid black;
+    height: 5cm;
+}
+
+.names__column-1 {
+    grid-column-start: 1;
+    display: grid;
+    background-color: grey;
+    
+}
+
+.names__column-line {
+    grid-column-start: 2; 
+    
+    width: 30px;
+    height: 5cm;
+    background-color: red;
+}
+
+.names__column-2 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+.names__row-line {
+    grid-column-start: 2;
+    width: 150px;
+    /* height: 30px; */
+    background-color: rgb(0, 255, 0);
+    grid-row-start: 2;
+}
+
+.names__column-3 {
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+
+.name-of-people {
+    height: 3cm;
+    width: 3cm;
+    background-color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(224, 224, 224);
+}
+
+.names__name-1 {
+    background-color: red;
+    grid-row-end: 4;
+}
+
+.names__name-2 {
+    background-color: blue;
+}
+
+.names__name-3 {
+    background-color: green;
+}
+
+.names__name-4 {
+    background-color: rgb(196, 176, 2);
+    grid-row-end: 1;
+}
+

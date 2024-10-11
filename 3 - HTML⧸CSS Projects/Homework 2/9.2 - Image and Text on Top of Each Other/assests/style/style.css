@@ -1,0 +1,52 @@
+body {
+    direction: rtl;
+    background-color: crimson;
+}
+
+.me {
+    margin-right: 14cm;
+    margin-top: 1cm;
+    display: inline-block;
+}
+
+.picture {
+    background-color: #f1efec;
+    display: inline-block;
+    width: 11cm;
+    height: 12.67cm;
+    text-align: center;
+    position: relative;
+    right: 1.5cm;
+    top: 2.2cm;
+    border-right: 5px solid darkgray;
+    border-top: 5px solid darkgray;
+    box-shadow: -1cm 0.5cm 0.5cm 5px rgba(0, 0, 0, 0.493);
+}
+
+.picture img {
+    margin-top: 12px;
+    margin-right: 1.8cm;
+}
+
+.Life {
+    display: inline-block;
+    height: 10cm;
+    width: 8cm;
+    background-color: #e29912;
+    margin-bottom: 2cm;
+    text-align: center;
+    border: 5px solid black;
+}
+
+.life-distance {
+    width: 6cm;
+    display: inline-block;
+    height: 8cm;
+    margin-top: 1cm;
+    margin-right: 1cm;
+    color: white;
+}
+
+.life-distance span {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

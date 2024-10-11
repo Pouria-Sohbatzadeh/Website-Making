@@ -1,0 +1,637 @@
+@import "./reset.css";
+/* This is to reset the defualt values of style attributes applied to our tags */
+
+
+
+@import "./variables\ \(colors\).css";
+/* This is for us to add our own colors */
+
+/* This is for more fonts! */
+@import "./fonts.css";
+
+/* This CSS file is for the scroll of the logos at the partners part. */
+/* Also sir before I go any further, I have to say that you misclicked on the partners name.
+You wrote "PERTNERS", Instead of "PARTNERS".
+If you plan to officaly use our version, Just correct that. */
+@import "./logo\ scroll\ animation.css";
+
+/* Okay, I'm doing this late but I need to test a theory. */
+/* @import "./responsive.css"; */
+/* I was wrong, I thought by putting the:
+@media only screen and () {
+
+}
+style attribute after the 1st line like my animation with the:
+@keyframes {}
+would make it work. Needs a bit more work.*/
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: chivo;
+}
+
+.deceleration-holder {
+    background-color: var(--header-color);
+    width: 100%;
+    height: 156px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.deceleration-holder__aligner {
+    width: 94%;
+    height: 82%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 23px 0px;
+}
+
+.deceleration-holder__aligner-upper-text {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.deceleration-holder__aligner-upper-text--green {
+    color: var(--custom-green);
+    line-height: 27px;
+}
+
+.deceleration-holder__aligner-upper-text--white {
+    color: var(--custom-white);
+}
+
+.deceleration-holder__timer {
+    display: flex;
+    gap: 0px 32px;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.timer-columns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: medium;
+}
+
+.deceleration-holder__timer-big-text--green {
+    font-size: 20px;
+    color: var(--custom-green);
+    font-weight: bold;
+}
+
+.deceleration-holder__timer-small-text--grey {
+    font-size: 14px;
+    color: var(--timer-gray);
+}
+
+.deceleration-holder__learn {
+    display: none;
+    color: #fff;
+}
+
+/* go back to FINISH THIS! */
+.menu {
+    height: 79px;
+    width: 100%;
+    background-color: #fff;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.13);
+    top: 0px;
+    z-index: 100;
+
+}
+
+.menu__aligner {
+    width: 351px;
+    height: 79px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+.menu__left-side {
+    display: flex;
+
+}
+
+.menu__left-side-menu {
+    display: none;
+}
+
+.menu__right-side-call {
+    display: none;
+}
+
+.menu__right-side-social-media {
+    display: none;
+}
+
+.menu__right-side-social-media-facebook, .menu__right-side-social-media-twitter {
+    color: var(--facebook-and-twitter-blue);
+}
+
+.menu__right-side-social-media-linkdin {
+    color: var(--linkdin-blue);
+}
+
+.menu__right-side-social-media-youtube {
+    color: var(--youtube-red);
+}
+
+.menu__right-side-social-media-envelope {
+    color: var(--envelope-green);
+}
+
+.menu__right-side-dropdown-menu-holder {
+    display: flex;
+    align-items: center;
+    height: 79px;
+}
+
+.menu__right-side-dropdown-menu-opener {
+    color: var(--envelope-green);
+    font-size: 30px;
+    display: inline-block;
+    padding-right: 10px;    
+}
+
+.menu__right-side-dropdown-menu-holder:hover .menu__right-side-dropdown-menu {
+    visibility: visible;
+}
+
+/* Starting deleting the belows. */
+
+.menu__right-side-dropdown {
+    position: relative;
+}
+
+.menu__right-side-dropdown-menu {
+    right: 0%;
+    top: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    visibility: hidden;
+    width: 351px;
+    /* background-color: darkred; */
+    background-color: #fff;
+
+}
+
+.menu__right-side-dropdown-menu-options {
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 3px;
+    width: 313px;
+    padding-bottom: 20px;
+}
+
+.menu__right-side-dropdown-menu-option, .menu__right-side-dropdown-menu-submenu-opener,.submenu-option {
+    height: 36.5px;
+    width: 313px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.dropdown-option, .dropdown-blog-option {
+    color: var(--complete-black);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.menu__right-side-dropdown-menu-submenu-opener {
+    display: flex;
+    justify-content: space-between;
+    color: var(--complete-black);
+}
+
+.menu__right-side-dropdown-menu-submenu-opener-tag {
+    color: var(--complete-black);
+}
+
+.menu__right-side-dropdown-menu-submenu-opener-and-closer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+
+.open-symbol {
+    position: absolute;
+}
+
+.close-symbol {
+    position: absolute;
+    display: none;
+}
+
+.menu__right-side-dropdown-menu-submenu-holder:hover .close-symbol {
+    display: inline-block;
+}
+
+.menu__right-side-dropdown-menu-submenu-holder:hover .open-symbol {
+    display: none;
+}
+
+.menu__right-side-dropdown-menu-submenu {
+    overflow: hidden;
+    height: 0px;
+    width: 100%;
+    transition: width 0.3s ease-in, height 0.3s ease-in 0.1s;
+}
+
+.menu__right-side-dropdown-menu-submenu-holder:hover .menu__right-side-dropdown-menu-submenu {
+    visibility: visible;
+    height: 110px;
+    width: 100%;
+    transition: width 0.3s ease-in, height 0.3s ease-in 0.1s;
+}
+
+.submenu-option {
+    padding-left: 30px;
+}
+
+/* Delete the above */
+
+.course {
+    height: 300px;
+    width: 100%;
+    background-image: url(../Image/Course/Course\ Background.png);
+    background-position: 50% 50%;
+    background-size: 430%;
+    background-repeat: no-repeat;
+    padding-left: 12px;
+    color: var(--custom-white-head);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.course__aligner {
+    display: flex;
+    flex-direction: column;
+    height: 52.5%;
+    gap: 14px 0px;
+    padding-top: 8px;
+}
+
+
+.course__concept-and--bold {
+    font-size: 27px;
+    font-weight: 900;
+    color: #fff;
+    
+}
+
+
+.course__events {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+
+/* The Element Content */
+.grey-box-holder {
+    display: none;
+    /* Change the above to flex the responsive */
+    justify-content: center;
+    width: 100%;
+}
+
+.grey-box-holder__box {
+    width: 93.7%;
+    height: 480px;
+    background-color: var(--location-grey);
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    color: var(--article-grey);
+}
+
+.contact-means {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 72.5px;
+}
+
+.contact-means__aligner {
+    display: flex;
+    flex-direction: column;
+    width: 93.7%;
+    /* background-color: gold; */
+    gap: 18.3px 0px;
+}
+
+.contact-means__headline {
+    color: var(--header-color);
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.contact-means__ways-to-connect {
+    display: flex;
+    flex-direction: column;
+    gap: 33.5px 0px;
+}
+
+.contact-means__user-fill {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-means__user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 38px 0px;
+}
+
+.contact-means__user-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* background-color: crimson; */
+    gap: 33.5px 0px;
+}
+
+.the-info {
+    padding-left: 19px;
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--user-form-grey);
+    color: var(--science-color);
+    display: inline-block;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+.the-info--small {
+    height: 48px;
+}
+
+.contact-means__user-massage {
+    height: 190px;
+    padding-bottom: 158px;
+}
+
+.contact-means__user-send {
+    height: 59px;
+    width: 37%;
+    border: 1px solid var(--custom-green-2);
+    color: var(--custom-green-2);
+    background-color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.contact-means__user-send:hover {
+    background-color: var(--custom-green-2);
+    border: none;
+    color: #fff;
+}
+/* Here are the user forms */
+
+/* Now for the company details */
+
+.contact-means__all-addresses {
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    gap: 49px 0px;
+}
+
+.contact-means__home-details, .contact-means__email-details, .contact-means__calling-details {
+    display: flex;
+    /* background-color: purple; */
+    gap: 0px 18px;
+}
+
+.contact-means__adress-icons {
+    font-size: 27px;
+    color: var(--icon-color);
+}
+
+.contact-means__home-address, .contact-means__call-availability, .contact-means__email-address {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    gap: 4px 0px;
+    /* background-color: orange; */
+}
+
+.top-text {
+    color: var(--top-text);
+}
+
+.bottom-text {
+    color: var(--icon-color);
+}
+
+
+/* The Element Content */
+
+
+.footer {
+    background-color: var(--header-color);
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    color: var(--custom-whote);
+    margin-top: 84px;
+}
+
+.footer__aligner {
+    padding-top: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px 0px;
+}
+
+
+.footer__university-logo {
+    /* padding-left: 10px; */
+    padding-top: 5px;
+}
+
+.footer__all-subjects {
+    display: flex;
+    flex-direction: column;
+    gap: 52px 0px;
+    padding-left: 12px;
+}
+
+.subject {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+
+}
+
+.footer__all-subjects-text--big {
+    font-size: 20px;
+    font-weight: 750;
+}
+
+.footer__quick-top-link, .footer__program-top-link, .footer__resources-top-link {
+    padding-top: 10px;
+}
+
+.links {
+    color: var(--custom-grey);
+    font-size: 16px;
+    transition: 0.4s linear 0s;
+
+}
+
+.link-text:hover{
+    text-decoration: underline;
+    color: var(--custom-green-2);
+    transition: 0.4s linear 0s;
+
+}
+
+.footer__newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 35px 0px;
+}
+
+.footer_newsletter-email {
+    display: flex;
+    flex-direction: column;
+    gap: 17px 0px;
+    position: relative;
+    width: 349px;
+}
+
+.footer_newsletter-send-email {
+    width: 349px;
+    height: 58px;
+    padding-left: 20px;
+}
+
+.footer_newsletter-send-email:focus {
+    outline: none;
+}
+
+.footer_newsletter-send-email[type="email"], .footer_newsletter-send-email::placeholder {
+    font-size: 16px;
+    color: var(--custom-gray-another);
+    font-weight: 500;
+}
+
+.footer_newsletter-email-send-button {
+    position: absolute;
+    background-color: var(--custom-green-2);
+    cursor: pointer;
+    border: none;
+    height: 58px;
+    width: 80.5px;
+    right: 0%;
+    bottom: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_newsletter-email-send-image {
+    height: 20px;
+    color: var(--custom-whote);
+}
+
+.footer__newsletter-social-media {
+    display: flex;
+    gap: 0px 15px;
+}
+
+.footer__newsletter-social-media-logo {
+    font-size: 20px;
+    color: var(--custom-white-head);
+}
+
+.footer__newsletter-social-media-logo:hover {
+    color: var(--custom-green-2);
+    transform: rotateY(180deg);
+    transition: 0.4s linear 0s;
+}
+
+.footer__copyright-and-creator {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    
+}
+
+.footer__copyright-and-creator-aligner {
+    border-top: 1px solid var(--footer-border);
+    width: 92%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 2;
+    color: var(--custom-grey);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer__copyright-and-creator-aligner-heart {
+    color: var(--custom-green-2);
+}
+
+.footer__copyrght-link {
+    color: var(--custom-green-2);
+
+}
+
+.nearly-forgot__div {
+    position: fixed;
+    right: 0.1%;
+    bottom: 2%;
+    transform: translateX(-33%);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--custom-green-2);
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    z-index: 100;
+}

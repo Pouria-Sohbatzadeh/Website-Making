@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.upper {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.user-options {
+    display: inline-block;
+}
+
+.profile {
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 10px;
+    
+}
+
+.profile img {
+    height: 55.1538px;
+    width: 55.6154px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.notification {
+    display: inline-block;
+}
+
+.bell {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    margin-bottom: 12px;
+}
+
+.record {
+    display: inline-block;
+}
+
+.search {
+    display: inline-block;
+    width: 2cm;
+    height: 10px;
+    background-color: blue;
+}
+
+.logo {
+    display: inline-block;
+    margin-bottom: 1cm;
+
+}
+
+.logo img {
+    height: 66.0381px;
+    width: 88px;
+}

@@ -1,0 +1,29 @@
+.holder {
+    position: relative;
+}
+
+.holder__input {
+    display: none;
+}
+
+.holder__label {
+    display: inline-flex;
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    cursor: pointer;
+}
+
+.holder__hidden-text {
+    transform: translateX(-200px);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s linear;
+}
+
+.holder__input:checked + .holder__label + .holder__hidden-text {
+    transform: translateX(0px);
+    opacity: 1;
+    pointer-events: auto;
+    transition: 0.3s linear;
+}

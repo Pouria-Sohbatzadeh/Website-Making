@@ -1,0 +1,19 @@
+@import "./reset.css";
+
+.sidebar {
+    height: 112px;
+    width: 56px;
+    background-color: chartreuse;
+    position: sticky;
+    left: 100%;
+    /* For some reason position: sticky is not affected by the
+    right:  ;
+    style attribute, Better use 
+    left:  ;
+    instead. */
+    top: 0;
+}
+
+span {
+    /* margin-left: 60cm; */
+}

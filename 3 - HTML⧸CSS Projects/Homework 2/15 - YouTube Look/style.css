@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    background-color: rgb(27, 27, 27);
+}
+
+.Upper {
+    display: inline-block;
+    background-color: crimson;
+    width: 100%;
+}
+
+.User {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.Account {
+    height: 17px;
+    border-radius: 200%;
+    width: 13px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.Notice {
+    height: 12px;
+    margin-bottom: 3px;
+}
+
+.Recorde {
+    height: 8px;
+    margin-bottom: 5px;
+    
+}
+
+.Account, .Notice, .Recorde {
+    margin-left: 8px;
+}
+
+.Voicing-box {
+    display: inline-block;
+    background-color: rgb(122, 121, 121);
+    border-radius: 1cm;
+    margin-left: 30px;
+    position: relative;
+    bottom: 3px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+}
+
+.Voicing-box :hover {
+    background-color: rgb(177, 176, 176);
+}
+
+.Voicing {
+    height: 12px;
+    position: relative;
+    top: 1px;
+    background-color: red;
+    /* How to give an Image width and Height Without changing its proportion in HTML. */
+}

@@ -1,0 +1,11 @@
+div {
+    display: flex;
+    flex-direction: row;
+    background-color: crimson;
+    /* I have to test the space- things */
+    justify-content: space-evenly;
+    /* Space-between, Alligns them from the begining of the axis to the end. */
+    /* space-around, Alligns them from the begining of the axis with space around the content. */
+    align-items: ;
+}
+

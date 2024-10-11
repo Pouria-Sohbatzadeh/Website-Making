@@ -1,0 +1,60 @@
+.card {
+    height: 5cm;
+    width: 5cm;
+    background-color: crimson;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.card-inner {
+    height: 90%;
+    width: 90%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(0deg);
+    height: 100%;
+    width: 100%;
+    background-color: chartreuse;
+}
+
+
+
+.card-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: gold;
+}
+
+
+
+
+

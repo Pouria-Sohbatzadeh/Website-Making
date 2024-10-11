@@ -1,0 +1,13 @@
+div {
+    display: inline-block;
+    width: 0.01cm;
+    height: 0.01cm;
+    background-color: red;
+    border: 50px dashed transparent;
+    border-right-color: black; 
+    rotate: 0deg;
+}
+
+div {
+    
+}

@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+}
+
+.red {
+    color: red;
+    background-color: gold;
+    position: relative;
+    transform: translate(2cm, 3cm);
+    display: inline-block;
+    /* Transform:  cannot affect inline content. */
+}
+
+.blue {
+    color: blue;
+    background-color: white;
+    box-shadow: 10px 10px 8px 5px red;
+}

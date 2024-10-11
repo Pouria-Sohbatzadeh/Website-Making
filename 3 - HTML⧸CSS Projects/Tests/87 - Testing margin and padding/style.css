@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    background-color: gold;
+}
+
+.box {
+    height: 90px;
+    width: 90px;
+    background-color: red;
+    display: flex;
+    align-items: center;    
+    padding: 50px 80px 0px 0px;
+    /* The 1st pair are top, right directions */
+}
+
+span {
+    margin: 0px 0px 70px 40px;    
+    /* The 2nd pair are bottom, left directions */
+}

@@ -1,0 +1,9 @@
+.Traingle-border {
+    border: 10px solid black;
+    padding-top: 3px;
+    display: inline-block;
+}
+
+.Traingle-border::after {
+    border-right-color: blue;
+}

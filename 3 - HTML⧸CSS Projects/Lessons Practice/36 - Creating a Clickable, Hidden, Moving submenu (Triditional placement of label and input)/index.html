@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- <label class="label">
+        <input type="checkbox" id="toggle">
+        <div class="trigger" for="toggle">
+            <div class="submenu">
+                
+            </div>
+        </div>
+        
+    </label> -->
+    <!-- Yep, This version doesn't work, you need the label/The tag we set as the Trigger needs to be seperate from the submenu. Observe: -->
+
+    <label class="label">
+        <input type="checkbox" id="toggle">
+        <div class="trigger" for="toggle">
+            
+        </div>
+        <div class="submenu">
+                
+        </div>
+    </label>
+    <!-- The only thing changed here was the .submenu not being inside the .trigger <div> anymore. -->
+    
+</body>
+</html>

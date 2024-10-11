@@ -1,0 +1,45 @@
+:root {
+    --header-blue: rgb(19,25,33);
+    --deliver-grey: rgb(204, 204, 204);
+    --send-grey: rgb(230,230,230); 
+    --outline-orange: #fb923c;
+    --send-orange: rgb(253,186,116);
+    --input-blue: rgb(241,245,249);
+    --languages-reveal: rgb(177,177,177);
+    --triangle-grey: #94a3b8;
+    --learn-more-blue: rgb(0, 113, 133);
+    --magnificent-red: rgb(220, 38, 38);
+    --seperation-line: rgb(148, 163, 184);
+    --button-yellow: rgb(250, 204, 21);
+    --button-hover-yellow: #EAB308;
+    --shadow: #94a3b8;
+    --menu-hover: rgb(148 163 184);
+    --category-hover: rgb(203 213 225);
+    --options-blue: rgb(35 47 62);
+    --option-submenu-hover: rgb(226 232 240);
+    --back-to-top-blue-text: rgb(255 255 255);
+    --back-to-top-blue: rgb(56,67,80);
+    --middle-main-grey: rgb(227,230,230);
+    --middle-bg: rgb(227,230,230);
+    --star: rgb(253,191,2);
+    --amazon-path-blue: rgb(0 113 133);
+    --footer-grey: #cbd5e1;
+    --footer-border: rgb(100 116 139);
+    --footer-bottom-links-border: rgb(188, 196, 207);
+    --body-color: rgb(227,230,230);
+
+    /* The colors for shopping-cart.html */
+    --countinue-blue: rgb(59 130 246);
+    --stock-green: rgb(0 118 0);
+    --numberI-brown: rgb(113 63 18);
+
+    /* The colors for product-showcase.html */
+    --product-summary-black: #0f1111;
+    --nearly-transparent: #e5e7eb;
+    --slashed-grey: rgb(86 89 89);
+    --details-submenu: rgb(148 163 184);
+    --saving-orange: rgba(237,169,58,.9);
+    --select-type-red: rgb(185 28 28);
+}
+
+/* I persoanly don't use this many colors, But for the sake of accuracy, Stored all the possible varients. */

@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+}
+
+div {
+    display: inline-block;
+}
+
+.search-bar {
+    background-color: blue;
+    border-radius: 3cm;
+}
+
+.search-icon {
+    margin-left: 8px;
+    position: relative;
+    top: 3px;
+}
+
+.User-Help  {
+    border-top-right-radius: 3cm;
+    border-bottom-right-radius: 3cm ;
+    text-align: right;
+    /* Remember to properly copy and double check your tag, class, and id names. */
+}
+

@@ -1,0 +1,12 @@
+.Test-for-applying-to-either-ol-and-ul :hover{
+
+    background-color: aqua;
+}
+
+.Test-for-applying-to-li-without-content-tag :hover {
+    background-color: brown;
+}
+
+.Test-for-applying-to-li-2-with-content-tag :hover{
+    color: red;
+}

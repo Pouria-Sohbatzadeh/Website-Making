@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+}
+
+.card {
+    height: 6cm;
+    width: 6cm;
+    transform-style: preserve-3d ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    height: 4cm;
+    width: 4cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    color: white;
+}
+
+.card-front {
+    background-color: red;
+}
+
+.card-back {
+    background-color: blue;
+    transform: rotateY(-180deg);
+}
+
+.card:hover .card-front {
+    transform: rotateY(-360deg);
+    transition: transform 5s;
+}
+
+.card:hover .card-back {
+    transform: rotateY(-540deg);
+    transition: transform 5s; 
+}

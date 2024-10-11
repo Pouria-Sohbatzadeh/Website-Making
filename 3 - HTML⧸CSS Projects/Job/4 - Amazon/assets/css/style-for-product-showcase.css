@@ -1,0 +1,1019 @@
+@import "./reset.css";
+@import "./fonts.css";
+@import "./variables-colors.css";
+@import "./ultilities.css";
+@import "./style.css";
+
+body {
+    background-color: #fff;
+    /* The only page with a pure white body background */
+}
+
+/* Start of the adjustments to the webpage. */
+
+/* advertisment section begins. */
+.advertisment {
+    width: 100%;
+}
+
+.advertisment__img {
+    width: 100%;
+}
+/* advertisment section ends. */
+
+/* product section begins. */
+.product {
+    background-color: #fff;
+    padding: 6px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px 0px;
+    margin-top: 45px;
+}
+
+.product__picture-div {
+    width: 250px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.product__picture {
+    width: inherit;
+}
+
+.product__explainations-all {
+    display: flex;
+    flex-direction: column;
+}
+
+/* row-one of explainations begin. */
+.product__explaination-row-one {
+    display: flex;
+    flex-direction: column;
+    gap: 9px 0px;
+    border-bottom: 2px solid var(--nearly-transparent);
+    padding-bottom: 12.5px;
+}
+
+.product__row-one-headline {
+    font-size: 39px;
+    font-weight: 500;
+}
+
+.product__row-one-descriptions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px 0px;
+}
+
+.product__row-one-utility {
+    position: relative;
+    font-size: 17px;
+    width: 90%;
+    font-weight: 500;
+    /* overflow-y: hidden;
+    overflow-x: visible; */
+    color: var(--product-summary-black);
+}
+
+.product__row-one-user {
+    display: flex;
+    flex-direction: column;
+    gap: 5px 0px;
+}
+
+.product__row-one-storeLink {
+    font-size: 13.5px;
+    color: var(--learn-more-blue);
+    width: 120px;
+}
+
+.product__row-one-storeLink:hover {
+    text-decoration: underline;
+    color: var(--magnificent-red);
+}
+
+.product__star-rating-search {
+    display: flex;
+    align-items: center;
+    gap: 0px 10px;
+}
+
+.product__star {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    width: 120px;
+    /* To limit the area from which :hover will activate */
+    gap: 0px 3px;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+/* Making the star-ratio reappear */
+.product__star:hover {
+    overflow: visible;
+}
+
+.product__star-general {
+    font-size: 14px;
+    color: #000;
+}
+
+/* The genral stars given */
+.product__general-stars {
+    font-size: 13px;
+}
+
+
+
+/* The appearance of star-ratio */
+.product__star-ratio {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid rgb(116, 116, 116);
+    box-shadow: 0px 10px 15px -3px var(--shadow);
+    border-radius: .25rem;
+    top: 140%;
+    left: 0%;
+    width: 400px;
+    height: auto;
+    gap: 20px 0px;/* The distance between the two rows. */
+    padding: 10px 10px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.product__star-ratio::before {
+    position: absolute;
+    content: "";
+    bottom: 100%;
+    left: 10%;
+    border: 10px solid transparent;
+    border-bottom-color: var(--triangle-grey);
+}
+
+/* Top row of star-ratio */
+.product__starRatio-top-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.product__starRatio-topRow-overall {
+    display: flex;
+    gap: 0px 8px;
+}
+
+.product__starRatio-topRow-text {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.product__starRatio-topRow-global {
+    font-size: 13px;
+    color: #000;
+}
+/* bottom-row of star-ratio */
+.product__starRatio-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px 0px;
+}
+
+.product__starRatio-bottom-starNumbers {
+    color: var(--learn-more-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 130px;/* To center the numbers and percent vertical */
+    font-size: 13px;
+    
+}
+
+.product__starRatio-bottom-bars {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 130px;/* To center the numbers and percent vertical */
+}
+
+.product__starRatio-bottom-bar {
+    width: 280px;
+    height: 18px;
+    border: 1px solid rgb(116, 116, 116);
+    /* darker shade of --deliver-grey */
+    border-radius: .25rem;
+}
+
+.product__starRatio-bar {
+    background-color: var(--button-yellow);
+    height: 100%;
+    border-radius: .25rem;
+
+}
+
+.product__starRatio-bar-five {
+    width: 65%;
+    
+}
+
+.product__starRatio-bar-four {
+    width: 17%;
+}
+
+.product__starRatio-bar-three {
+    width: 7%;
+}
+
+.product__starRatio-bar-two {
+    width: 3%;
+}
+
+.product__starRatio-bar-one {
+    width: 8%;
+}
+
+.product__starRatio-bar-zero {
+    width: 2%;
+}
+
+.product__starRatio-bottom-starPercent {
+    color: var(--learn-more-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 130px;/* To center the numbers and percent vertical */
+    font-size: 15px;
+}
+/* star-ratio ends */
+
+.product__row-one-ratings {
+    font-size: 13.5px;
+    color: var(--learn-more-blue);
+}
+
+.product__row-one-ratings:hover {
+    text-decoration: underline;
+    color: var(--magnificent-red);
+}
+
+.product__rating-search-seperating {
+    height: 15px;
+    background-color: #000;
+    width: 1.5px;
+}
+
+.product__row-one-search {
+    font-size: 13.5px;
+    color: var(--learn-more-blue);
+}
+
+.product__row-one-search:hover {
+    text-decoration: underline;
+    color: var(--magnificent-red);
+}
+
+.product__row-one-bought {
+    font-size: 12px;
+    color: #0f1111;
+}
+/* Section product-row-one ends */
+
+/* Section product-rowII begins */
+
+.product__explaination-rowII {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px 0px;
+    border-bottom: 1px solid #000;
+}
+
+/* Container of product__rowII-newPrice, product__rowII-pricingDetails */
+.product__explaination-rowII-top {
+    display: flex;
+    flex-direction: column;
+    gap: 15.5px 0px;
+}
+
+/* holder of product__newPrice-cutValue, product__newPrice-actualValue */
+.product__rowII-newPrice {
+    display: flex;
+    align-items: center;
+    gap: 0px 15px;
+    
+}
+
+.product__newPrice-cutValue {
+    color: var(--magnificent-red);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.product__newPrice-actualValue {
+    display: flex;
+    color: #000;
+}
+
+.product__newPrice-actualValue-percent, .product__newPrice-actualValue-cent  {
+    font-size: 13px;
+    align-self: flex-start;
+}
+
+.product__newPrice-actualValue-dollar {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* V this tag */
+.product__rowII-pricingDetails {
+    font-size: 13px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    gap: 6.5px 0px;
+}
+/* Is the container of the bottom tags  */
+
+
+.product__rowII-oldPrice {
+    color: var(--slashed-grey);
+}
+
+.product__rowII-oldPrice-doollars--through {
+    text-decoration: line-through;
+}
+
+/* The holder of and a previous text product__rowII-shippingDetails */
+.product__rowII-shippingPlaces {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 15px;
+}
+
+.product__rowII-shipping-label {
+    position: relative;
+}
+
+.product__rowII-shipping-input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+/* The trigger for the product__shippingDetails-submenu */
+.product__rowII-shippingDetails {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 58px;
+    height: 18px;
+}
+
+.product__rowII-shipping-input:checked + .product__rowII-shippingDetails + .product__shippingDetails-submenu {
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px 0px;
+}
+
+/* This name is metaphorical, The actual trigger for the appearance of the submenu is the above tag. */
+.product__rowII-shippingDetails-trigger {
+    color: var(--learn-more-blue);
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.product__rowII-shippingDetails-trigger:hover {
+    color: var(--magnificent-red);
+    overflow: visible;
+}
+
+.fa-xmark {
+    cursor: pointer;/* To show the correct location that the user can close the box. */
+    
+}
+
+.product__rowII-shippingDetails-trigger::after {
+    position: absolute;
+    content: "";
+    rotate: 45deg;
+    transform-origin: center;
+    height: 8px;
+    width: 8px;
+    border-right: 2px solid var(--details-submenu);
+    border-bottom: 2px solid var(--details-submenu);
+    top: 2px;
+    right: -13px;
+}
+
+.product__shippingDetails-submenu {
+    opacity: 0;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: .25rem;
+    height: auto;
+    width: 280px;
+    z-index: 20;
+    box-shadow: 0 10px 15px -3px #292929;
+    right: 0;
+}
+
+.product__details-submenu-Ithrid, .product__details-submenu-IIIthrid, .product__submenu-IIthrid-rows {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.product__Details-deposite {
+    color: var(--learn-more-blue);
+    position: relative;
+}
+
+.product__Details-deposite:hover {
+    color: var(--magnificent-red);
+}
+
+.product__submenu-seperatingLine {
+    width: 100%;
+    height: 1px;
+    background-color: var(--slashed-grey);
+}
+
+.product__rowII-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 2px 0px;
+}
+
+.product__rowII-benefits-saving {
+    color: #fff;
+    background-color: var(--saving-orange);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0px;
+    border-radius: .25rem;
+    cursor: pointer;
+    
+}
+
+.product__rowII-benefits-offer {
+    position: relative;
+}
+
+/* The trigger for product__benefits-offer-box reappearing. */
+.product__rowII-benefits:hover .product__benefits-offer-box{
+    display: flex;
+}
+
+
+.product__rowII-benefits:hover .product__benefits-offer-box {
+    transform: translateY(-3px);/* To assure the user can touch the box upon :hover */
+    
+}
+
+.product__rowII-benefits-offer:hover .product__benefits-offer-text {
+    color: var(--magnificent-red);
+}
+
+.product__benefits-offer-text {
+    position: relative;
+    color: var(--learn-more-blue);
+    cursor: pointer;
+}
+
+
+.product__benefits-offer-text::after {
+    position: absolute;
+    content: "";
+    rotate: 45deg;
+    transform-origin: center;
+    height: 8px;
+    width: 8px;
+    border-right: 2px solid var(--details-submenu);
+    border-bottom: 2px solid var(--details-submenu);
+    top: 2px;
+    right: -10px;
+}
+
+.product__benefits-offer-box {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: .25rem;
+    box-shadow: 0 10px 15px -3px #292929;
+    font-size: 15px;
+    height: 50px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    transform: translateY(10%); /* To distance the box away from the vicinity of product__rowII-benefits-offer, So it's not seen outside of :hover */
+    display: none;
+    left: 9%;
+}
+
+.product__benefits-offer-box::after {
+    position: absolute;
+    content: "";
+    border: 10px solid transparent;
+    border-bottom-color: var(--triangle-grey);
+    right: 3%;
+    bottom: 100%;
+}
+/* The rowII-top is finished */
+
+.product__rowII-seperating-line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--nearly-transparent);
+}
+
+/* The rowII-bottom section begins */
+.product__explaination-rowII-bottom {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px 0px;
+}
+
+.product__rowII-bottom-productType {
+    display: flex;
+    flex-direction: column;
+    gap: 3px 0px;
+}
+
+.product__productType--bold {
+    font-weight: 700;
+}
+
+/* The tag that holds the boxes of type price/product__rowII-bottom-productType section begins */
+.product__rowII-bottom-typePrices {
+    display: flex;
+    gap: 0px 6px;/* Distancing the buttons (containing product's version and price) from each other */
+    
+}
+
+/* The shape of the buttons that contain the product's version and price */
+.product__typePrices-box {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: .25rem;
+    width: 84px;
+    height: 57px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product__typePrices-box:hover {
+    box-shadow: 0 0 3px 2px rgba(228,121,17,.5);
+    /* This color has only been used one, Not worth adding it with :root */
+}
+
+.product__typePrices-box:focus {
+    border: 1px solid var(--saving-orange);
+    /* An indicator of the user clicking on product version. */
+}
+
+.type--bold {
+    font-weight: 700;/* The thickness of categories */
+    
+}
+
+.prices {
+    color: var(--select-type-red);
+    font-size: 12px;
+    /* Size and color of the product's details */
+}
+/* product__rowII-bottom-productType is finished */
+
+/* .product__rowII-bottom-details begins */
+.product__rowII-bottom-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0px;/* Distancing every row of categories and names from each other */
+    
+}
+
+.product__bottom-detail-rows {
+    display: flex;
+    justify-content: space-between;/* aligning Categories and names in every row */
+}
+
+.product__bottom-detail-category {
+    font-weight: 700;
+}
+
+/* Holds all the hidden details and their trigger */
+.product__detail-rows-div-hold {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.product__detail-rows-input {
+    position: absolute;
+    width: 0;
+    opacity: 0;
+}
+
+.product__detail-rows-trigger {
+    display: inline-block;
+    width: 70px; /* Limiting the width to pervent the user opening and closing the details by accident */
+    cursor: pointer;/* Making the user awar of the clickability */
+    position: relative;
+    left: 13px;
+    color: var(--learn-more-blue);
+}
+
+.product__detail-rows-input:checked ~ .product__detail-rows-trigger {
+    display: none;
+}
+
+.product__detail-rows-trigger::before {
+    position: absolute;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; /* Required for solid icons */
+    color: var(--triangle-grey);
+    top: 2%;/* Aligning the added part to our tag. */
+    right: 110%;/* Aligning the added part to our tag. */   
+}
+
+.product__detail-rows-trigger--icon-rotate::before {
+    rotate: 180deg;
+    top: 5%;/* Aligning the added part to our tag. */
+}
+
+.product__detail-rows-trigger:hover {
+    color: var(--magnificent-red); /* Change the color of ::after on hover */
+}
+
+.product__detail-rows-hidden {
+    display: none;/* To make the hidden detail's existance not affect anything while hidden  */
+    flex-direction: column;
+    gap: 10px 0px;/* Distancing every row of hidden categories and names from each other */
+    
+}
+
+.product__detail-rows-input:checked ~ .product__detail-rows-hidden {
+    display: flex;
+}
+
+.product__hidden-detail-rows {
+    display: flex;
+    justify-content: space-between;/* aligning Categories and names in every row */
+}
+/* .product__rowII-bottom-details ends */
+/* The rowII-bottom section ends */
+/* Section product-rowII ends. */
+
+/* product__explaination-rowIII begins */
+.product__explaination-rowIII {
+    margin-top: 24px;
+    padding: 0px 9px;
+    display: flex;
+    flex-direction: column;
+    gap: 19px 0px;/* Distancing the headline from the list of qualities */
+    border-bottom: 1px solid #000;
+}
+
+.product__explaination-rowIII-headline {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* The list */
+.product__explaination-rowIII-qualities {
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 5px 0px;/* The distance between each quality of the product */
+}
+
+.qualities {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* The holder of the */
+.product__explaination-rowIII-hold {
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.product__explaination-rowIII-input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+/* The trigger for the reappearance of hidden qualities. */
+.product__rowIII-hiddenQualities-trigger {
+    position: relative;
+    cursor: pointer;
+    width: 70px;
+    left: 20px;
+    color: var(--learn-more-blue);
+    font-weight: 600;
+}
+
+.product__rowIII-hiddenQualities-trigger:hover {
+    color: var(--magnificent-red);
+}
+
+.product__explaination-rowIII-input:checked + .product__rowIII-hiddenQualities-trigger {
+    display: none;
+}
+
+.product__rowIII-hiddenQualities-trigger::before {
+    position: absolute;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; /* Required for solid icons */
+    color: var(--triangle-grey);
+    top: 0%;/* Aligning the added part to our tag. */
+    right: 110%;/* Aligning the added part to our tag. */
+    
+    
+}
+
+.product__explaination-rowIII-input:checked + .product__rowIII-hiddenQualities-trigger--rotate-icon::before {
+    transform: rotateZ(180deg);
+    
+}
+
+.product__rowIII-hiddenQualities-trigger:hover::after {
+    color: var(--magnificent-red); /* Change the color of ::after on hover */
+}
+
+.product__rowIII-hidden-qualities {
+    position: relative;
+    font-size: 13px;
+    font-weight: 700;
+    display: none;
+    flex-direction: column;
+    gap: 5px 0px;/* The distance between each quality of the product */
+}
+
+.product__explaination-rowIII-input:checked + .product__rowIII-hiddenQualities-trigger + .product__rowIII-hidden-qualities {
+    transform: translateY(-0px);/* Causing the hidden details to takes the place of product__detail-rows-trigger after the click. */
+    display: flex; /* To make the hidden details reappear, And align the content inside. */
+    padding-bottom: 10px;/* Creating space for ::before and ::after */
+    
+}
+/* list of qualities ends */
+
+.product__rowIII-help {
+    display: flex;
+    flex-direction: column;
+}
+
+.product__rowIII-report {
+    display: flex;
+    align-items: center;
+    gap: 0px 5px;
+}
+
+.product__report-icon {
+    color: #565959;
+}
+
+.product__rowIII-report-text {
+    font-size: 15px;
+}
+
+.product__rowIII-help {
+    position: relative;
+    bottom: 15px;
+    font-size: 14.5px;
+}
+
+.product__rowIII-help-headline {
+    font-weight: 700;
+}
+/* product__explaination-rowIII section ends */
+/* product__explaination section ends */
+
+/* product__order section begins */
+.product__order {
+    width: 90%;
+    border: 2px solid var(--category-hover);
+    border-radius: .25rem;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+}
+
+/* The top half of the buy box */
+.product__order-buy {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.product__order-buyPrice {
+    display: flex;
+}
+
+.product__order-buy-statments {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__buy-circle {
+    background-color: transparent;
+    height: 15px;
+    width: 15px;
+    border: 4px solid rgb(40,137,151);
+    border-radius: 100%;
+}
+
+.product__buyPrice-icon, .product__buyPrice-cent {
+    font-size: 13px;
+    align-self: flex-start;
+}
+
+.product__buyPrice-dollar--bold {
+    font-weight: 700;
+    font-size: 21px;
+}
+/* The top section of product__order ends */
+
+.product__order-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0px;
+    font-size: 14px;
+}
+
+.product__order-delivery {
+    width: 60%;
+    display: inline-block;
+}
+
+.product__order-date--bold {
+    font-weight: 700;
+}
+
+.product__order-deliveryII {
+    display: flex;
+    align-items: center;
+    gap: 0px 5px;
+}
+
+.product__order-deliveryII-icon {
+    color: var(--slashed-grey);
+}
+
+.product__order-deliveryII-location:hover {
+    text-decoration: none;
+}
+
+.product__order-request {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0px;
+}
+
+.product__order-availability {
+    color: rgb(0 118 0);
+    font-size: 21px;
+}
+
+.product__order-request-confirm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product__order-quantity {
+    width: 40%;
+    border-radius: .25rem;
+    font-size: 13px;
+    padding: 5px 0px;
+    outline: none;
+    box-shadow: 0 1px 2px 0 var(--shadow);
+    cursor: pointer;
+
+}
+
+.product__order-quantity:focus {
+    border: 1.5px solid var(--amazon-path-blue);
+}
+
+.product__order-confirm {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    /* The given value is based on the width of .product__order-confirm-input */
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--button-yellow);
+    box-shadow: 0 1px 2px 0 var(--shadow);
+    border-radius: 30px;
+}
+
+.product__order-confirm::before {
+    content: "Add to Cart";
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50% , -50%);
+}
+
+.product__order-confirm:focus:before {
+    content: "Remove to Cart";
+}
+
+.product__order-confirm:hover {
+    background-color: var(--button-hover-yellow);
+}
+
+.product__order-last-parts {
+    display: flex;
+    flex-direction: column;
+    gap: 3px 0px;
+}
+
+.product__order-shipping, .product__order-sold, .product__order-returns {
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__order-returns-explain {
+    width: 75px;
+}
+
+.product__order-returns-explain:hover, .product__order-more:hover, .product__support-hidden-textsII:hover {
+    text-decoration: none;
+}
+
+.product__order-support {
+    font-size: 13px ;
+    position: relative;
+    height: auto;
+}
+
+.product__order-support-input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.product__order-support-input:checked ~ .product__order-more {
+    display: none;
+}
+
+.product__order-supprt-hidden {
+    display: flex;
+    height: 0;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.product__support-hidden-texts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__support-hidden-textsII {
+    width: 75px;
+}
+
+.product__order-support-input:checked ~ .product__order-supprt-hidden {
+    height: auto;
+}
+
+
+
+
+/* product__order section ends */
+
+.back-to-top {
+    margin-top: 49px;
+}

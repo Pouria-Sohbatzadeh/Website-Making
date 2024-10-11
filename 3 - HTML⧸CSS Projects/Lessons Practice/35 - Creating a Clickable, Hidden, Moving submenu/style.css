@@ -1,0 +1,69 @@
+.menu {
+    height: 200px;
+    width: 270px;
+    background-color: black;
+    border: 2px solid red;
+    /* | */
+    /* V */
+    /* Aligning the boxes inside. */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__options {
+    height: 60px;
+    width: 30%;/* The value is set in comparison to the .menu */
+    background-color: red;
+    border: 2px solid black;
+}
+
+
+/* The div that contains the submenu and trigger for the submenu. */
+.menu__trigger {
+    background-color: rgb(1, 60, 148);
+    position: relative;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__option-input {
+    display: none;
+}
+
+/* The trigger for submenu */
+.menu__option-label {
+    height: 90%;
+    width: 80%;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    text-align: center;  
+}
+
+/* The Submenu */
+.menu__submenu {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: gold;
+    color: white;
+    direction: rtl;
+    transform: translate(100%, 100%);
+    opacity: 0;/* renders the submenu invisible until the trigger is clicked. */
+    transition: 0.3s linear;/* Makes the change to happen smoother */
+}
+
+.menu__option-input:checked + .menu__option-label + .menu__submenu {
+    background-color: green;/* An overt change for the sake of testing this method. */
+    
+    transform: translate(10%, 100%);
+    overflow: visible;
+    opacity: 1;
+    transition: 0.3s linear;/* Makes the change to happen smoother */
+
+
+}

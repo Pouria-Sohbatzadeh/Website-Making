@@ -1,0 +1,66 @@
+@import "./reset.css";
+
+.menu {
+    background-color: red;
+    height: 180px;
+    width: 320px;
+    border: 8px solid rgb(0, 38, 119);
+    display: flex;
+    align-items: center;
+    gap: 42px;
+    padding-left: 10px;
+}
+
+.option {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid black;
+} 
+
+.menu__submenu-label {
+    position: relative;
+    bottom: 19px;
+}
+
+.menu__submenu-input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.menu__submenu-revealer {
+    display: inline;
+    padding-top: 10px;
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+
+.menu__submenu {
+    border-top: 1px solid black;
+    position: absolute;
+    top: 38px;
+    right: 0px;
+    left: 0;
+}
+
+.menu__submenu-input:checked + .menu__submenu-revealer {
+    height: 132px;
+    transition: 0.3s linear;
+    
+}
+
+/* By removing the transition:  style attribute, You can make the submenu appear out of nowhere, Liek with display: none and display: inline when :hover */

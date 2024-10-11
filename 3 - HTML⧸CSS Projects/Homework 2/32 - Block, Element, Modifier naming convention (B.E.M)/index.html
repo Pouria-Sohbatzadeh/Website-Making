@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+</head>
+<body>
+    <!-- This is a demonstration of the BEM naming convention. -->
+    <!-- First is the Block. Refering to tags that contain large parts of the webpage, The <section>, <form> tags and the like. -->
+    <section class="box">
+    <!-- Just given a normal class or id name. -->
+    <!-- Or : Block -->
+
+
+        <!-- Second is the Element, Refering mostly to content tags and the organazation tags that aren't included as Blocks. The <span>, <img>, <div>, <a> tags for example -->
+        <span class="box__porpuse-of-existance">Shipment</span>
+        <!-- It's named by first writing the class or id name of the Element's organazing Block, And the connecting the name of the Element with a double underscore (_). -->
+        <!-- Or : Block__Element -->
+
+        <!-- And at long last is the Modifier. Refering to the style attribute we want affecting the content. -->
+        <span class="box__porpuse-of-existance--yellow">Shipment</span>
+        <!-- It's written by first having the name of the Block, And Element class or id name before it, And then connecting the Modifier name with a double dash (-). -->
+        <!--  or : Block__Element--Modifier -->
+
+    </section>
+    
+
+    <!-- Note : While an Element can contain another Element, We write the BEM name like this. -->
+    <section class="box-2">
+
+        <div class="box-2__letter-sealer">
+
+            <span class="box-2__letter"></span>
+            <!-- We write the class or id name of the Element's Organazing Block, Rather than the Element, And then connect its name 
+            via a double underscore (_) to the Block name. -->
+            <!-- Or : Block__box-1 -->
+            <!-- And : Block__boxe-words -->
+
+        </div>
+        
+    </section>
+
+    
+    
+</body>
+</html>

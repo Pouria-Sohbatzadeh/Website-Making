@@ -1,0 +1,27 @@
+.label {
+    position: relative;
+}
+
+input {
+    display: none;
+}
+
+.trigger {
+    display: inline-block;
+    height: 70px;
+    width: 350px;
+    background-color: crimson;
+    overflow: hidden;
+}
+
+.submenu {
+    height: 50px;
+    width: 150px;
+    background-color: darkblue;
+    transform: translate(-150px);
+
+}
+
+input:checked + .trigger + .submenu {
+    transform: translate(0px);
+}

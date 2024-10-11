@@ -1,0 +1,26 @@
+label {
+    position: relative;
+}
+
+input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.submenu-open {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: red;
+    height: 20px;
+    overflow: hidden;
+    transition: 0.3s linear;
+}
+
+input:checked + .submenu-open {
+    height: 60px;
+    transition: 0.3s linear;
+}

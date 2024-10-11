@@ -1,0 +1,94 @@
+.course-box {
+  box-shadow: 0 0 19px rgba(168, 172, 185, 0.6);
+  border-radius: 0.5rem;
+  transition: all 400ms ease;
+  margin: 2rem 0;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+}
+.course-box:hover {
+  transform: translateY(-1rem);
+  -webkit-transform: translateY(-1rem);
+  -moz-transform: translateY(-1rem);
+  -ms-transform: translateY(-1rem);
+  -o-transform: translateY(-1rem);
+}
+.course-box__image {
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+  -webkit-border-radius: 0.5rem 0.5rem 0 0;
+  -moz-border-radius: 0.5rem 0.5rem 0 0;
+  -ms-border-radius: 0.5rem 0.5rem 0 0;
+  -o-border-radius: 0.5rem 0.5rem 0 0;
+}
+.course-box__main {
+  padding: 0 1rem;
+}
+.course-box__title {
+  display: block;
+  padding: 1rem 0;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  color: #000;
+}
+.course-box__rating-teacher {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+.course-box__teacher {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.course-box__teacher-icon {
+  font-size: 1.4rem;
+}
+.course-box__teacher-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.course-box__rating img {
+  margin: 0 -0.2rem;
+}
+.course-box__status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+.course-box__users {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.course-box__users-icon {
+  font-size: 1.4rem;
+}
+.course-box__users-count {
+  font-size: 1.2rem;
+  color: #000;
+}
+.course-box__users-price {
+  font-size: 1.4rem;
+}
+.course-box__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  border-top: 1px solid #e8e8e8;
+}
+.course-box__footer a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primary-color);
+}

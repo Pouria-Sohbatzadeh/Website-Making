@@ -1,0 +1,7 @@
+.trying-to-apply-hover-to-div-with-content-tag :hover{
+    background-color: aqua;
+}
+
+.trying-apply-hover-to-one-part-of-the-content-in-div :hover {
+    color: chocolate;
+}

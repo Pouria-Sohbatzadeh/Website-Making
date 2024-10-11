@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    position: relative;
+    background-color: brown;
+    width: 180px;
+    height: 45px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.box::after {
+    position: absolute;
+    content: "\f078";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+

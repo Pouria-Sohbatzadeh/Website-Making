@@ -1,0 +1,5 @@
+@font-face {
+    font-family: Pokemon Classic;
+    /* Thankfully the the name we set for the font can have space in it. */
+    src: url(../Fonts/Pokemon\ Classic.ttf);
+}

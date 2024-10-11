@@ -1,0 +1,19 @@
+table,tr,th,td {
+    border: 5px solid black;
+}
+
+.Test-for-Applying-Hover-to-tr :hover {
+    background-color: grey;
+}
+
+.Test-for-Applying-Hover-to-th :hover{
+    background-color: red;
+}
+
+.Test-for-Applying-Hover-to-th-without-content-tag :hover{
+    background-color: blueviolet;
+}
+
+.Test-for-Applying-Hover-to-th-with-content-tag :hover{
+    color: red;
+}

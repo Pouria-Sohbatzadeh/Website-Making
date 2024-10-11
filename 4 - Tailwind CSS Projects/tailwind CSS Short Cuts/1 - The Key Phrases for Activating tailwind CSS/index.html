@@ -1,0 +1,54 @@
+What Key Phrases are necessary for activating Tailwind?
+
+
+npm install -D tailwindcss
+<!-- 1 - Put this in the terminal of your "index" named HTML file. -->
+
+npx tailwindcss init
+<!-- 2 - Put this in the terminal of your "index" named HTML file as well. -->
+
+"./*.{html,js}"
+<!-- 3 - Go to the "tailwind.config" named JS file and then put this in the bracket ([]) of content. -->
+
+
+@tailwind base; 
+@tailwind components; 
+@tailwind utilities;
+<!-- 4 - Put these in the input named css file. -->
+
+
+npx tailwindcss -i ./Assets/CSS/input.css -o ./Assets/CSS/output.css --watch
+<!-- 5 - Go back to your "index" named HTML file and put this in the terminal. -->
+<!-- 5.5 - And then using "ctrl + c" shortcut abort the terminal. -->
+
+
+,
+  "scripts": {
+    "go" : "npx tailwindcss -i ./Assets/CSS/input.css -o ./Assets/CSS/output.css --watch"
+  }
+<!-- 6 - Go to the "package" named file, And put this after the curled brace ({}) of "devDependencies" -->
+  
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Put your <link> tag for the "style" named CSS file here. -->
+    <link rel="stylesheet" href="Assets/CSS/output.css">
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+</span>
+</body>
+</html>
+<!-- 7 - Go back to your "index" named html file, And put this code there. -->
+
+npm run go
+<!-- 8 - Put this in the terminal to activate tailwind CSS. -->

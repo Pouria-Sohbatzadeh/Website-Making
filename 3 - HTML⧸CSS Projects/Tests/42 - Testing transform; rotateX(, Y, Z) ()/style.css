@@ -1,0 +1,17 @@
+div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* The above is just to get the text to the center of the box. */
+    height: 5cm;
+    width: 5cm;
+    background-color: red;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d ;
+}
+
+span {
+    font-size: 1cm;
+    color: white;
+}

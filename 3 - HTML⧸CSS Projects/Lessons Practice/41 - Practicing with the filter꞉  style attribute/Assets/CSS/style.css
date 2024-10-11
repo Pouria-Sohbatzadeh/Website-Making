@@ -1,0 +1,73 @@
+@import url(./reset.css);
+@import url(./utilities.css);
+
+.gallery {
+    height: 63vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 10px;
+    justify-content: center;
+
+
+    align-items: flex-start; /* To make sure the prent tags inside don't start having too much height or width (Not in this case thanks to me setting a width) 
+    thanks to align-items: stretch, Even though we don't have a use for align-items:  right now. */
+    
+
+}
+
+.gallery__seperating-line {
+    height: 100%;
+    width: 4px;
+    border-right: 4px solid red;
+}
+
+.gallery__thinking--noir, .gallery__old-picture-div--faded, .gallery__intense-colors, .gallery__person-without-glassess--blurred {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px 0px;
+}
+
+.gallery__thinking--noir {
+    color: rgb(194, 194, 194);
+    color: red;
+    width: 300px;/* The Size I want for the image */
+    filter: grayscale(100%) brightness(40%);/* A typical noir look */
+    /* You can put multiple special texts inside for more visual effect to be applied. */
+    /* Also when the filter:  style attribute is applied to the parent tag, Any tags that are inside it are also effected. */
+    
+}
+
+.gallery__thinking-img {
+    width: 100%;/* My image's width becomes the same as the <div> */
+    
+}
+
+.gallery__old-picture-div--faded {
+    width: 300px;
+    filter: opacity(55%);
+}
+
+.gallery__old-picture-img {
+    width: 100%;
+}
+
+.gallery__intense-colors--eye-bleeding {
+    width: 326px;/* Higher value so the image is the same height as every other image. */
+    filter: contrast(160%);/* The contrast value has to be more than 100% for the color to start being vibrant */
+}
+
+.gallery__intense-colors-img {
+    width: 100%;
+}
+
+.gallery__person-without-glassess--blurred {
+    height: 533px;
+    filter: blur(3px);
+}
+
+.gallery__without-glassess-img {
+    height: 100%;
+}

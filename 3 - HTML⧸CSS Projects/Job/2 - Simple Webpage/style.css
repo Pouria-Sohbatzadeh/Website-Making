@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+}
+
+.website-upper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10cm;
+    justify-content: space-around;
+}
+
+.name-and-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 3cm;
+}
+
+.names {
+    font-size: 1cm;
+}
+
+.name-red {
+    color: rgb(206, 1, 1);
+}
+
+.name-blue {
+    color: rgb(1, 1, 177);
+} 
+
+.time-manager {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.5cm;
+    height: 2cm;
+    width: 8cm;
+    border: 7px solid rgb(0, 81, 156);
+    gap: 20px;
+    font-weight: 700;
+}
+
+.time-distancer {
+    font-weight: 900;
+}
+
+.clock {
+    color: grey;
+}
+
+.weather {
+    color: orange;
+}
+
+.website-middle-holder {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.website-middle-aligner {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.greeting {
+    align-self: flex-start;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.app-and-hub {
+    display: flex;
+    flex-direction: row;
+    gap: 4cm;
+} 
+
+.app, .hub {
+    color: white;
+    height: 2cm;
+    width: 4cm;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ad {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

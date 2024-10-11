@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(green, purple);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 10cm;
+    display: flex;
+    align-items: center;
+}
+
+.all-people {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    bottom: 3.5cm;
+}
+
+.Person {
+    display: inline-block;
+    position: relative;
+    left: 5CM;
+    top: 0
+}
+
+.words {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: absolute;
+    height: 2.5cm;
+    width: 2.5cm;
+    background-color: white;
+    backface-visibility: hidden;
+    z-index: -1;
+    text-align: center;
+}
+
+
+.bold {
+    font-weight: 100;
+}
+
+.Duck {
+    position: absolute;
+}
+
+
+.Person:hover .words {
+    /* left:40px;
+    top: 1cm; */
+    transform: translate(40px, 1cm);
+    transition: transform 2s;
+}
+
+.Person:hover .Duck {
+    transform: translate(-30px, -0.5cm);
+    transition: transform 2s;
+}
+
+.Person-2 {
+    position: relative;
+    left: 10cm;
+  
+}
+
+.Person-2:hover .words {
+    /* left:40px;
+    top: 1cm; */
+    transform: translate(40px, 1cm);
+    transition: transform 2s;
+}
+
+.Person-2:hover .Duck {
+    transform: translate(-30px, -0.5cm);
+    transition: transform 2s;
+}
+
+.Person-3 {
+    position: relative;
+    left: 15cm;
+
+}
+
+.Person-3:hover .words {
+    /* left:40px;
+    top: 1cm; */
+    transform: translate(40px, 1cm);
+    transition: transform 2s;
+}
+
+.Person-3:hover .Duck {
+    transform: translate(-30px, -0.5cm);
+    transition: transform 2s;
+}
+
+.Duck, .words {
+    height: 5cm;
+    width: 5cm;
+}
+
+
+
+

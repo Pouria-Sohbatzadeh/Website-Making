@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    background-color: crimson;
+    display: inline-block;
+}
+
+span {
+    color: white;
+    font-size: 2cm;
+    transition: 1s;
+}
+
+span:hover {
+    background-color: rgb(1, 1, 129);
+    color: orangered;
+    transition: all 1s linear;
+}
+
+
+

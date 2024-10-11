@@ -1,0 +1,7 @@
+/* <!-- If you want to change the size of the icon... --> */
+
+.fa-volume-control-phone {
+    /* apply font-size:  to it, As these are files that make up an image with text. (They are an .svg file) */
+    /* Just be sure to apply it to the class name rather than the tag...... */
+    font-size: 5cm;
+}

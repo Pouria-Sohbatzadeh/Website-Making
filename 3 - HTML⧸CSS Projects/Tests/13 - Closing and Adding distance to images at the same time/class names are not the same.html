@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1 - There are cases when the tags of the content are not the same, And we can not call their class names because they too are adifferent. */
+        /* 3 - And then apply margin to the classed div. */
+        .first-line {
+            display: inline-block;
+            margin-left: 10cm;
+            /* 4 - Again, Don't forget that too much distance causes them to be in seperate lines. */
+        }
+    </style>
+</head>
+<body>
+    <!-- 2 - I want to distance these content away from each other, So i put them in their own Classed div that have the same class name. -->
+    <div class="first-line">
+        <span class="first-text">Hello</span>
+    </div>
+
+    <div class="first-line">
+        <img src="Sauve.jpg" alt="" class="first-image">
+    </div>
+
+    <div class="first-line">
+        <label for="" class="Question">What for</label>
+    </div>
+    
+    
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+body {
+    background-image: url(Cows\ Regards.png);
+}
+.Top-Head {
+    background-color: rgb(87, 87, 87);
+    width: 100%;
+    
+    border-top-right-radius: 35px;
+}
+
+.Site-symbol {
+    display: inline-block;
+    margin-left: 2cm;
+    b {
+        color: red;
+    }
+
+}
+
+.Pages-of-website {
+    display: inline-block;
+    
+    margin-left: 12cm;
+    text-align: center;
+    
+}
+
+
+
+.my-symbol {
+    background-color: brown;
+    display: inline-block;
+    border-radius: 12px;
+    text-align: center;
+    h2 {
+        color: burlywood;
+    }
+    
+}
+
+.Job {
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+    margin-left: 12px;
+    border-radius: 28px;
+
+}
+
+.My-likes {
+    display: inline-block;
+    background-color: red;
+    margin-left: 28px;
+    border-radius: 28px;
+    h4 {
+        color: white;
+    }
+}
+
+.Way-reach {
+    display: inline-block;
+    background-color: purple;
+    margin-left: 28px;
+    border-radius: 28px;
+    h4 {
+        color: pink;
+    }
+}
+
+.Support {
+    display: inline-block;
+    background-color: rgba(25, 25, 189, 0.63);
+    span {
+        color: red;
+    }
+    margin-left: 10cm;
+    border-radius: 45px;
+    text-align: center;
+    border: 1px solid ;
+    width: 2cm;
+}
+
+.middle-of-page {
+    margin-left: 17.5cm;
+    margin-top: 12cm;
+}
+
+.last-part {
+    background-color: white;
+    width: 100%;
+    height: 5.5cm;
+}
+
+.suggestion {
+    margin-top: 1.5cm;
+    display: inline-block;
+}
+
+.email {
+    display: inline-block;
+    margin-top: 1.5cm;
+    margin-left: 30cm;
+    border: 5px solid black;
+    width: 5cm;
+}

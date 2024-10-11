@@ -1,0 +1,50 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    position: absolute;
+    width: 20%;
+    background-color: red;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2rem;
+}
+.wrapper__input {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem;
+    outline: none;
+    border-radius: inherit;
+    border: 1px solid black;
+    font-size: 1.5rem;
+}
+.wrapper__input::placeholder {
+    font-size: 2rem;
+}
+.wrapper__icon {
+    position: absolute;
+    border-radius: inherit;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 1rem;
+}
+
+/* .image-holder {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #000;
+    margin: 6rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.image-holder__image {
+    width: 90%;
+    height: 90%;
+    border-radius: inherit;
+} */

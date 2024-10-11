@@ -1,0 +1,32 @@
+div {
+    height: 1cm;
+    width: 5cm;
+    background-color: red;
+    border-radius: 5px;
+    position: relative;
+    
+}
+
+div::before {
+    content: '';
+    height: 15px;
+    width: 15px;
+    background-color: WHITE;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+    
+}
+
+div::after {
+    content: '';
+    height: 0px;
+    width: 0cm;
+    border: 0.5cm solid transparent;
+    border-left-color: red ;
+    border-radius: 0px;
+    position: absolute;
+    left: 5cm;
+}
+

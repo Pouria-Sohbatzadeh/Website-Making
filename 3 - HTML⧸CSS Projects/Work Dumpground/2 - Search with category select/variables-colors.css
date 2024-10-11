@@ -1,0 +1,8 @@
+:root {
+    --header-blue: rgb(19,25,33);
+    --deliver-grey: rgb(204, 204, 204);
+    --send-grey: rgb(230,230,230); 
+    --outline-orange: #fb923c;
+    --send-orange: rgb(253,186,116);
+    --input-blue: rgb(241,245,249);
+}

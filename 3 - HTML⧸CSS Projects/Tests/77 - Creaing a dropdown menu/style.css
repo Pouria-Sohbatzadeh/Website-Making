@@ -1,0 +1,102 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+/* I need to find a way for the #submenu to take up space even when hidden */
+/* Applying the display: none style attribute  to the #submenu in default might be a good idea.  */
+/* Also maybe apply padding to the .menu__right-side-menu in order to align it properly will also cause the content to actually expand when the display: none is 
+disabled, with the :hover */
+
+
+.menu__right-side-dropdown-menu {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 351px;
+    background-color: darkred;
+}
+
+.menu__right-side-dropdown-menu-options {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 3px;
+    width: 313px;
+    padding-bottom: 10px;
+}
+
+.menu__right-side-dropdown-menu-option, .menu__right-side-dropdown-menu-submenu-opener,.submenu-option {
+    height: 36.5px;
+    width: 313px;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-option, .dropdown-blog-option {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.menu__right-side-dropdown-menu-submenu-opener {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.menu__right-side-dropdown-menu-submenu-opener-and-closer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.open-symbol {
+    position: absolute;
+}
+
+.close-symbol {
+    position: absolute;
+    display: none;
+}
+
+.menu__right-side-dropdown-menu-submenu-holder:hover .close-symbol {
+    display: inline-block;
+}
+
+.menu__right-side-dropdown-menu-submenu-holder:hover .open-symbol {
+    display: none;
+}
+
+.menu__right-side-dropdown-menu-submenu {
+    overflow: hidden;
+    height: 0px;
+    width: 100%;
+    transition: width 0.3s ease-in, height 0.3s ease-in 0.1s;
+}
+
+.menu__right-side-dropdown-menu-submenu-holder:hover .menu__right-side-dropdown-menu-submenu {
+    visibility: visible;
+    height: 110px;
+    width: 100%;
+    transition: width 0.3s ease-in, height 0.3s ease-in 0.1s;
+}
+
+.submenu-option {
+    padding-left: 30px;
+}
+

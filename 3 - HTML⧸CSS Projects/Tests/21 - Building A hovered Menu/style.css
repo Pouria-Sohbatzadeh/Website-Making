@@ -1,0 +1,22 @@
+.Menu {
+    display: inline-block;
+    width: 2cm;
+    background-color: yellow;
+    text-align: center;
+}
+
+.all-button {
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    width: 100%;
+    background-color: aqua;
+    height: 1.4cm;
+}
+
+.button :hover {
+    background-color: white;
+    
+}

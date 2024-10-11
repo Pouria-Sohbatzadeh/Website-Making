@@ -1,0 +1,90 @@
+@import url(reset.css);
+@import url(responsive.css);
+@import url(colors.css);
+@import url(utility.css);
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 150px 1fr; /* Sidebar (150px) + Content (remaining space) */
+    grid-template-rows: 100px 200px 100px; /* Fixed height for rows */
+    gap: 10px; /* Space between grid items */
+    height: 500px; /* Total height of the grid container */
+    width: 600px; /* Total width of the grid container */
+}
+
+.header {
+    grid-column: 1 / 3; /* Header spans both columns */
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar {
+    grid-row: 2 / 3; /* Sidebar is in the second row */
+    background-color: lightgreen;
+    padding: 10px;
+    text-align: center;
+}
+
+.content {
+    grid-row: 2 / 4; /* Content spans 2 rows */
+    background-color: lightcoral;
+    padding: 10px;
+    text-align: center;
+}
+
+.extra {
+    grid-column: 1 / 3; /* Extra spans both columns */
+    background-color: lightgray;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer {
+    grid-column: 1 / 3; /* Footer spans both columns */
+    background-color: lightyellow;
+    padding: 10px;
+    text-align: center;
+}
+/* Grid ends */
+
+/* Flex starts */
+.flex-container {
+    margin-top: 250px;/* Distancing from the grid container */
+    display: flex;
+    flex-direction: column;
+
+}
+
+.flex-container__header, .flex-container__footer {
+    width: 100%;
+    height: 10px;
+    color: white;
+    background-color: var(--beautiful-blue);
+    display: flex;
+    align-items: center;
+}
+
+.flex-container__middle {
+    display: flex;
+    align-items: center;
+
+}
+
+.flex-container__sidebar {
+    background-color: green;
+    height: 803px;
+    width: 10%;
+    order: 2;
+}
+
+.flex-container__content {
+    background-color: var(--decent-red);
+    height: 803px;
+    width: 90%;
+    order: 1;
+}
+
+.flex-container__footer {
+   background-color: gray;
+}

@@ -1,0 +1,89 @@
+
+
+/* Change the class name to suit your needs */
+.checkI {
+    height: 30px;
+    width: 15px;
+    /* When adjusting the checkmark, Be sure that the width is half of the height:  */
+
+    border-right: 6px solid black;
+    border-bottom: 6px solid black;
+    /* Don't make the width of the border too thick. */
+
+    rotate: 45deg;
+}
+
+
+
+/* Change the class name for your uses. */
+.custom-check {
+    margin-top: 30px; /* Distancing from the checkI tag. REMOVE THIS!  */
+    position: relative; /* This is essential, Do not change */
+    
+}
+
+/* Only change the block name of the class for your uses. */
+.custom-check__input {
+    /* These are essential, Do not change */
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    /* These are essential, Do not change */
+}
+
+/* Only change the block name of the class for your uses. */
+.custom-check__label {
+    display: inline-block;/* This is essential, Do not change, Without it we can't give <label> height: */
+    position: relative;/* This is essential, Do not change, Without it, We can't add the check */
+    cursor: pointer;/* This is essential, Do not change, Without it the user won't know they can click on the tag. */
+
+    /* Just creating the background for the check, You can freely change these */
+    height: 150px;
+    width: 150px;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 10px;
+    /* Just creating the background for the check, You can freely change these */
+}
+
+.custom-check__label::before {
+    /* These are essential, Do not change, Without them the check does not get added. */
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 20%;/* Remember, The width has to be half of the height: */
+    /* These are essential, Do not change, Without them the check does not get added. */
+
+    display: none;/* You CAN change this, But it's better from a visual standpoint for the check to appear after the user clickes on the tag.  */
+
+    
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    /* Remember, DO NOT MAKE THE BORDER WIDTH TOO THICK */
+
+
+    /* These are essential, Do not change */
+    rotate: 45deg;
+    transform-origin: 50% 50%;
+    top: 50%;
+    left: 30%;/* You HAVE to mess with this in order to center the check, Thanks to rotate messing with the alignment, Though it seems somewhere between 20% (for smaller 
+    backgrounds) and 40% (for bigger backgrounds) is the sweet spot */
+    transform: translate(-50%, -60%);
+    /* These are essential, Do not change */
+    
+}
+
+
+/* Make whatever changes you want to the background  */
+.custom-check__input:checked ~ .custom-check__label {
+    background-color: rgb(2, 33, 117);
+}
+
+.custom-check__input:checked ~ .custom-check__label::before {
+    display: inline; /* Makes the check reappear after the user clicks on its background */
+    
+    /* Make whatever changes you want to the thickness and color of check, Just be sure it doesn't become too thick. */
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+}

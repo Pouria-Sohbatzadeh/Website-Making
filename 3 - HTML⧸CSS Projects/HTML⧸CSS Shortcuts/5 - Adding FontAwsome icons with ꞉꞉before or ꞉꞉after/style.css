@@ -1,0 +1,18 @@
+.box {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    background-color: red;
+}
+
+.box::after {
+    position: absolute;
+    content: "\f071";
+    font-weight: 900;/* If 900 doesn't work, Change the value to 400, And vice versa if 400 doesn't work */
+    
+    font-family: "Font Awesome 5 Free";
+    font-size: 37.8px;
+    top: 50%;
+    left: 100%;
+    transform: translate(0%, -50%);/* Verticly centering the icon */
+}

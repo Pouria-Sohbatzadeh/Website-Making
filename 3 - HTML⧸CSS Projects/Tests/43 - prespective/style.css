@@ -1,0 +1,21 @@
+
+.holder {
+  perspective: 1000px;
+  transform-style: preserve-3d ;  
+}
+
+.holder:hover .blue {
+  transition: transform 5s ;
+  transform: rotatez(-90DEG);
+  background-repeat: no;
+}
+
+.blue {
+    transform-style: preserve-3d;
+    height: 4cm;
+    width: 4cm;
+    border-top: 2CM solid red;
+    background-color: blue;
+    
+}
+

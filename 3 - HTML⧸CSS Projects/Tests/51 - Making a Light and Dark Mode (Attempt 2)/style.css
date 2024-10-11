@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+}
+
+.background {
+    position: absolute;
+    background-color: blue;
+    height: 2cm;
+    width: 5cm;
+    z-index: -5;
+    top: 0cm;
+}
+
+input {
+    display: inline-block;
+    background-color: red;
+    height: 1cm;
+    width: 3cm;
+
+}
+
+input[type="checkbox"] {
+    height: 1cm;
+    width: 3cm;
+}
+
+input[type="checkbox"]:checked + .background {
+    background-color: red
+}
+

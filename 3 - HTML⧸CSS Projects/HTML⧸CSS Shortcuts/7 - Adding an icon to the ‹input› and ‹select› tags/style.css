@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.holder-of-input {
+    margin: 40px 0px 0px 140px;/* Just changing the location */
+
+    
+    height: 35px;/* The height I wanted to set for <input> */
+    width: 160px;/* The width I wanted to set for <input> */
+    
+    
+    position: relative;
+}
+
+.holder-of-input__input {
+    width: 100%;/* Setting the width */
+    height: 100%;/* Setting the height */
+    
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.holder-of-input__icon {
+    position: absolute;
+    top: 50%; transform: translate(0, -50%);/* Centering the icon */
+    
+    right: 10px;
+}
+
+.holder-of-select {
+    position: relative;
+
+    width: 80px;
+    height: 20px;
+
+}
+
+.holder-of-select__select {
+    width: 100%;
+    height: 100%;
+    appearance: none;/* In order to make the natural icon of <select> disappear. */
+}
+
+.holder-of-select__icon {
+    position: absolute;
+    top: 50%; transform: translate(0, -50%);/* Centering the icon */
+    
+    right: 15px;
+    color: red;
+}

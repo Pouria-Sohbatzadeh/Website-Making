@@ -1,0 +1,163 @@
+body {
+    margin: 0cm;
+    margin-bottom: 0cm;
+    margin-top: 0cm;
+}
+
+.Profile {
+    background-color: darkgray;
+    height: 12.5cm;
+    width: 100%;
+    display: inline-block;
+}
+
+.social-media {
+    display: inline-block;
+    margin-top: 4.5cm;
+    width: 1cm;
+    height: 3cm;
+    background-color: crimson;
+}
+
+.all-symbol {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.facebook, .twitter, .youtube {
+    display: inline-block;
+    width: 100%;
+    height: 1cm;
+    text-align: center;
+}
+
+.facebook-symbol, .twitter-symbol, .youtube-symbol {
+    display: inline-block;
+}
+
+.facebook-symbol {
+    text-decoration: none;
+    color: white;
+    font-size: 0.5cm;
+}
+
+.person, .name-profession, .name {
+    display: inline-block;
+}
+
+.person {
+    margin-left: 19cm;
+    width: 8cm;
+    text-align: right;
+    width: 10cm;
+    position: relative;
+    bottom: 9.5cm;
+}
+
+.name {
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.5cm;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: yellow;
+}
+
+.work {
+    display: inline-block;
+    margin-top: 0.3cm;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.5cm;
+    color: white;
+}
+
+.job-location {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.404);
+}
+
+.city {
+    width: 100%;
+    margin-top: 20px;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.404);
+}
+
+.last-info {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.former-job {
+    display: inline-block;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.404);
+}
+
+.education {
+    display: inline-block;
+    margin-top: 5px;
+    color: rgba(0, 0, 0, 0.404);
+
+}
+
+.white-text {
+    color: white;
+}
+
+.detailes {
+    color: white;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.404);
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    border-radius: 1cm;
+}
+
+.my-face {
+    display: inline-block;
+    margin-left: 11cm;
+    position: relative;
+    bottom: 7cm;
+}
+
+.my-face {
+    border: 5px solid black; 
+}
+
+.menu {
+    background-color: crimson;
+    display: inline-block;
+    margin-left: 10cm;
+    position: relative;
+    bottom: 18cm;
+    width: 1cm;
+    text-align: center;
+    height: 6.4cm;
+}
+
+
+.home, .eye, .hat, .bag, .diamond, .pencil, .speech, .letter {
+    width: 100%;
+    height: 0.8cm;
+    display: inline-block;
+}
+
+
+.menu :hover {
+    background-color: white;
+}
+
+@media only screen and (min-width: 412px) {
+    .social-media {
+        display: inline-block;
+        margin-top: 4.5cm;
+        width: 1cm;
+        height: 3cm;
+        background-color: crimson;
+        
+        
+    }
+}

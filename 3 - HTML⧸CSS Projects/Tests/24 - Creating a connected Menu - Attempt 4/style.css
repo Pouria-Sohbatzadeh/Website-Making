@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+
+ul, li {
+    display: inline-block;
+}
+
+
+
+li {
+    background-color: crimson;
+    color: white;
+    width: 1cm%;
+    /* Now in order for me to distance the menu buttons without margin (So they stay connected), I increase their height (Vertical Menu) width (Horizantal Menu) */
+    height: 1cm;
+}
+
+li :hover {
+    background-color: rgb(255, 156, 175);
+}

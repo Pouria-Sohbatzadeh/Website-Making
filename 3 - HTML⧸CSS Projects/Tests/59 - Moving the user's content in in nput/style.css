@@ -1,0 +1,21 @@
+input {
+    height: 3cm;
+    width: 4cm;
+
+}
+
+input[type="text"] {
+    text-align: center;
+    font-size: 17px;   
+}
+
+input::placeholder {
+    font-size: 17px;
+    color: red;
+    text-align: center;
+}
+
+input[type="text"]:focus {
+    background-color: black;
+    color: white;
+}

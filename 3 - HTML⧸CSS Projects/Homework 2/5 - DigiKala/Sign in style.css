@@ -1,0 +1,12 @@
+.box {
+    background-color: rgba(115, 255, 0, 0.336);
+    height: 15cm;
+    width: 15cm;
+    text-align: center;
+    margin-left: 18cm;
+    margin-top: 4cm;
+    border: 1px solid black;
+}
+.user-details {
+    margin-top: 2cm;
+}

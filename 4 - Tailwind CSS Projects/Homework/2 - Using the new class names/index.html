@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Assets/CSS/output.css">
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <link rel="stylesheet" href="./Assets/CSS/input.css">
+</head>
+<body>
+    <span class="text-red-600">Hello</span>
+    <span class="bg-blue-950">to you,</span>
+    <!-- Name of color-50,(100,....., 900, 950) connects to both the "text" and "bg" Primary class names. -->
+
+    <span class="text-xs">Yellow</span>
+    <span class="text-sm">I'm</span>
+    <span class="text-lg">not done</span>
+    <span class="text-5xl">with this yet</span>
+    <!-- This is the showing of all the codependent class names that need to be connected to "text" Primary class name in order to work. -->
+    
+    <!-- bg doesn't seem to have any dependent on it. -->
+
+    <br>
+
+    <span class="font-serif"> How you been?</span>
+    <span class="font-extralight">Not bad..... could be worse.</span>
+    <span class="font-black">And better, Come one, I know just the thing to cheer ye up.</span>
+   <!-- And these are the "Codependent" class names that need to be connected to font. -->
+
+    <br>
+
+    <p class="uppercase">Just another one</p>
+    <p class="lowercase">THIS WILL NOT BE CAPITAL</p>
+    <p class="capitalize">one only</p>
+    <span class="mt-[3cm] ml-[5cm] inline-block">I'm nearly done with this</span>
+    <br>
+    <span class="border-t-[10px] border-red-600">How thick is the line above?</span>
+    <!-- Ask teach why this border doesn't work.... -->
+    <!-- You used border-top-[number allong with a measuring unit] instead of border-t-[number allong with a measuring unit] -->
+    <br>
+    <span class="hover:text-green-700 hover:font-black hover:text-[5cm]">Nature</span>
+    <!-- Note : hover: only works for the class names in front of it. -->
+    <!-- Alas that's all "Independent" Secondary class names. -->
+
+    
+    
+</body>
+</html>

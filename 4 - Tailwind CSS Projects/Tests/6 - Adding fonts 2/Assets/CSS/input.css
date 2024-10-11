@@ -1,0 +1,32 @@
+@tailwind base; 
+@tailwind components; 
+@tailwind utilities;
+
+@font-face {
+    font-family: GoetheBold;
+    src: url(GoetheBold.ttf);
+}
+
+.normal {
+    font-family: GoetheBold;
+    font-size: 2cm;
+}
+
+@font-face {
+    font-family: SuperLegendBoy;
+    src: url(SuperLegendBoy.ttf);
+}
+
+.pixel {
+    font-family: SuperLegendBoy;
+    font-size: 1.3cm;
+}
+
+@font-face {
+    font-family: Edu Australia;
+    src: url(Edu\ Australia.ttf);
+}
+
+p {
+    font-family: Edu Australia;
+}

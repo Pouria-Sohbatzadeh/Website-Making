@@ -1,0 +1,14 @@
+body {
+  .Sentence{
+    display: inline-block;
+    border: 0.5cap solid black;
+    background-color: grey;
+    color: white;
+    height: 1cp; width: 2cp;
+    padding: 2cap;
+    margin-left: 28cap;
+    margin-top: 10cap;
+
+  }  
+
+}

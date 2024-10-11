@@ -1,0 +1,55 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 5cm;
+    background-color: crimson;
+}
+
+li {
+    width: 2cm;
+    height: 2cm;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;   
+    background-color: white; 
+}
+
+li:hover {
+    background-color: gold;
+}
+
+
+.holder {
+    /* margin-top: 30px; */
+    /* For now I applied position: absolute, top and right attributes so I can have an easier time for comapring the two lists. */
+    position: absolute;
+    right: 5cm;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 5cm;
+    background-color: rgb(1, 65, 182);
+}
+
+.holder-button {
+    width: 2cm;
+    height: 2cm;
+    background-color: rgb(224, 9, 20);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.holder-button:hover {
+    background-color: silver;
+}

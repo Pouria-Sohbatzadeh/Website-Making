@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+.upper-bar-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.upper-bar {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 95%;
+}
+
+.operator {
+    font-size: 2cm;
+}
+
+.heat-date-weather {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.heat {
+    font-size: 2cm;
+    display: flex;
+    flex-direction: row;
+}
+
+.heat-grey {
+    color: grey;
+    font-size: 1cm;
+}
+
+.splitting-line {
+    border-right: 4px solid white;
+    width: 1px;
+    height: 1.6cm;
+}
+
+.date-weather {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8cm;
+    font-weight: bold;
+}
+
+.date-weather-statement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.red-text {
+    color: red;
+}
+
+.weather-statement {
+    color: grey;
+}
+
+.middle-bar-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3cm;
+}
+
+.middle-bar {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    gap: 30px;
+}
+
+.greeting {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: baseline;
+}
+
+.greeting-custom {
+    color: grey;
+    padding-bottom: 3px;
+}
+
+.name {
+    color: white;
+    font-size: 0.8cm;
+}
+
+a {
+    text-decoration: none;
+}
+
+.app-a-hub {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.app, .hub {
+    width: 6cm;
+    height: 1.5cm;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    color: rgb(27, 27, 27);
+    font-size: 0.6cm;
+}
+
+.app:hover {
+    background-color: red;
+    color: white;
+    transition: 0.4s linear 0s;
+}
+
+.hub:hover {
+    background-color: red;
+    color: white;
+    transition: 0.4s linear 0s;
+}
+
+.advertisment-a-QR-Code-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 12cm;
+}
+
+.advertisment-a-QR-Code {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.advertisment {
+    height: 2cm;
+    width: 45%;
+    background-color: rgb(96, 107, 138);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    font-size: 0.5cm;
+}

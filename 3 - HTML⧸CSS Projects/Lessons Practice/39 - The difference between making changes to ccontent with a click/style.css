@@ -1,0 +1,81 @@
+@import "./reset.css";
+
+/* The clicking-on-the-content-itself section begins */
+.clicking-on-the-content-itself {
+    display: inline-block;
+    position: relative; /* For the <input> tag to position itself in regards to the <label> tag. */
+    /* limit the  */
+}
+
+.clicking-on-the-content-itself__input {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    /* To make the <input> tag disappear. */
+}
+
+.clicking-on-the-content-itself__div {
+    height: 400px;
+    width: 400px;
+    background-color: red;
+    border: 5px solid black;
+}
+/* Just some style attributes to give the <div> tag a recognizabale shape. */
+
+
+/* And now for the changes, With this method the changes start happening to the content; When the user clicks on the content itself. */
+.clicking-on-the-content-itself__input:checked + .clicking-on-the-content-itself__div {
+    background-color: rgb(0, 59, 107);
+    border: 5px solid silver;
+}
+/* Note that the <input> tag can only make changes to the tags placed beside it. */
+/* The clicking-on-the-content-itself section ends */
+
+
+/* clicking-the-trigger-for-change_ section begins */
+
+.clicking-the-trigger-for-change {
+    height: auto;
+    width: 500px;
+    background-color: greenyellow;
+    color: orange;
+    padding: 20px;
+    display: flex; flex-direction: column; /* Simply aligning the content and the trigger. You can't put the trigger and <input> tag below the content tag, So this was
+    the solution to get them to the places I wanted them. */
+    gap: 20px 0px; /* The distance between the trigger and the content getting changed once it's clicked */
+}
+/* Again just giving a distinct shape to the <div> tag. */
+
+.clicking-the-trigger-for-change__input {
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.clicking-the-trigger-for-change__label {
+    background-color: white;
+    color: blue;
+    height: 30px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clicking-the-trigger-for-change__input:checked ~ .clicking-the-trigger-for-change__label {
+    display: none;
+}
+/* You can only make changes to the trigger by summoing it the the wave (~) symbol, From now on use this symbol to summon all other tags as well. */
+/* Setting the shape for the trigger */
+
+.clicking-the-trigger-for-change__span  {
+    background-color: purple;
+}
+
+/* .clicking-the-trigger-for-change__span is the class name of the content we want to change after the trigger is clicked. */
+.clicking-the-trigger-for-change__input:checked + .clicking-the-trigger-for-change__span {
+    background-color: red;
+    color: white;
+    height: 20px;
+    overflow: hidden;
+}

@@ -1,0 +1,344 @@
+body {
+    margin: 0cm;
+    background-color: #070f1d;
+}
+
+.introduction {
+    color: white;
+    rtl
+}
+
+.upper {
+    display: inline-block;
+
+}
+
+.Account {
+    display: inline-block;
+    height: 1cm;
+    width: 4.3cm;
+    background-color: white;
+    border-radius: 35px;
+    text-align: center;
+    margin-left: 1.5cm;
+    margin-top: 0.8cm;
+}
+
+.Account a, span, img {
+    display: inline-block;
+    margin-top: 2px;
+    font-weight: 600;
+}
+
+.Account img {
+    height: 20px;
+}
+
+.shopping {
+    display: inline-block;
+}
+
+.shopping-item {
+    height: 30px;
+}
+
+.Information, .Calling, .About-Us, .Products, .Home, .Site-Logo {
+    display: inline-block;
+    
+} 
+
+.Information {
+    margin-left: 27cm;
+    
+    
+}
+
+.Calling, .About-Us, .Products, .Home {
+    margin-left: 0.5cm;
+    color: rgba(255, 255, 255, 0.774);
+    position: relative;
+    bottom: 0.3cm;
+}
+
+.Calling span {
+    text-decoration: none;
+}
+
+.Calling span:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.About-Us span {
+    text-decoration: none;
+}
+
+.About-Us span:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.Products span {
+    text-decoration: none;
+}
+
+.Products span:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.Home span{
+    text-decoration: none;
+}
+
+.Home span:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.Site-Logo {
+    margin-left: 1cm;
+}
+
+.Site-Logo img{
+    height: 2cm;
+}
+
+.upper-mid {
+    margin-left: 2cm;
+    background-color: #151a2e;
+    width: 90%;
+    height: 3cm;
+    
+}
+
+.search-bar {
+    margin-top: 0.5cm;
+    margin-left: 1cm;
+    display: inline-block;
+    background-color: #070f1d;
+    height: 2cm;
+    width: 5cm;
+    border-radius: 25px;
+}
+
+.Request {
+    display: inline-block;
+    text-align: center;
+}
+
+.Request input {
+    background-color: #070f1d;
+    width: 3.5cm;
+    margin-left: 0.5cm;
+    margin-top: 0.7cm;
+}
+
+.All-Products-and-Services, .Questions, .Gift-Cards, .Programs, .services, .games {
+    display: inline-block;
+    margin-left: 11.5cm;
+}
+
+.Questions, .Gift-Cards, .Programs, .services, .games {
+    margin-left: 3cm;
+    color: grey;
+}
+
+.All-Products-and-Services span:hover {
+    color: white;
+}
+
+.Middle {
+    margin-top: 2cm;
+    margin-left: 3cm;
+}
+
+.Description {
+    display: inline-block;
+    margin-left: 12cm;
+    position: relative;
+    top: 2cm;
+    text-align: center;
+
+}
+
+.Description img {
+    display: inline-block;
+    height: 5cm;
+}
+
+.Description-words {
+    width: 10cm;
+    margin-top: 1.5cm;
+    margin-left: 0.6cm;
+    font-size: 17.5px;
+    color: rgb(209, 207, 207);
+}
+
+.Game-items {
+    display: inline-block;
+    position: relative;
+    top: 65px;
+    margin-right: 5cm;
+    color: white;
+}
+
+.Buying-games {
+
+    margin-left: 5.5cm;
+}
+
+.Buying-games-box {
+    color: white;
+    height: 1.7cm;
+    width: 5cm;
+    background-image: repeating-linear-gradient(125deg, #bd69bc , #f96bc3 ) ;
+    border-radius: 50px;
+    position: relative;
+    top: 20px;
+}
+
+.Buying-games span {
+    margin-top: 18PX;
+}
+
+ .benefits {
+    display: inline-block;
+}
+
+.benefits img {
+    display: inline-block;
+    
+}
+
+.benefits div {
+    display: inline-block;
+}
+
+.benefits {
+    margin-left: 22cm;
+}
+
+.benefits img {
+    height: 1.6cm;
+    margin-left: 4cm;
+}
+
+.benefit-images {
+    display: inline-block;
+    width: 100%;
+}
+
+.general-benefits, .detailed-benefits {
+    width: 100%;
+}
+
+.general-benefits {
+    margin-top: 0.5cm;
+    margin-left: -1.3cm;
+    font-size: 20px ;
+}
+
+.general-benefits span {
+    margin-left: 4cm;
+    color: white;
+}
+
+.detailed-benefits {
+    margin-top: 0.5cm;
+    color: gray;
+}
+
+.detailed-benefits span{
+    margin-left: 2cm;
+    
+}
+
+.Delevier {
+    display: inline-block;
+    position: relative;
+    right: 1cm;
+}
+
+.lower-middle {
+    margin-top: 2cm;
+    text-align: center;
+}
+
+.All-games {
+    display: inline-block;
+    margin-right: 2cm ;
+}
+
+.PUBG, .Call-of-Duty, .Spider-Man, .Dark-Souls {
+    background-color: #151a2e;
+    height: 5cm;
+    width: 4cm;
+    display: inline-block;
+    margin-left: 2cm;
+    border-radius: 20px;
+}
+
+.All-games img {
+    display: inline-block;
+    height: 2.25cm;
+    width: 2cm;
+    border-radius: 100%;
+    margin-top: 0.5cm;
+
+}
+
+.All-games div {
+    display: inline-block;
+}
+
+.PUBG div {
+    width: 100%;
+}
+
+.All-games {
+    color: grey;
+}
+
+.White {
+    color: white;
+}
+
+.lower-high {
+    margin-top: 3cm;
+}
+
+.see-all {
+    margin-left: 9cm;
+}
+
+.see-all span {
+    color: white;
+    margin-left: 10px;
+}
+
+.New  {
+    display: inline-block;
+    color: white;
+    margin-left: 22cm;
+}
+
+.New span {
+    margin-right: 0.8cm;
+}
+
+.new-picture {
+    display: inline-block;
+    background-image: repeating-linear-gradient(#f96bc3, #6e376d ) ;
+    text-align: center;
+    width: 1.6cm;
+    height: 1.4cm;
+    border-radius: 30px;
+}
+
+.new-picture img {
+    height: 1cm;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+

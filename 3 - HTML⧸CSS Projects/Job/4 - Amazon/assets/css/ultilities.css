@@ -1,0 +1,36 @@
+.container {
+    /* max-width: 1500px;   */
+    padding: 6px 10px;
+    margin: 0 auto;
+}
+
+.menu-hover {
+    height: 99%;
+    padding: 18px 5px 10px 5px;
+    border: 1px solid transparent;
+}
+
+/* For when the menu options are touched, Give this to tags with Block names except header__search. */
+.menu-hover:hover {
+    border: 1px solid var( --menu-hover);
+}
+
+.options-hover {
+    border: 1px solid transparent;
+}
+
+/* For when the options are touched, Give this to tags with Block names except header__search. */
+.options-hover:hover {
+    border: 1px solid var( --menu-hover);
+}
+
+/* I have seen thisexact type of change enough in product showcase */
+.address {
+    cursor: pointer;
+    color: var(--learn-more-blue);
+}
+
+.address:hover {
+    text-decoration: underline;
+    color: var(--magnificent-red);
+}

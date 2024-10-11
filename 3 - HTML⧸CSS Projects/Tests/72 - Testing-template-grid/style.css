@@ -1,0 +1,23 @@
+.box-holder {
+    grid-template-rows: 50px 50px 50px;
+    grid-template-columns: 74px 74px;
+    display: grid;
+    
+    gap: 50px 0px;
+}
+
+/* .box-holder__boxes {
+    width: 74px;
+} */
+
+.box-holder__boxes--red {
+    background-color: red;
+}
+
+.box-holder__boxes--blue {
+    background-color: darkblue;
+}
+
+.box-holder__boxes--gold {
+    background-color: gold;
+}

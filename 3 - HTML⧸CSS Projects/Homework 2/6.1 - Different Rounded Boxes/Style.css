@@ -1,0 +1,6 @@
+.boxes {
+    display: inline-block;
+    background-color: red;
+    height: 75px;
+    width: 75px;
+}

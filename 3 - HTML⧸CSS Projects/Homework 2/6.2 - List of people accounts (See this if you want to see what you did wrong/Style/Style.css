@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+}
+.all-image {
+    background-color: white;
+    margin-top: 5cm;
+    height: 7cm;
+}
+.images {
+    display: inline-block;
+    margin-left: 1cm;
+    margin-top: 1cm;
+    text-align: center;
+    margin-top: 2cm;
+    margin-left: 3cm;
+
+}
+
+.images :hover{
+    width: 3cm;
+    height: 3cm;
+    background-color: yellow;
+}
+
+
+img {
+    height: 2cm;
+    width: 2cm;
+    border: 3px solid magenta;
+    border-radius: 100%;
+    padding: 5px;
+    
+}
+p {
+    text-align: center;
+    
+    
+}

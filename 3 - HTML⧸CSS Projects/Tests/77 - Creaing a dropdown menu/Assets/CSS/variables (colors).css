@@ -1,0 +1,21 @@
+:root {
+    --header-color: #32404D;
+    --custom-green: #00B78A;
+    --custom-green-thinned: rgba(0, 122, 92, 0.08);
+    --custom-green-2: #007A5C;
+    --custom-white: #E4E8F2;
+    --timer-gray: #FFFFFFB3;
+    --custom-whote: #FFFFFF;
+    --teacher-background: #FCF2EB;
+    --teacher-big-text-color: #32404D;
+    --teacher-text-color: #777777;
+    --border-color: #D9E2E9;
+    --science-color: #212529;
+    --border-color: rgb(93,100,106,0.2); 
+    --ANOTHER-GREY: #dee2e6;
+    --custom-cream: #FFF6EE;
+    --weird-green: #C9D6CB;
+    --custom-grey: #A7AEB4;
+    --custom-gray-another: #5C6168;
+    --footer-border: rgba(255, 255, 255, 0.1);
+}

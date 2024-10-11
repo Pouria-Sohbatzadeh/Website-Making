@@ -1,0 +1,2252 @@
+@import "./reset.css";
+/* This is to reset the defualt values of style attributes applied to our tags */
+
+
+
+@import "./variables\ \(colors\).css";
+/* This is for us to add our own colors */
+
+/* This is for more fonts! */
+@import "./fonts.css";
+
+/* This CSS file is for the scroll of the logos at the partners part. */
+/* Also sir before I go any further, I have to say that you misclicked on the partners name.
+You wrote "PERTNERS", Instead of "PARTNERS".
+If you plan to officaly use our version, Just correct that. */
+@import "./logo\ scroll\ animation.css";
+
+/* Okay, I'm doing this late but I need to test a theory. */
+/* @import "./responsive.css"; */
+/* I was wrong, I thought by putting the:
+@media only screen and () {
+
+}
+style attribute after the 1st line like my animation with the:
+@keyframes {}
+would make it work. Needs a bit more work.*/
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: chivo;
+    background-color: #fff;
+}
+
+.deceleration-holder {
+    background-color: var(--header-color);
+    width: 100%;
+    height: 156px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.deceleration-holder__aligner {
+    width: 94%;
+    height: 82%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 23px 0px;
+}
+
+.deceleration-holder__aligner-upper-text {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.deceleration-holder__aligner-upper-text--green {
+    color: var(--custom-green);
+    line-height: 27px;
+}
+
+.deceleration-holder__aligner-upper-text--white {
+    color: var(--custom-white);
+}
+
+.deceleration-holder__timer {
+    display: flex;
+    gap: 0px 32px;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.timer-columns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: medium;
+}
+
+.deceleration-holder__timer-big-text--green {
+    font-size: 20px;
+    color: var(--custom-green);
+    font-weight: bold;
+}
+
+.deceleration-holder__timer-small-text--grey {
+    font-size: 14px;
+    color: var(--timer-gray);
+}
+
+.deceleration-holder__learn {
+    display: none;
+    color: #fff;
+}
+
+/* go back to FINISH THIS! */
+.menu {
+    height: 79px;
+    width: 100%;
+    background-color: #fff;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.13);
+    top: 0px;
+    z-index: 100;
+
+}
+
+.menu__aligner {
+    width: 351px;
+    height: 79px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+.menu__left-side {
+    display: flex;
+
+}
+
+.menu__left-side-menu {
+    display: none;
+}
+
+.menu__right-side-call {
+    display: none;
+}
+
+.menu__right-side-social-media {
+    display: none;
+}
+
+.menu__right-side-social-media-facebook, .menu__right-side-social-media-twitter {
+    color: var(--facebook-and-twitter-blue);
+}
+
+.menu__right-side-social-media-linkdin {
+    color: var(--linkdin-blue);
+}
+
+.menu__right-side-social-media-youtube {
+    color: var(--youtube-red);
+}
+
+.menu__right-side-social-media-envelope {
+    color: var(--envelope-green);
+}
+
+.menu__right-side-dropdown-menu-holder {
+    display: flex;
+    align-items: center;
+    height: 79px;
+}
+
+.menu__right-side-dropdown-menu-opener {
+    color: var(--envelope-green);
+    font-size: 30px;
+    display: inline-block;
+    padding-right: 10px;    
+}
+
+.menu__right-side-dropdown-menu-holder:hover .menu__right-side-dropdown-menu {
+    visibility: visible;
+}
+
+/* Starting deleting the belows. */
+
+.menu__right-side-dropdown {
+    position: relative;
+}
+
+.menu__right-side-dropdown-menu {
+    right: 0%;
+    top: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    visibility: hidden;
+    width: 351px;
+    /* background-color: darkred; */
+    background-color: #fff;
+
+}
+
+.menu__right-side-dropdown-menu-options {
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 3px;
+    width: 313px;
+    padding-bottom: 20px;
+}
+
+.menu__right-side-dropdown-menu-option, .menu__right-side-dropdown-menu-submenu-opener,.submenu-option {
+    height: 36.5px;
+    width: 313px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.dropdown-option, .dropdown-blog-option {
+    color: var(--complete-black);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.menu__right-side-dropdown-menu-submenu-opener {
+    display: flex;
+    justify-content: space-between;
+    color: var(--complete-black);
+}
+
+.menu__right-side-dropdown-menu-submenu-opener-tag {
+    color: var(--complete-black);
+}
+
+.menu__right-side-dropdown-menu-submenu-opener-and-closer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+
+.open-symbol {
+    position: absolute;
+}
+
+.close-symbol {
+    position: absolute;
+    display: none;
+}
+
+.menu__right-side-dropdown-menu-submenu-holder:hover .close-symbol {
+    display: inline-block;
+}
+
+.menu__right-side-dropdown-menu-submenu-holder:hover .open-symbol {
+    display: none;
+}
+
+.menu__right-side-dropdown-menu-submenu {
+    overflow: hidden;
+    height: 0px;
+    width: 100%;
+    transition: width 0.3s ease-in, height 0.3s ease-in 0.1s;
+}
+
+.menu__right-side-dropdown-menu-submenu-holder:hover .menu__right-side-dropdown-menu-submenu {
+    visibility: visible;
+    height: 110px;
+    width: 100%;
+    transition: width 0.3s ease-in, height 0.3s ease-in 0.1s;
+}
+
+.submenu-option {
+    padding-left: 30px;
+}
+
+/* Delete the above */
+
+.course {
+    height: 300px;
+    width: 100%;
+    background-image: url(../Image/Course/Course\ Background.png);
+    background-position: 50% 50%;
+    background-size: 430%;
+    background-repeat: no-repeat;
+    padding-left: 12px;
+    color: var(--custom-white-head);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.course__aligner {
+    display: flex;
+    flex-direction: column;
+    height: 52.5%;
+    gap: 14px 0px;
+    padding-top: 8px;
+}
+
+
+.course__concept-and--bold {
+    font-size: 27px;
+    font-weight: 900;
+    color: #fff;
+    
+}
+
+
+.course__events {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* These are the rest that need size adjusting for different screen sizes. */
+
+.text-usage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.text-usage__aligner {
+    width: 93.7%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0px;
+    padding-right: 5px;
+}
+
+.headline {
+    font-size: 24px;
+    color: var(--header-color);
+}
+
+.text-usage__information {
+    line-height: 1.6;
+    color: var(--article-grey);
+}
+
+.text-uasge__notable-text--bold {
+    font-weight: bold;
+    color: var(--bold-orange);
+}
+
+.text-usage__notable-text--italic {
+    font-style: italic;
+}
+
+.text-usage__notable-text--small {
+    color: var(--bold-orange);
+    font-size: 12px;
+    position: relative;
+    bottom: 5px;
+}
+
+.text-usage__notable-text--small-down {
+    color: var(--bold-orange);
+    font-size: 12px;
+    position: relative;
+    top: 5px;
+}
+
+.text-usage__notable-text--line-through {
+    text-decoration: line-through;
+    color: var(--bold-orange);
+}
+
+.text-usage__notable-text--under-line {
+    text-decoration: underline;
+    color: var(--bold-orange);
+}
+
+.webpage-seperating-line {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.webpage-seperating-line__line {
+    margin-top: 91px;
+    border-top: 1px solid var(--seperating-line);
+    width: 91%;
+}
+
+/* These below are the buttons */
+
+.buttons-holder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.buttons__aligner {
+    width: 93%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0px;
+}
+
+.button__all-rows-of-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 50px 0px;
+}
+
+
+/* The first buttons begin */
+.buttons__first-buttons {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 69%;
+    gap: 20px 0px;
+}
+
+/* The first button's first row begins */
+
+.buttons__first-buttons-first-row {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px 0px;
+}
+
+.buttons__first-buttons-first-row-defualt {
+    color: var(--first-button-blue);
+    background-color: var(--first-button-white);
+}
+
+.button {
+    padding: 13.5px 31px 13.5px 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.second-button {
+    margin-left: 15px;
+}
+
+.buttons__first-buttons-first-row-second {
+    background-color: var(--bold-orange);
+    color: #fff;
+    transition: 0.2s linear;
+}
+
+.buttons__first-buttons-first-row-second:hover {
+    color: var(--bold-orange);
+    background-color: #fff;
+    border: 1px solid var(--bold-orange);
+    transition: 0.2s linear;
+}
+
+.buttons__first-buttons-first-row-third {
+    background-color: var(--third-button-blue);
+    color: #fff;
+    transition: 0.2s linear;
+}
+
+.buttons__first-buttons-first-row-third:hover {
+    color: var(--third-button-blue);
+    background-color: #fff;
+    border: 1px solid var(--third-button-blue);
+    transition: 0.2s linear;
+}
+
+.buttons__first-buttons-first-row-fourth {
+    background-color: var(--fourth-button-blue);
+    color: #fff;
+    transition: 0.2s linear;
+}
+
+.buttons__first-buttons-first-row-fourth:hover {
+    color: var(--fourth-button-blue);
+    background-color: #fff;
+    border: 1px solid var(--fourth-button-blue);
+    transition: 0.2s linear;
+}
+
+.buttons__first-buttons-first-row-fifth {
+    background-color: var(--fifth-button-yellow);
+    color: #fff;
+    transition: 0.2s linear;
+    padding: 13.5px 0 13.5px;
+    width: 114px;
+}
+
+.buttons__first-buttons-first-row-fifth:hover {
+    color: var(--fifth-button-yellow);
+    background-color: #fff;
+    border: 1px solid var(--fifth-button-yellow);
+    transition: 0.2s linear;
+}
+
+.buttons__first-buttons-first-row-sixth {
+    background-color: var(--sixth-button-red);
+    color: #fff;
+    transition: 0.2s linear;
+}
+
+.buttons__first-buttons-first-row-sixth:hover {
+    color: var(--sixth-button-red);
+    background-color: #fff;
+    border: 1px solid var(--sixth-button-red);
+    transition: 0.2s linear;
+}
+
+.buttons__first-buttons-first-row-seventh  {
+    text-decoration: underline;
+    color: var(--first-button-blue);
+    background-color: var(--first-button-white);
+}
+
+
+.buttons__first-buttons-first-row-eighth {
+    cursor: not-allowed;
+    background-color: var(--first-button-white);
+    color: #fff;
+
+}
+
+.buttons__first-buttons-first-row-eighth-a {
+    cursor: not-allowed;
+}
+/* The first button's first row end */
+
+/* The 2nd row of first buttons */
+.buttons__first-buttons-second-row {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px 0px;
+}
+
+.button {
+    padding: 13.5px 31px 13.5px 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+
+.buttons__first-buttons-second-row-defualt {
+    color: var(--first-button-blue);
+    background-color: var(--first-button-white);
+}
+
+.defualt-text {
+    opacity: 0;
+    transition: 0.2s linear;
+}
+
+.buttons__first-buttons-second-row-defualt:hover .defualt-text {
+    opacity: 1;
+    transition: 0.2s linear;
+}
+
+.second-button {
+    margin-left: 15px;
+}
+
+.buttons__first-buttons-second-row-second {
+    color: var(--bold-orange);
+    background-color: #fff;
+    transition: 0.2s linear;
+    border: 1px solid var(--bold-orange);
+
+}
+
+.buttons__first-buttons-second-row-second:hover {
+    background-color: var(--bold-orange);
+    color: #fff;
+    transition: 0.2s linear;
+}
+
+.buttons__first-buttons-second-row-third {
+    color: var(--third-button-blue);
+    background-color: #fff;
+    transition: 0.2s linear;
+    border: 1px solid var(--third-button-blue);
+
+}
+
+.buttons__first-buttons-second-row-third:hover {
+    background-color: var(--third-button-blue);
+    color: #fff;
+    transition: 0.2s linear;
+}
+
+.buttons__first-buttons-second-row-fourth {
+    color: var(--fourth-button-blue);
+    background-color: #fff;
+    border: 1px solid var(--fourth-button-blue);
+    transition: 0.2s linear;
+}
+
+.buttons__first-buttons-second-row-fourth:hover {
+    background-color: var(--fourth-button-blue);
+    color: #fff;
+    transition: 0.2s linear;
+}
+
+.buttons__first-buttons-second-row-fifth {
+    color: var(--fifth-button-yellow);
+    background-color: #fff;
+    transition: 0.2s linear;
+    border: 1px solid var(--fifth-button-yellow);
+    padding: 13.5px 0 13.5px;
+    width: 114px;
+}
+
+.buttons__first-buttons-second-row-fifth:hover {
+    background-color: var(--fifth-button-yellow);
+    color: #fff;
+    transition: 0.2s linear;
+}
+
+.buttons__first-buttons-second-row-sixth {
+    color: var(--sixth-button-red);
+    background-color: #fff;
+    border: 1px solid var(--sixth-button-red);
+    transition: 0.2s linear;
+}
+
+.buttons__first-buttons-second-row-sixth:hover {
+    background-color: var(--sixth-button-red);
+    color: #fff;
+    transition: 0.2s linear;
+}
+
+.buttons__first-buttons-second-row-seventh  {
+    text-decoration: underline;
+    color: var(--first-button-blue);
+    background-color: var(--first-button-white);
+}
+
+
+.buttons__first-buttons-second-row-eighth {
+    cursor: not-allowed;
+    background-color: var(--first-button-white);
+    color: #fff;
+
+}
+
+/* The end of the 2nd row of the first buttons */
+/* The first buttons end */
+
+/* The second buttons begin */
+.second-row-button {
+    border-radius: 3px;
+}
+/* The second buttons end */
+
+/* The third buttons begin */
+.third-row-button {
+    border-radius: 20px;
+}
+/* The third buttons end */
+
+/* The fourth buttons begin */
+.buttons__fourth-buttons {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 20px 0px;
+}
+
+.fourth-row-button {
+    border-radius: 20px;
+    padding: 13.5px 40px 13.5px 31px;
+    display: flex;
+    align-items: center;
+}
+
+.buttons__fourth-buttons-first-row-fifth {
+    background-color: var(--fifth-button-yellow);
+    color: #fff;
+    transition: 0.2s linear;
+    border: none;
+    padding: 13.5px 42px 13.5px 31px;
+}
+
+.buttons__fourth-buttons-first-row-fifth:hover {
+    color: var(--fifth-button-yellow);
+    background-color: #fff;
+    transition: 0.2s linear;
+}
+
+.buttons__fourth-buttons-second-row-fifth {
+    color: var(--fifth-button-yellow);
+    background-color: #fff;
+    transition: 0.2s linear;
+    border: 1px solid var(--fifth-button-yellow);
+    padding: 13.5px 42px 13.5px 31px;
+}
+
+.buttons__fourth-buttons-second-row-fifth:hover {
+    background-color: var(--fifth-button-yellow);
+    color: #fff;
+    transition: 0.2s linear;
+}
+/* The only differences here are the size of the fourth buttons compared to the other buttons (Thus neccesating the change of class names and width value. 
+We also needed to change the values of the fifth button in the 1st and 2nd row for more acuuracy. */
+/* The fourth buttons end */
+
+/* The last button row begins */
+.buttons__last-buttons {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px 0px;
+    font-size: 13px;
+}
+
+/* The fourth button's first row begins */
+
+.buttons__last-buttons-first-row {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px 15px;
+}
+
+.button-alignment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons__last-buttons-first-row-first--extra-large {
+    height: 52px;
+    width: 154px;
+    background-color: var(--bold-orange);
+    color: #fff;
+    transition: 0.2s linear;
+}
+
+.buttons__last-buttons-first-row-first--extra-large:hover {
+    color: var(--bold-orange);
+    background-color: #fff;
+    border: 1px solid var(--bold-orange);
+    transition: 0.2s linear;
+}
+
+.buttons__last-buttons-first-row-second--large {
+    height: 47px;
+    width: 97.5px;
+    background-color: var(--third-button-blue);
+    color: #fff;
+    transition: 0.2s linear;
+}
+
+.buttons__last-buttons-first-row-second--large:hover {
+    color: var(--third-button-blue);
+    background-color: #fff;
+    border: 1px solid var(--third-button-blue);
+    transition: 0.2s linear;
+}
+
+.buttons__last-buttons-first-row-third--default {
+    width: 106px;
+    height: 42px;
+    color: #fff;
+    background-color: var(--bold-orange);
+    transition: 0.2s linear;
+}
+
+.buttons__last-buttons-first-row-third--default:hover {
+    background-color: #fff;
+    color: var(--bold-orange);
+    border: 1px solid var(--bold-orange);
+    transition: 0.2s linear;
+}
+
+.buttons__last-buttons-first-row-fourth--medium {
+    width: 112px;
+    height: 32px;
+    background-color: var(--third-button-blue);
+    color: #fff;
+    transition: 0.2s linear;
+    width: 114px;
+}
+
+.buttons__last-buttons-first-row-fourth--medium:hover {
+    color: var(--third-button-blue);
+    background-color: #fff;
+    border: 1px solid var(--third-button-blue);
+    transition: 0.2s linear;
+}
+
+.buttons__last-buttons-first-row-fifth--small {
+    width: 95.7px;
+    height: 27px;
+    background-color: var(--bold-orange);
+    color: #fff;
+    transition: 0.2s linear;
+}
+
+.buttons__last-buttons-first-row-fifth--small:hover {
+    color: var(--bold-orange);
+    background-color: #fff;
+    border: 1px solid var(--bold-orange);
+    transition: 0.2s linear;
+}
+
+/* The fourth button's first row end */
+
+/* The 2nd row of first buttons */
+.buttons__fourth-buttons-second-row {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    gap: 10px 15px;
+}
+
+
+.buttons__last-buttons-second-row-first--extra-large-inverted {
+    height: 52px;
+    width: 154px;
+    border: 1px solid var(--bold-orange);
+    color: var(--bold-orange);
+    background-color: #fff;
+    transition: 0.2s linear;
+}
+
+.buttons__last-buttons-second-row-first--extra-large-inverted:hover {
+    background-color: var(--bold-orange);
+    color: #fff;
+    transition: 0.2s linear;
+}
+
+.buttons__last-buttons-second-row-second--large-inverted {
+    height: 47px;
+    width: 97.5px;
+    color: var(--third-button-blue);
+    background-color: #fff;
+    border: 1px solid var(--third-button-blue);
+    transition: 0.2s linear;
+}
+
+.buttons__last-buttons-second-row-second--large-inverted:hover {
+    background-color: var(--third-button-blue);
+    color: #fff;
+    transition: 0.2s linear;
+}
+
+.buttons__last-buttons-second-row-third--default-inverted {
+    width: 106px;
+    height: 42px;
+    background-color: #fff;
+    color: var(--bold-orange);
+    border: 1px solid var(--bold-orange);
+    transition: 0.2s linear;
+}
+
+.buttons__last-buttons-second-row-third--default-inverted:hover {
+    color: #fff;
+    background-color: var(--bold-orange);
+    transition: 0.2s linear;
+}
+
+.buttons__last-buttons-second-row-fourth--medium-inverted {
+    width: 112px;
+    height: 32px;
+    transition: 0.2s linear;
+    width: 114px;
+    color: var(--third-button-blue);
+    background-color: #fff;
+    border: 1px solid var(--third-button-blue);
+}
+
+.buttons__last-buttons-second-row-fourth--medium-inverted:hover {
+    background-color: var(--third-button-blue);
+    color: #fff;
+    
+    transition: 0.2s linear;
+}
+
+.buttons__last-buttons-second-row-fifth--small-inverted {
+    width: 95.7px;
+    height: 27px;
+    color: var(--bold-orange);
+    background-color: #fff;
+    border: 1px solid var(--bold-orange);
+    transition: 0.2s linear;
+}
+
+.buttons__last-buttons-second-row-fifth--small-inverted:hover {
+    background-color: var(--bold-orange);
+    color: #fff;
+    transition: 0.2s linear;
+}
+
+/* The last button row ends */
+
+/* The Above are all the rows of the buttons */
+
+/* Now for the seperating line */
+
+.webpage-seperating-line__alignment-line {
+    margin-top: 69px;
+
+}
+
+.alignment-demo {
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+}
+
+.alignment-demo__aligner {
+    width: 93.7%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px 0px;
+}
+
+.alignment-demo__left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px 0px;
+    color: var(--header-color);
+}
+
+.alignment-demo__left-headline {
+    font-size: 24px;
+}
+
+.alignment-demo__left-explaination {
+    display: flex;
+    flex-direction: column;
+    color: var(--article-grey);
+}
+
+.alignment-demo__left-image-div {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+}
+
+.alignment-demo__left-image-tag {
+    width: inherit;
+}
+
+.alignment-demo__seperating-line {
+    border-top: 1px solid var(--seperating-line);
+}
+
+.alignment-demo__right {
+    display: flex;
+    flex-direction: column;
+    gap: 25px 0px;
+    color: var(--header-color);
+}
+
+.alignment-demo__right-headline {
+    font-size: 24px;
+}
+
+.alignment-demo__left-explaination-text {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.alignment-demo__right {
+    display: flex;
+    flex-direction: column;
+    gap: 25px 0px;
+    color: var(--header-color);
+}
+
+.alignment-demo__right-headline {
+    font-size: 24px;
+}
+
+.alignment-demo__right-explaination {
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0px;
+    color: var(--article-grey);
+}
+
+.alignment-demo__right-image-div {
+    width: 100%;
+    overflow: hidden;
+}
+
+.alignment-demo__right-image-tag {
+    width: inherit;
+}
+
+.alignment-demo__right-explaination-text {
+    line-height: 1.6;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0px;
+}
+
+.webpage-seperating-line__above-definition-line {
+    margin-top: 46px;
+}
+
+.definition-holder {
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.definition-holder__aligner {
+    width: 93.7%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0px;
+}
+
+.definition-holder__headline {
+    color: var(--header-color);
+    font-size: 21.5px;
+}
+
+.definition-holder__headline--big {
+    font-size: 24px;
+}
+
+.definition-holder__definitions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0px;
+}
+
+.definition-holder__definition-one {
+    color: var(--article-grey);
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0px;
+    line-height: 1.6;
+}
+
+
+.webpage-seperating-line__below-definition-line {
+    margin-top: 65px;
+
+}
+
+.quote {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.quote__aligner {
+    width: 93.7%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0px;
+}
+
+.quote__headline {
+    font-size: 23px;
+    color: var(--header-color);
+}
+
+.quote__box {
+    height: 684px;
+    background-color: var(--first-button-white);
+    border-left: 2px solid var(--bold-orange);
+    display: flex;
+    align-items: center;
+}
+
+.quote__box-aligner {
+    font-weight: 500;
+    color: var(--science-color);
+    margin-left: 30px;
+    width: 76%;
+    height: 90%;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.webpage-seperating-line__line-quote {
+    margin-top: 70px;
+}
+
+.table {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.table__aligner {
+    width: 93.7%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0px;
+}
+
+.table__headline {
+    font-size: 23.5px;
+    color: var(--header-color);
+}
+
+.table__data-holder {
+    overflow: auto;
+}
+
+.table__data {
+    width: 750px;
+    height: 570px;
+    display: flex;
+    
+    background-color: var(--first-button-white);
+    font-size: 16px;
+}
+
+.table__categories {
+    width: 100%;
+    display: flex;
+    gap: 0px 00px;
+    color: var(--table-categories);
+    padding-left: 30px;
+    margin-top: 28px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--table-border);
+}
+
+.table__categories-country {
+    margin-left: 40px;
+}
+
+.table__categories-visit {
+    margin-left: 140px;
+}
+
+.table__categories-percent {
+    margin-left: 100px;
+}
+
+.table__categories-text {
+    font-weight: 400;
+}   
+
+.table__countries {
+    width: 750px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--table-border);
+    color: var(--science-color);
+}
+
+.table__countries--no-border {
+    border: none;
+}
+
+.table__country-name-and-flag {
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    gap: 0px 10px;
+}
+
+.table__country-population {
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.table__country-percent {
+    margin-left: 90px;
+    border: 2px solid var(--percent-blue);
+    width: 150px;
+}
+
+.table__country-two-percent {
+    width: 65px;
+    border: 2px solid var(--percent-semi-red);
+}
+
+.table__country-three-percent {
+    width: 120px;
+    border: 2px solid var(--percent-orange);
+    
+}
+
+.table__country-four-percent {
+    width: 131px;
+}
+
+.table__country-five-percent {
+    width: 87.5px;
+}
+
+.table__country-four-percent, .table__country-five-percent {
+    border: 2px solid var(--percent-green);
+}
+
+.table__country-six-percent {
+    width: 153px;
+    border: 2px solid var(--percent-blue);
+
+}
+
+.table__country-seven-percent {
+    width: 64.5px;
+    border: 2px solid var(--percent-purple);
+
+}
+
+.table__country-eight-percent {
+    width: 151px;
+    border: 2px solid var(--percent-semi-red);
+}
+
+.webpage-seperating-line__line-table {
+    margin-top: 47px;
+}
+
+.image-gallery {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.image-gallery__aligner {
+    width: 93.8%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0px;
+}
+
+.image-galley__headline {
+    font-size: 23.5px;
+    color: var(--header-color);
+}
+
+.image-galley__gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 0px;
+}
+
+.image-galley__image-div {
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.image-galley__image-tag {
+    width: inherit;
+}
+
+.image-galley__unsual-image-tag {
+    position: relative;
+    right: 85px;
+    width: 520px;
+}
+
+.image-galley__clown-image-tag {
+    width: 370px;
+    position: relative;
+    right: 10px;
+}
+
+.image-galley__sibling-image-tag {
+    position: relative;
+    bottom: 20px;
+}
+
+.image-galley__second-sibling-image-tag {
+    position: relative;
+    bottom: 20px;
+}
+
+.image-galley__smile-image-tag  {
+    position: relative;
+    bottom: 20px;
+}
+
+.image-galley__asian-image-tag {
+    width: 370px;
+    position: relative;
+    right: 10px;
+}
+
+.image-galley__working-image-tag {
+    width: 360px;
+    position: relative;
+    right: 5px;
+}
+
+.webpage-seperating-line__after-image-line {
+    margin-top: 50px;
+}
+
+.organazation-types {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.organazation-types__aligner {
+    width: 93.7%;
+    display: flex;
+    flex-direction: column;
+    gap: 0px 0px;
+}
+
+.organazation-types__headline, .organazation-types__unordered-list-headline, .organazation-types__ordered-list-headline {
+    font-size: 25px;
+    color: var(--header-color);
+}
+
+
+
+.organazation-types__demo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0px;
+}
+
+
+.organazation-types__flex {
+    display: flex;
+    flex-direction: column;
+    gap: 8px 0px;
+    color: var(--flex-purple)
+}
+
+.organazation-types__flex-h-one {
+    font-size: 27.5px;
+    margin-top: 20px;
+}
+
+.organazation-types__flex-h-two {
+    font-size: 24.5px;
+}
+
+.organazation-types__flex-h-three {
+    font-size: 23px;
+}
+
+.organazation-types__flex-h-four {
+    font-size: 21.5px;
+}
+
+.organazation-types__flex-h-five {
+    font-size: 20px;
+}
+
+.organazation-types__flex-h-six {
+    font-size: 16px;
+}
+
+.organazation-types__unordered-list-holder {
+    display: flex;
+    flex-direction: column;
+    gap: 23px 0px;
+}
+
+.organazation-types__unordered-list {
+    color: var(--science-color);
+    display: flex;
+    flex-direction: column;
+    line-height: 1.8;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 5px;
+    width: 98%;
+}
+
+.organazation-types__unordered-list-members {
+    position: relative;
+    margin-left: 25px;
+}
+
+.organazation-types__unordered-list-members::before {
+    top: 5px;
+    left: -30px;
+    content: "";
+    position: absolute;
+    border: 3px solid var(--bold-orange);
+    border-radius: 100%;
+    height: 14px;
+    width: 14px;
+}
+
+.organazation-types__unordered-sublist {
+    margin-left: 25px;
+}
+
+.organazation-types__unordered-sublist-members {
+    position: relative;
+    padding-left: 5px;
+}
+
+.organazation-types__unordered-sublist-members::before {
+    top: 5px;
+    left: -25px;
+    content: "";
+    position: absolute;
+    border: 3px solid var(--bold-orange);
+    border-radius: 100%;
+    height: 14px;
+    width: 14px;
+}
+
+.organazation-types__unordered-sublist-sub {
+    margin-left: 25px;
+
+}
+
+/* The ordered List is below */
+
+.organazation-types__ordered-list-holder {
+    display: flex;
+    flex-direction: column;
+    gap: 23px 0px;
+}
+
+.organazation-types__ordered-list {
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside;
+    margin-left: 35px;
+    color: var(--science-color);
+    display: flex;
+    flex-direction: column;
+    line-height: 1.8;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--ordered-list-color);
+
+}
+
+.organazation-types__ordered-list ::marker {
+    color: var(--bold-orange);
+}
+
+.organazation-types__ordered-sublist {
+    padding-left: 70px;
+    list-style-type: lower-latin;
+}
+
+.organazation-types__ordered-sublist-extra {
+    list-style: lower-latin;
+    margin-left: 70px;
+    width: 50px;
+
+}
+
+.webpage-seperating-line__form-line {
+    margin-top: 66px;
+}
+
+.different-uses-of-form {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.different-uses-of-form__aligner {
+    display: flex;
+    flex-direction: column;
+    width: 93.7%;
+    gap: 15px;
+}
+
+.different-uses-of-form__left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0px;
+}
+
+.different-uses-of-form__left-headline, .different-uses-of-form__swtiches-headline, .different-uses-of-form__selecboxes-headline, .different-uses-of-form__checkboxes-headline, .different-uses-of-form__radio-headline {
+    font-size: 23.5px;
+    color: var(--header-color);
+}
+
+
+.different-uses-of-form__left-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0px;
+
+}
+
+.different-uses-of-form__forms {
+    background-color: var(--first-button-white);
+    font-size: 16px;
+    outline: none;
+    height: 40px;
+    border: none;
+    padding-left: 20px;
+}
+
+.different-uses-of-form__form-address {
+    padding-left: 35px;
+}
+
+.different-uses-of-form__forms::placeholder {
+    color: var(--fornm-grey);
+}
+
+.different-uses-of-form__city-select-holder, .different-uses-of-form__country-select-holder {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.different-uses-of-form__city-select-plane, .different-uses-of-form__country-select-plane {
+    position: absolute;
+    z-index: 3;
+    left: 10px;
+    color: var(--city-select-grey);
+}
+
+.different-uses-of-form__city-all-options, .different-uses-of-form__country-all-options {
+    position: absolute;
+    border-radius: 4px;
+    border: 1px solid var(--city-select-grey);
+    color: var(--city-select-grey);
+    outline: none;
+    height: 40px;
+    width: 100%;
+    right: 0;
+    padding-left: 35px;
+    cursor: pointer;
+    /* color: var(--bold-orange); */
+}
+
+/* I attempted to find a way to make the text color change when the options are touched, But all the answers I found were with JS */
+/* I could do this with my dropdown menu method (Using div, ul and the like), But then I would lose the clickability of <select> and color change after click. 
+So I settle for changing the colors after they're clicked on. */
+
+
+.different-uses-of-form__city-options:checked {
+    color: var(--bold-orange);
+}
+
+
+.different-uses-of-form__country-options:checked {
+    color: var(--bold-orange);
+}
+
+
+
+
+.different-uses-of-form__massage {
+    font-size: 16px;
+    height: 100px;
+    border: none;
+    outline: none;
+    padding-bottom: 60px;
+    padding-left: 10px;
+}
+
+.different-uses-of-form__colors {
+    background-color: var(--first-button-white);
+    font-size: 16px;
+    outline: none;
+    height: 40px;
+    border: none;
+    padding-left: 23px;
+}
+
+.different-uses-of-form__colors[type="text"]:focus {
+    outline: none;
+    border: 1px solid var(--bold-orange);
+    background-color: #fff;
+}
+
+.different-uses-of-form__right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0px;
+}
+
+.different-uses-of-form__right-swtiches {
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0px;
+}
+
+.different-uses-of-form__all-swtiches {
+    display: flex;
+    flex-direction: column;
+    gap: 27px 0px;
+    color: var(--article-grey);
+}
+
+.different-uses-of-form__swtiche-one-holder {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.different-uses-of-form__swtiche-one-label {
+    position: absolute;
+    right: 10%;
+    cursor: POINTER;
+    
+}
+
+.different-uses-of-form__swtiche-one-input, .different-uses-of-form__swtiche-one-toggle-and-background {
+    position: absolute;
+}
+
+.different-uses-of-form__swtiche-one-input {
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.different-uses-of-form__swtiche-one-toggle-and-background {
+    display: inline-block;
+    height: 17px;
+    width: 35px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 8.5px;
+    transition: 0.1s linear;
+
+}
+
+.different-uses-of-form__swtiche-one-input:checked + .different-uses-of-form__swtiche-one-toggle-and-background {
+    background-color: var(--bold-orange);
+    transition: 0.1s linear;
+}
+
+.different-uses-of-form__swtiche-one-toggle-and-background::before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0%;
+    transition: 0.1s linear;
+
+}
+
+.different-uses-of-form__swtiche-one-input:checked + .different-uses-of-form__swtiche-one-toggle-and-background::before {
+    left: 57%;
+    transition: 0.1s linear;
+
+}
+
+/* The second toggle */
+.different-uses-of-form__swtiche-two-holder {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.different-uses-of-form__swtiche-two-label {
+    position: absolute;
+    right: 10%;
+    cursor: pointer;
+}
+
+.different-uses-of-form__swtiche-two-input, .different-uses-of-form__swtiche-two-toggle-and-background {
+    position: absolute;
+}
+
+.different-uses-of-form__swtiche-two-input {
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.different-uses-of-form__swtiche-two-toggle-and-background {
+    display: inline-block;
+    height: 17px;
+    width: 35px;
+    background-color: var(--bold-orange);
+    border-radius: 8.5px;
+    transition: 0.1s linear;
+
+}
+
+.different-uses-of-form__swtiche-two-input:checked + .different-uses-of-form__swtiche-two-toggle-and-background {
+    background-color: rgb(224, 224, 224);
+    transition: 0.1s linear;
+}
+
+.different-uses-of-form__swtiche-two-toggle-and-background::before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 57%;
+    transition: 0.1s linear;
+
+}
+
+.different-uses-of-form__swtiche-two-input:checked + .different-uses-of-form__swtiche-two-toggle-and-background::before {
+    left: 0%;
+    transition: 0.1s linear;
+}
+/* The third toggle */
+.different-uses-of-form__swtiche-three-holder {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.different-uses-of-form__swtiche-three-label {
+    position: absolute;
+    right: 10%;
+    cursor: pointer;
+}
+
+.different-uses-of-form__swtiche-three-input, .different-uses-of-form__swtiche-three-toggle-and-background {
+    position: absolute;
+}
+
+.different-uses-of-form__swtiche-three-input {
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.different-uses-of-form__swtiche-three-toggle-and-background {
+    display: inline-block;
+    height: 17px;
+    width: 35px;
+    background-color: var(--third-button-blue);
+    border-radius: 8.5px;
+    transition: 0.1s linear;
+
+}
+
+.different-uses-of-form__swtiche-three-input:checked + .different-uses-of-form__swtiche-three-toggle-and-background {
+    background-color: rgb(224, 224, 224);
+    transition: 0.1s linear;
+}
+
+.different-uses-of-form__swtiche-three-toggle-and-background::before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 57%;
+    transition: 0.1s linear;
+
+}
+
+.different-uses-of-form__swtiche-three-input:checked + .different-uses-of-form__swtiche-three-toggle-and-background::before {
+    left: 0%;
+    transition: 0.1s linear;
+
+}
+
+.different-uses-of-form__right-selecboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 35px 0px;
+    margin-top: 20px;
+    /* Note to self: If there's an issue with you wanting to get a specific distance, It's because of the attribute above. */
+}
+
+.different-uses-of-form__selecboxes-languages {
+    background-color: var(--first-button-white);
+    padding-left: 15px;
+    outline: none;
+    font-size: 14px;
+    width: 90%;
+    height: 40px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    color: var(--selectbox-black);
+}
+
+.different-uses-of-form__language-name:checked {
+    color: var(--bold-orange);
+}
+
+.different-uses-of-form__right-checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 35px 0px;
+    color: var(--article-grey);
+}
+
+.different-uses-of-form__all-checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 27px 0px;
+}
+
+.different-uses-of-form__checkboxes-one {
+    display: flex;
+    justify-content: space-between;
+}
+
+.different-uses-of-form__checkboxes-input--pink {
+    height: 16px;
+    width: 16px;
+    accent-color: var(--percent-semi-red);
+}
+
+.different-uses-of-form__checkboxes-one-input {
+    cursor: pointer;
+}
+
+.different-uses-of-form__checkboxes-input--black {
+    height: 16px;
+    width: 16px;
+    accent-color: var(--checkbox-black);
+}
+
+
+.different-uses-of-form__checkboxes-input--not-allowed {
+    cursor: not-allowed;
+}
+/* The radio */
+.different-uses-of-form__right-radio {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px 0px;
+    color: var(--article-grey);
+    border-radius: 100%;
+}
+
+.different-uses-of-form__all-radio {
+    display: flex;
+    flex-direction: column;
+    gap: 27px 0px;
+}
+
+.different-uses-of-form__radio-one {
+    display: flex;
+    gap: 205px;
+}
+
+.different-uses-of-form__radio-one-label {
+    position: relative;
+}
+
+.different-uses-of-form__radio-one-input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.different-uses-of-form__radio-one-span {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid var(--article-grey);
+    /* If you want it (The radio buttons) to look EXACTLY like the buttons you made, Turn the above border attribute into comment, And then uncomments the bottom attributes */
+    /* border: 1px solid var(--the-unseeible-color);
+    background-color: var(--unseeible-background); */
+    /* It's REALLY hard to see where it's like this, But turns out exactly like yours sir. */
+    height: 16px;
+    width: 16px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.different-uses-of-form__radio-one-input:checked + .different-uses-of-form__radio-one-span {
+    border: 5px solid var(--percent-semi-red);
+    height: 16px;
+    width: 16px;
+}
+
+.different-uses-of-form__radio-two-label {
+    position: relative;
+}
+
+.different-uses-of-form__radio-two-input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.different-uses-of-form__radio-two {
+    display: flex;
+    gap: 155px;
+    /* justify-content: space-between; */
+}
+
+.different-uses-of-form__radio-two-span {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid var(--article-grey);
+    /* If you want it (The radio buttons) to look EXACTLY like the buttons you made, Turn the above border attribute into comment, And then uncomments the bottom attributes */
+    /* border: 1px solid var(--the-unseeible-color);
+    background-color: var(--unseeible-background); */
+    /* It's REALLY hard to see where it's like this, But turns out exactly like yours sir. */
+    height: 16px;
+    width: 16px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.different-uses-of-form__radio-two-input:checked + .different-uses-of-form__radio-two-span {
+    border: 5px solid var(--percent-semi-red);
+    height: 16px;
+    width: 16px;
+}
+
+.different-uses-of-form__radio-three {
+    display: flex;
+    gap: 156px;
+    /* justify-content: space-between; */
+}
+
+.different-uses-of-form__radio-three-label {
+    position: relative;
+}
+
+.different-uses-of-form__radio-three-input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.different-uses-of-form__radio-three-span {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid var(--article-grey);
+    /* If you want it (The radio buttons) to look EXACTLY like the buttons you made, Turn the above border attribute into comment, And then uncomments the bottom attributes */
+    /* border: 1px solid var(--the-unseeible-color);
+    background-color: var(--unseeible-background); */
+    /* It's REALLY hard to see where it's like this, But turns out exactly like yours sir. */
+    height: 16px;
+    width: 16px;
+    border-radius: 100%;
+    cursor: pointer;
+
+}
+
+.different-uses-of-form__radio-three-input:checked + .different-uses-of-form__radio-three-span {
+    border: 5px solid var(--checkbox-black);
+    height: 16px;
+    width: 16px;
+}
+
+
+.different-uses-of-form__radio-four {
+    display: flex;
+    gap: 196px;
+    /* justify-content: space-between; */
+}
+
+.different-uses-of-form__radio-four-label {
+    position: relative;
+}
+
+.different-uses-of-form__radio-four-input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.different-uses-of-form__radio-four-span {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid var(--article-grey);
+    /* If you want it (The radio buttons) to look EXACTLY like the buttons you made, Turn the above border attribute into comment, And then uncomments the bottom attributes */
+    /* border: 1px solid var(--the-unseeible-color);
+    background-color: var(--unseeible-background); */
+    /* It's REALLY hard to see where it's like this, But turns out exactly like yours sir. */
+    height: 16px;
+    width: 16px;
+    border-radius: 100%;
+    cursor: not-allowed;
+}
+
+.different-uses-of-form__radio-four-input:checked + .different-uses-of-form__radio-four-span {
+    border: 5px solid var(--checkbox-black);
+    height: 16px;
+    width: 16px;
+}
+
+.different-uses-of-form__radio-five {
+    display: flex;
+    gap: 149px;
+    /* justify-content: space-between; */
+}
+
+.different-uses-of-form__radio-five-label {
+    position: relative;
+}
+
+.different-uses-of-form__radio-five-input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.different-uses-of-form__radio-five-span {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid var(--article-grey);
+    /* If you want it (The radio buttons) to look EXACTLY like the buttons you made, Turn the above border attribute into comment, And then uncomments the bottom attributes */
+    /* border: 1px solid var(--the-unseeible-color);
+    background-color: var(--unseeible-background); */
+    /* It's REALLY hard to see where it's like this, But turns out exactly like yours sir. */
+    height: 16px;
+    width: 16px;
+    border-radius: 100%;
+    cursor: not-allowed;
+}
+
+.different-uses-of-form__radio-five-input:checked + .different-uses-of-form__radio-five-span {
+    border: 5px solid var(--checkbox-black);
+    height: 16px;
+    width: 16px;
+}
+
+
+
+
+
+
+
+/* The below stay the same */
+.footer {
+    background-color: var(--header-color);
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    color: var(--custom-whote);
+    margin-top: 100px;
+}
+
+.footer__aligner {
+    padding-top: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px 0px;
+}
+
+
+.footer__university-logo {
+    /* padding-left: 10px; */
+    padding-top: 5px;
+}
+
+.footer__all-subjects {
+    display: flex;
+    flex-direction: column;
+    gap: 52px 0px;
+    padding-left: 12px;
+}
+
+.subject {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+
+}
+
+.footer__all-subjects-text--big {
+    font-size: 20px;
+    font-weight: 750;
+}
+
+.footer__quick-top-link, .footer__program-top-link, .footer__resources-top-link {
+    padding-top: 10px;
+}
+
+.links {
+    color: var(--custom-grey);
+    font-size: 16px;
+    transition: 0.4s linear 0s;
+
+}
+
+.link-text:hover{
+    text-decoration: underline;
+    color: var(--custom-green-2);
+    transition: 0.4s linear 0s;
+
+}
+
+.footer__newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 35px 0px;
+}
+
+.footer_newsletter-email {
+    display: flex;
+    flex-direction: column;
+    gap: 17px 0px;
+    position: relative;
+    width: 349px;
+}
+
+.footer_newsletter-send-email {
+    width: 349px;
+    height: 58px;
+    padding-left: 20px;
+}
+
+.footer_newsletter-send-email:focus {
+    outline: none;
+}
+
+.footer_newsletter-send-email[type="email"], .footer_newsletter-send-email::placeholder {
+    font-size: 16px;
+    color: var(--custom-gray-another);
+    font-weight: 500;
+}
+
+.footer_newsletter-email-send-button {
+    position: absolute;
+    background-color: var(--custom-green-2);
+    cursor: pointer;
+    border: none;
+    height: 58px;
+    width: 80.5px;
+    right: 0%;
+    bottom: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_newsletter-email-send-image {
+    height: 20px;
+    color: var(--custom-whote);
+}
+
+.footer__newsletter-social-media {
+    display: flex;
+    gap: 0px 15px;
+}
+
+.footer__newsletter-social-media-logo {
+    font-size: 20px;
+    color: var(--custom-white-head);
+}
+
+.footer__newsletter-social-media-logo:hover {
+    color: var(--custom-green-2);
+    transform: rotateY(180deg);
+    transition: 0.4s linear 0s;
+}
+
+.footer__copyright-and-creator {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    
+}
+
+.footer__copyright-and-creator-aligner {
+    border-top: 1px solid var(--footer-border);
+    width: 92%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 2;
+    color: var(--custom-grey);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer__copyright-and-creator-aligner-heart {
+    color: var(--custom-green-2);
+}
+
+.footer__copyrght-link {
+    color: var(--custom-green-2);
+
+}
+
+.nearly-forgot__div {
+    position: fixed;
+    right: 0.1%;
+    bottom: 2%;
+    transform: translateX(-33%);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--custom-green-2);
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    z-index: 100;
+}

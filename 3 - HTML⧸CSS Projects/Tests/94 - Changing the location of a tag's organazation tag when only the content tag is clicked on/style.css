@@ -1,0 +1,31 @@
+.label {
+    position: relative;
+    height: 180px;
+    width: 100px;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.label__words {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 140px;
+    width: 80px;
+    background-color: green;
+}
+
+input:checked + .move {
+    margin-left: 400px;
+}

@@ -1,0 +1,49 @@
+.label {
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+}
+
+.label__input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.label__check {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(214, 214, 214);
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+
+}
+
+.label__check::before {
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg); /* Moves the element by half its width and height */
+    transform-origin: center;
+    height: 20px;
+    width: 10px;
+    border-right: 4px solid red;
+    border-bottom: 4px solid red;
+    
+}
+
+.label__input:checked + .label__check {
+    background-color: rgb(0, 71, 138);
+}
+
+.label__input:checked + .label__check::before {
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+}

@@ -1,0 +1,53 @@
+.check {
+    height: 10px;
+    width: 5px;
+    border: solid red;
+    border-width: 0px 5px 5px 0px;
+    rotate: 45deg;
+}
+
+
+label {
+    position: relative;
+}
+
+input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+span {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: lightgrey;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input:checked + span {
+    background-color: red;
+}
+
+span::before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 6px;
+    border: solid black;
+    border-width: 0px 5px 5px 0px;
+    rotate: 45deg;
+}
+
+input:checked + span::before {
+    border: solid white;
+    border-width: 0px 5px 5px 0px;
+    rotate: 45deg;
+}

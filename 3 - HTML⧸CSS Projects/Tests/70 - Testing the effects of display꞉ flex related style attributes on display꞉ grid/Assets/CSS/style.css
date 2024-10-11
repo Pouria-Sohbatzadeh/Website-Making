@@ -1,0 +1,75 @@
+@import "./reset.css";
+
+.grid {
+    display: grid;
+    height: 302.4px;
+    width: 224px;
+    background-color: darkgrey;
+
+    align-items: start;
+    /* 1 - The Align-items:  works just fine with display: grid. */
+
+    justify-content: start;
+    /* 2 - Justify-content: also works just fine. */
+    /* 2.1 : the the justify-content style attribute disables with the justify-self: style attribute. 
+    See the .grid__cell--red tag as an example. try to change the value of self-justify:  and see how it doesn't change a thing. */
+
+    gap: 0px 0px;
+
+    /* align-content: end; */
+    /* 3 - the align-content:  style attribute also works fine! */
+
+
+    /* Note: the the special texts of the 
+    justify-content:  : style attribute, Aligns the overall grid (Not counting the organazation tag) based on which of the grid's content is
+    the closest to the start end and center of the horizantal axis.
+    
+     align-items:  : style attribute, Aligns the overall grid (Not counting the organazation tag) based on which of the grid's content is
+    the closest to the start end and center of the vertical axis.
+    
+     align-content:  : style attribute, Aligns the overall grid (Not counting the organazation tag) based on which of the grid's content is
+    the closest to the start end and center of the vertical axis.
+    
+     */
+
+}
+
+.grid-cell {
+    /* height: 20%;
+    width: 50%; */
+    /* Percent is confusing in display: grid. Sereasly */
+    height: 30px;
+    width: 30px;
+}
+
+.grid__cell--red {
+    background-color: red;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    justify-self: center;
+
+}
+
+.grid__cell--blue {
+    background-color: blue;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.grid__cell--yellow {
+    background-color: yellow;
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.grid__cell--green {
+    background-color: green;
+    grid-column-start: 4;
+    grid-row-start: 4;
+}
+
+.grid__cell--black {
+    background-color: black;
+    grid-column-start: 5;
+    grid-row-start: 5;
+}

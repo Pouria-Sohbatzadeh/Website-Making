@@ -1,0 +1,63 @@
+body{
+    background-color:#f1efec ;
+    margin: 0px;
+}
+.header{
+    width: 100%;
+    background-color: #FFF;
+    height: 100px;
+    padding-top: 15px;
+    position: fixed;
+}
+.header-menu{
+    margin: auto;
+    padding-top: 10px;
+    width: 80%;
+    height:70% ;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    margin-top: 20px;
+
+}
+
+.my-logo {
+    margin-left: 20px;
+}
+
+.menu{
+    margin-top: 26px;
+    width: 14cm;
+    height: 20px;
+    display: inline-block;
+    margin-left: -1cm;
+
+}
+
+.menu-page {
+    margin-left: 77px;
+    text-decoration: none;
+}
+.triel{
+    background-color: #e29912;
+    width: 120px;
+    height: 40px;
+    display: inline-block;
+    margin-top: 6px;
+    text-align: center;
+    border-radius: 1cm;
+    margin-right: 20px;
+}
+
+.triel a {
+    color: black;
+    display: inline-block;
+    margin-top: 12.5px;
+    text-decoration: none;
+}
+

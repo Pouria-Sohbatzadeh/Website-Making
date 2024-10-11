@@ -1,0 +1,84 @@
+body {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: rgb(9, 95, 153);
+
+}
+.main-menu, ul, li, .section1 {
+    display: inline-block;
+} 
+
+.section1 {
+    background-color: rgba(230, 150, 29, 0.808);
+    width: 100%;
+    height: 3.5cm;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    position: fixed;
+}
+
+.main-menu {
+    margin-left: 20%;
+    position: relative;
+    bottom: 25px;
+
+}
+
+.main-menu img {
+    position: relative;
+    top: 1cm;
+    right: 5cm;
+}
+
+.main-menu li {
+    margin-left: 3cm;
+    position: relative;
+    bottom: 15px;
+}
+
+.main-menu ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.offer {
+    margin-left: 8cm;
+    display: inline-block;
+    height: 1cm;
+    width: 3cm;
+    background-color: rgb(255, 255, 255);
+    bottom: 8px;
+    position: relative;
+    border: 5px solid rgb(114, 11, 11);
+    border-radius: 30%;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+}
+
+.offer a {
+    text-decoration: none;
+    color: rgb(8, 18, 150)
+
+}
+
+.section2 {
+    position: relative;
+    top: 5cm;
+}
+
+.my-picture, .life {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+

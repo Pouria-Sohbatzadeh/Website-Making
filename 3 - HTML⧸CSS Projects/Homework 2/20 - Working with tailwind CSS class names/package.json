@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "scripts": {
+    "Pouria" :
+    "npx tailwindcss -i ./Assets/Style/input.css -o ./Assets/Style/output.css --watch"
+
+  }
+}

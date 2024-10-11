@@ -1,0 +1,12 @@
+.shapes {
+    background-color: red; 
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
+.shades {
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}

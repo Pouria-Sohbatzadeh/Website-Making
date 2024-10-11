@@ -1,0 +1,26 @@
+div {
+    display: inline-block;
+}
+
+.board {
+    height: 10cm;
+    width: 10cm;
+    background-color: rgb(0, 66, 189);
+    
+}
+
+.black {
+    height: 1cm;
+    width: 1cm;
+    background-color: black;
+}
+
+.white {
+    height: 1cm;
+    width: 1cm;
+    background-color: white;
+}
+
+.black, .white {
+    margin-right: -4px;
+}

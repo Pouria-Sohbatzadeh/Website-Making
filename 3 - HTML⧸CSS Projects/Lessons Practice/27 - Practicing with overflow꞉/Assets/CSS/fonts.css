@@ -1,0 +1,8 @@
+@font-face {
+    font-family: Classic Pokemon;
+    src: url(../Fonts/Pokemon\ Classic.ttf);
+}
+
+body {
+    font-family: Classic Pokemon;
+}

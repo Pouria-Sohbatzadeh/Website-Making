@@ -1,0 +1,36 @@
+.shapes {
+    height: 1.98cm;
+    width: 10cm;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1cm;
+}
+
+.square, .circle, .triangle {
+    display: inline-block;
+}
+
+.square {
+    height: 2cm;
+    width: 2cm;
+    background-color: silver;
+}
+
+.circle {
+    height: 2cm;
+    width: 2cm;
+    background-color: gold;
+    border-radius: 100%; 
+}
+
+.triangle {
+    position: relative;
+    bottom: 2cm;
+    height: 1px;
+    border: 2cm solid transparent ;
+    border-bottom-color: blue ;
+}
+
+.Alphabet {
+    display: inline-block;
+}

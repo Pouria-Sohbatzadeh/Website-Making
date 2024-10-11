@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+}
+
+.section1 {
+    display: inline-block;
+    background-color: red;
+    height: 12cm;
+    /* When applying the height or width attribute with a percent to an organization tag that's the first thing in the file, Be sure that at least one has a 
+    number along with a measuring unit. */
+    width: 100%;
+}
+
+.social-media {
+    position: relative;
+    bottom: 150%;
+    display: inline-block;
+    background-color: rgba(8, 0, 0, 0.705);
+    height: 28%;
+    width: 2%;
+    text-align: center;
+}
+
+.buttons {
+    margin-top: 40%;
+    margin-right: 8%;
+    display: inline-block;
+}
+
+.facebook, .twitter, .youtube{
+    display: inline-block;
+    margin-bottom: 60% ;
+}
+
+.facebook {
+    width: 100%;
+}
+
+.facebook a {
+    text-decoration: none;
+    color: white;
+}
+
+.Person {
+    display: inline-block;
+    height: 80%;
+    width: 22%;
+    margin-left: 35%;
+    position: relative;
+    top: 12%;
+}
+
+.name-and-profession {
+    display: inline-block;
+    text-align: right;
+}
+
+.name {
+    display: inline-block;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 450%;
+    color: #fdd55c;
+}
+
+.profession {
+    display: inline-block;
+    margin-top: 5%;
+    font-size: 170%;
+    color: white;
+    width: 100%;
+}
+
+.current-state{
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+    position: relative;
+    top: 10%;
+}
+
+.living-place {
+    display: inline-block;
+    width: 100%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    color: rgba(58, 57, 57, 0.596);
+}
+
+.job {
+    display: inline-block;
+    width: 100%;
+    margin-top: 2%;
+    font-weight: bold;
+    color: rgba(58, 57, 57, 0.596);
+}
+
+.detailes {
+    display: inline-block;
+    position: relative;
+    top: 20%;
+    text-align: right;
+}
+
+.former-job, .education{
+    display: inline-block;
+    width: 100%;  
+    margin-top: 2%;
+}
+
+.first-part {
+    color: white;
+}
+
+.second-part {
+    color: rgba(58, 57, 57, 0.596);
+}
+
+.know{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 7%;
+}
+
+.know-2 {
+    background-color: rgba(58, 57, 57, 0.596);
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    height: 20px;
+    border-radius: 20px;
+}
+
+.My-image{
+    display: inline-block;
+    position: relative;
+    bottom: 50%;
+    margin-left: 120%;
+}
+
+.My-image img {
+    border: 10px solid rgb(233, 219, 219);
+    padding-left: 0px;
+}
+
+.menu {
+    display: inline-block;
+    margin-left: 210%;
+    position: relative;
+    bottom: 170%;
+}
+
+.pages li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.menu {
+    background-color: #fdd55c;
+    width: 10%;
+    height: 80%;
+    text-align: center;
+    margin-top: 20%;
+
+}
+
+.pages {
+    position: relative;
+    right: 75%;
+    
+}
+
+.pages li {
+    position: relative;
+    right: 150%;
+    margin-top: 500%;
+    background-color: ;
+}
+
+.pages li :hover {
+    background-color: rgb(255, 255, 255);
+    margin-right: 5%;
+}
+

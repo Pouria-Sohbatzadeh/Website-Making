@@ -1,0 +1,18 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* No need for a reset file */
+
+
+
+
+#bottom {
+    margin-top: 200vh;
+    /* Distancing the box from the top as much as possible to see whether putting the id name without removing the quotes works or not. */
+
+    height: 40px;
+    width: 50px;
+    background-color: red;
+}

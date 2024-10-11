@@ -1,0 +1,21 @@
+.triangle {
+    background-color: black;
+    border: 50px solid transparent;
+    border-top-color: rgb(206, 0, 41);
+    border-bottom-color: rgb(206, 0, 0);
+    /* If the triangle is made from either the top or bottom direction, Then the value of the height:  attribute can be whatever, But the value 
+    of the width: attribute has to be 1px */
+    height: 80px;  
+    width: 1px;
+}
+
+.triangle-two {
+    background-color: rgb(187, 187, 187);
+    border: 50px solid transparent;
+    border-left-color: rgb(25, 51, 136);
+    border-right-color: rgb(25, 51, 136);
+    /* If the triangle is made from either the left or right direction, Then the value of the width:  attribute can be whatever, But the value 
+    of the height: attribute has to be 1px */
+    width: 80px;  
+    height: 1px;
+}

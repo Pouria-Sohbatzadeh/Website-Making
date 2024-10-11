@@ -1,0 +1,12 @@
+.box {
+    background-color: red;
+    height: 50px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

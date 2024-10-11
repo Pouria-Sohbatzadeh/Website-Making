@@ -1,0 +1,214 @@
+@import "./reset.css";
+@import "./variables\ \(colors\).css";
+@import "./responsive.css";
+
+.menu {
+    background-color: gold;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__aligner {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__left-side {
+    display: flex;
+    align-items: center;
+    gap: 0 35px; /* The distance between the logo and menu options */
+
+}
+
+.menu__left-options {
+    display: flex;
+    gap: 0px 20px; /* The distance between the menu options */
+    font-size: 17px;
+  /* Blog is out of sync with other options thanks to storing a submenu, And thus having more height. This will fix it. */
+
+}
+
+.options-size {
+    height: 80px;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.options {
+    color: var(--menu-option);
+    font-weight: bold;
+    transition: 0.3s linear 0s;
+    cursor: pointer;
+}
+
+.options:hover {
+    color: white;
+    transition: 0.3s linear 0s;
+}
+
+.menu__blog-label {
+    position: relative;
+    height: 80px;
+    width: 50px;
+}
+
+.menu__blog-input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.menu__left-blog {
+    height: 50px;
+    /* small height, So overflow: hides the submenu. */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    margin-top: 30px;
+    /* margin-top:  to center the tag, Thanks to it NOT being thanks to absolute. */
+}
+
+.menu__left-submenu {
+    position: absolute;
+    background-color: var(--decent-red);
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+    height: 140px;
+    width: 200px;
+    margin-top: 7px;
+    /* margin-top: , For the sake of location sync with the blog. */
+    top: 85%;
+    left: 10%;
+    padding: 0px 0px 0px 0px;
+    /* display: none; */
+}
+
+.menu__blog-input:checked + .menu__left-blog {
+    overflow: visible;
+}
+
+.menu__left-submenu-blog {
+    padding-top: 25px;
+    margin-left: 30px;
+}
+
+.menu__left-submenu-option {
+    margin-left: 30px;
+}
+
+.menu__right-side {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 40px;
+    text-align: center;
+}
+
+.menu__right-label {
+    position: relative;
+    bottom: 40px; /* to center the right menu */
+    
+}
+
+.menu__right-input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.menu__right-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: 80px;
+    width: 40px;
+    overflow: hidden;
+    
+}
+
+.menu__right-meopener {
+    /* We can't use font-size:  , Thanks to the position of the parent <ul> tag, Disappearing the icon without height.  */
+    height: 27px;
+    width: 27px;
+    margin-top: 30px;
+    cursor: pointer;
+    /* Put the margin here, So the input and menu are left in the right locations */
+}
+
+.menu__right-submenu {
+    padding-top: 10px;
+    top: 80px;
+    position: absolute;
+    background-color: var(--decent-red);
+    width: 140px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu__right-input:focus + .menu__right-menu {
+    overflow: visible;
+}
+
+.menu__blog-sub-label {
+    position: relative;
+}
+
+.menu__blog-sub-input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.menu__right-menu-blog {
+    /* position: absolute; */
+    /* Don't use position absolute When you want the opening of the submenu to push other tag out of the way. */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0px;
+    height: 18px;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.3s linear 0s;
+    background-color: black;
+    color: white;
+}
+
+.opener {
+    cursor: pointer;
+}
+
+
+.menu__blog-sub-input:checked + .menu__right-menu-blog {
+    height: 90px;
+    transition: 0.3s linear 0s;
+}
+
+
+/* Okay, So i have a problem with */

@@ -1,0 +1,27 @@
+.background {
+    position: relative;
+    display: inline-block;
+}
+
+.background::before {
+    position: absolute;
+    content: "";
+    width: 5cm;
+    background-color: crimson;
+    height: 2cm;
+    z-index: -2;
+}
+
+.turn {
+    position: relative;
+    z-index: 5;
+}
+
+.turn:checked + .background {
+    color: white;
+}
+
+.turn:checked + .background::before {
+    background-color: black;
+    color: white;
+}

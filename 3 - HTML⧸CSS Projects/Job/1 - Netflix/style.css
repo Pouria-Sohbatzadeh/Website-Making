@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+}
+
+.website {
+    background-image: url(./Image/show.png);
+    background-color: rgb(53, 53, 53);
+    height: 960px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.website-and-menu {
+    margin-left: 2cm;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+}
+
+.netflix-logo-image {
+    height: 2cm;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+}
+
+.menu a:hover {
+    color: white;
+}
+
+.series {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 2cm;
+}
+
+.netflix-series-logo {
+    height: 2cm;
+    
+}
+
+.show-logo {
+    height: 7cm;
+}
+
+.show-general-rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.show-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(168, 0, 0);
+    color: none;
+    width: 1cm;
+    height: 45px;
+    justify-content: center;
+}
+
+.show-rating-2 {
+    font-size: 25px;
+}
+
+.show-explained-rating {
+    font-size: 1cm;
+    color: white;
+}

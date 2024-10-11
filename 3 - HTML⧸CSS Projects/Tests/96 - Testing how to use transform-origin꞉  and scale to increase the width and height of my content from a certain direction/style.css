@@ -1,0 +1,36 @@
+.square {
+    position: relative;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    transform-origin: 100% 50%;
+    /* This sets our picot point at */
+}
+
+
+/* To help visualize the pivot point we control with transform-origin: */
+.square::after {
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    /* Always use top and left to change the location of the visualazation, As those are the default direction that transform uses to change the location of the picot point */
+    width: 35px;
+    height: 35px;
+    content: '';
+    background-color: blue;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.square:hover {
+    width: 500px;
+    /* the pivot point's location has nor effect on how the width:  style attribute increases my content's width */
+
+    /* Now to see whether it affects the direction of scale's wdith increasing' */
+    scale: 3 1;
+    right: 175px;
+    /* We need to do some manual location changing to make it look like it stayed in placed, But it's no problem */
+}

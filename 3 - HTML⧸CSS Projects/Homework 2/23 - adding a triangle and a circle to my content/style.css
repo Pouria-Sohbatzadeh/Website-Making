@@ -1,0 +1,67 @@
+body {
+    margin: 0cm;
+    
+}
+
+div {
+    height: 1cm;
+    width: 3cm;
+    background-color: red;
+    margin-left: 40%;
+    margin-top: 20px;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    
+}
+
+div span {
+    position: relative;
+    top: 25%; 
+    color: white;  
+}
+
+div::before {
+    content: "";
+    /* Do NOT forget about content. */
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12%;
+}
+
+div::after{
+    content: '';
+    position: absolute;
+    height: 0cm;
+    width: 0cm;
+    border: 19px solid transparent;
+    border-left-color: red ;
+    left: 95%;
+}
+
+div:hover {
+    background-color: black;
+    transition: 2s;
+}
+
+span:hover {
+    color: red;
+    transition: 2s;
+}
+
+div:hover::before {
+    background-color: red;
+    border-radius: 0cm;
+    transition: 2s;
+}
+
+div:hover::after {
+    border-left-color: black;
+    transition: 2s;
+}
+

@@ -1,0 +1,7 @@
+p {
+    background-image: linear-gradient(red 10px, blue 10px );
+    border: 5px solid black;
+    height: 2cm;
+    width: 2cm;
+    background-image: repeating-linear-gradient(red 3px, blue 3px, red 3px, blue 3px);
+}

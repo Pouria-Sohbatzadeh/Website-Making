@@ -1,0 +1,38 @@
+@import "./reset.css";
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+}
+
+.menu , .menu__submenu {
+    margin-left: 20px;
+    
+}
+
+.menu__input {
+    display: none;
+}
+
+.menu__memberIV {
+    color: red;
+    cursor: pointer;
+}
+
+.menu__input:checked + .menu__memberIV {
+    color: blue;
+}
+/* You can't make changes to the trigger of the change */
+
+.menu__submenu {
+    display: none;
+    margin-top: 20px;
+}
+
+.menu__input:checked + .menu__submenu {
+    display: flex;
+    flex-direction: row;
+    gap: 0px 40px;
+}
+/* The change in this is menu_-submenu appearing again */

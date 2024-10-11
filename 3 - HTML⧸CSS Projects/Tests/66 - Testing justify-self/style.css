@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.texts {
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+    background-color: gold;
+    width: 100%;
+}
+
+.texts__text-1 {
+    justify-items: end;
+}
+

@@ -1,0 +1,34 @@
+@import "./reset.css";
+
+.menu {
+    background-color: rgb(0, 79, 128);
+    border: 4px solid black;
+    width: 150px;
+    height: 250px;
+    color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+.option {
+    width: auto;
+    height: 30px;
+    background-color: white;
+} 
+
+.menu__tv-submenu-holder {
+    background-color: gold;
+    position: relative;
+    overflow: hidden;
+    height: 36px;
+    transition: 0.3s linear 0s;
+}
+
+.menu__submenu {
+    position: absolute;
+}
+
+.menu__tv-submenu-holder:hover {
+    height: 136px;
+    transition: 0.3s linear 0s;
+}

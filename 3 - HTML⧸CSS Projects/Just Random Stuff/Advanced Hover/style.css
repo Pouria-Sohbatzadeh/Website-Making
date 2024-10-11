@@ -1,0 +1,49 @@
+body {
+    margin: 0px;
+}
+    
+.parent {
+    background-color: yellow;
+}
+
+.box {
+    height: 2cm;
+    width: 2cm;
+    background-color: green;
+    margin-bottom: 10px; 
+    transition: 4s; 
+     
+}
+
+.box1 {
+    transition-timing-function: ease;
+}
+
+.box2 {
+    transition-timing-function: ease-in;
+}
+
+.box3 {
+    transition-timing-function: ease-out;
+}
+
+.box4 {
+    transition-timing-function: ease-in-out;
+}
+
+.box5 {
+    transition-timing-function: linear;
+}
+
+.box6 {
+    transition-timing-function: steps(5);
+}
+
+.box7 {
+    transition-timing-function: step-end;
+}
+
+.parent:hover .box{
+    margin-left: 5cm;
+     
+}

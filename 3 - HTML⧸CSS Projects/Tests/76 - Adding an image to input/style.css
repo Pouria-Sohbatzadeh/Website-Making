@@ -1,0 +1,47 @@
+
+
+.footer_newsletter-email {
+    display: flex;
+    flex-direction: column;
+    gap: 17px 0px;
+    position: relative;
+    width: 349px;
+}
+
+.footer_newsletter-send-email {
+    width: 349px;
+    height: 58px;
+    padding-left: 20px;
+    
+}
+
+.footer_newsletter-send-email:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: grey;
+}
+
+input[type="email"] {
+    color: grey;
+}
+
+.footer_newsletter-send-email[type="email"], .footer_newsletter-send-email::placeholder {
+    font-size: 16px;
+}
+
+.footer_newsletter-email-send-button {
+    position: absolute;
+    background-color: green;
+    border: none;
+    height: 63px;
+    width: 80.5px;
+    left: 84%;
+    top: 100%;
+    transform: translateY(-100%);
+}
+
+.footer_newsletter-email-send-image {
+    height: 20px;
+}

@@ -1,0 +1,8 @@
+span {
+    display: inline-block;
+    /* You just need to turn it into any element other than inline */
+    padding-top: 0.5cm;
+    background-color: crimson;
+    height: 1cm;
+    
+}

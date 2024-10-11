@@ -1,0 +1,41 @@
+.red, .blue {
+    position: absolute;
+    height: 2cm;
+    width: 2cm;
+}
+
+.red {
+    background-color: red;
+    color: black;  
+    z-index: 5; 
+}
+
+.blue {
+    background-color: blue;
+    color: white;
+}
+
+.big-box {
+    height: 4cm;
+    width: 4cm;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+.box-1 {
+    height: 2cm;
+    width: 2cm;
+    background-color: gold;
+    position: absolute;
+}
+
+.box-2 {
+    height: 2cm;
+    width: 2cm;
+    background-color: green; 
+    z-index: 5;
+}

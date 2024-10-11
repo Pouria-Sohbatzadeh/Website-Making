@@ -1,0 +1,53 @@
+body {
+    height: 23cm;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Heart {
+    height: 4cm;
+    width: 4cm;
+    background-color: crimson;
+    rotate: 45deg;
+    position: relative;
+    animation: Beating 0.6s linear infinite ;
+}
+
+.Heart::before {
+    position: absolute;
+    content: '';
+    height: 4cm;
+    width: 4cm;
+    background-color: crimson;
+    right: 72px;
+    border-top-left-radius: 2cm;
+    border-bottom-left-radius: 2cm;
+}
+
+.Heart::after {
+    position: absolute;
+    content: '';
+    height: 4cm;
+    width: 4cm;
+    background-color: crimson;
+    bottom: 72px;
+    border-top-left-radius: 2cm;
+    border-top-right-radius: 2cm;
+}
+
+@keyframes Beating {
+    0% {
+        scale: 1.07 1.07;
+    }
+
+    80% {
+        scale: 1.0 1.0;
+    }
+
+    100% {
+        scale: 0.8 0.8;
+    }
+}
+

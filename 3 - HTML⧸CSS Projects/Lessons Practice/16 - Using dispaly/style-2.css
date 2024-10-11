@@ -1,0 +1,15 @@
+.box {
+    height: 2cm;
+    width: 2cm;
+    background-color: crimson;
+    display: flex;
+}
+
+.box-2 {
+    height: 2cm;
+    width: 2cm;
+    background-color: aqua;
+    display: inline-block; 
+}
+
+/* A display:Flex Element, Can't have another content be in the same line.  */

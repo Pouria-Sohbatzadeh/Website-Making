@@ -1,0 +1,29 @@
+table, tr, th {
+    display: inline-block;
+}
+
+table {
+    background-color: crimson;
+}
+
+tr {
+    width: 100%;
+}
+
+
+
+th :hover {
+    
+}
+
+.sure {
+    background-color: rgb(27, 231, 0);
+    display: inline-block;
+}
+
+.sure :hover {
+    background-color: white;
+    height: 2cm;
+    width: 2cm;
+}
+

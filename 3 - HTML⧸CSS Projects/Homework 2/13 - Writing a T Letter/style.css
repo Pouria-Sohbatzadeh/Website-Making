@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+
+div {
+    display: inline-block;
+    background-color: crimson;
+    width: 8cm;
+    display: flow-root;
+}
+
+.letter-t {
+    font-size: 1cm;
+    float: left;
+}
+
+.word {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+}

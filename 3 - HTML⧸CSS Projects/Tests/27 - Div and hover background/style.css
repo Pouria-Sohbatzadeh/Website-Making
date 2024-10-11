@@ -1,0 +1,26 @@
+.Text1 {
+    display: inline-block;
+}
+
+.Greeting2 {
+    display: inline-block;
+    background-color: red;
+    height: 2cm;
+    width: 2cm;
+}
+
+.Text1 :hover {
+    background-color: blue;
+}
+
+.Farewell {
+    background-color: crimson;
+}
+
+.noth5 :hover {
+    background-color: darkgreen;
+    font-size: 2cm;
+}
+
+
+

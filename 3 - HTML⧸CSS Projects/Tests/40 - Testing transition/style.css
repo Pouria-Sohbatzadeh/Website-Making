@@ -1,0 +1,9 @@
+span:hover {
+    color: red;
+    background-color: black;
+    
+
+    transition: color 5s ease;
+    transform: ;
+}
+

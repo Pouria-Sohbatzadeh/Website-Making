@@ -1,0 +1,65 @@
+body {
+    background-color: black;
+    margin: 0cm;
+}
+
+.card {
+    height: 6cm;
+    width: 6cm;
+    background-color: gold;
+}
+
+.card-inner {
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d ;
+    /* You forgot to apply position: relative. */
+    /* position: relative; */
+
+    /* It was because of the background color of card-inner that it looked like the rotation was cut in half. */
+    /* background-color: white; */
+}
+
+.card-front, .card-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    color: white;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-back {
+    color: blue;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    transform: rotateY(180deg);
+}
+
+.card-inner:hover .card-front {
+    transition: transform 5s;
+    transform: rotateY(360deg);
+}
+
+/* .card-inner:hover .card-back {
+    transition: transform 5s;
+    transform: rotateY(540deg);
+} */
+/* Why can't I just do one for card-back instead? */
+/* You need to rotate it more, to 540 to be specific. */
+
+/* By changing the target of :hover from card-inner to card, and spacing the card-inner it works??? */
+
+/* .card:hover .card-inner {
+    transition: transform 5s;
+    transform: rotateY(360deg);
+} */
+

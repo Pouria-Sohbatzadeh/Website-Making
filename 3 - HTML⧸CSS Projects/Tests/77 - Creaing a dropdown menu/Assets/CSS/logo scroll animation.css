@@ -1,0 +1,59 @@
+
+
+@keyframes slide {
+    /* This is the starting point, The CIDB Logo with Bumn Logo */
+    0% {
+        transform: translateX(0%);
+    }
+
+    18.5% {
+        transform: translateX(0%);
+    }
+    /* In order for the scrolling to stop for 4 seconds on the content you want , Be sure that the value inside the brace |()| of the transform: translateX() is 
+    the same for 12% of the progression. Like the above */
+
+    /* Now I just have to figure out how many percents I need to add to the progression so the scroll on the other content is smooth as well. */
+    /* The difference between the progression percent has to be 4 percent for a smooth scroll. */
+    /* The difference in the value of trnasform: translateX() between each progression point has to be 21%. */
+
+    /* This the 1st jump, Bumn Logo with Syngenta Logo */
+    21% {
+        transform: translateX(-26%);
+    }
+
+    38.5% {
+        transform: translateX(-26%);
+    }
+
+    /* This is the 2nd Jump, Syngenta Logo with Haier Logo*/
+
+    42% {
+        transform: translateX(-52%);
+    }
+
+    60% {
+        transform: translateX(-52%);
+    }
+
+    /* This is the 3rd jump. Haier Logo with CID Logo */
+
+    62.5% {
+        transform: translateX(-76%);
+    }
+
+    80.5% {
+        transform: translateX(-76%);
+    }
+
+
+    /* This the 4rth jump. The CID Logo with BUMEN. */
+
+    83% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+

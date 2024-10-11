@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: green;
+}
+
+.Heart {
+    display: inline-block;
+    height: 3cm;
+    width: 3cm;
+    background-color: red;
+    rotate: 45deg;
+    margin-left: 23cm;
+    margin-top: 5cm;
+    position: relative;
+    animation: heart 3s linear infinite ;
+    /* 1 - The problem is with the timing*/
+}
+
+.Heart::before {
+    content: '';
+    position: absolute;
+    border: 1.509cm solid red;
+    right: 2.8cm;
+    border-top-left-radius: 2cm ;
+    border-bottom-left-radius: 2cm ;
+    
+}
+
+.Heart::after {
+    content: '';
+    position: absolute;
+    border: 1.50813cm solid red;
+    rotate: 90deg;
+    bottom: 2.8cm;
+    border-top-left-radius: 2cm ;
+    border-bottom-left-radius: 2cm ;
+}
+
+@keyframes heart {
+    0%{
+         scale(1.07);
+    }
+
+    80%{
+         scale(1.0);
+    }
+    
+    100%{
+         scale(0.8);
+    }
+    /* And the way scale was written.
+    The correct method is : 
+    scale: 1.07 1.07 0
+    scale: 1.0 1.0
+    scale: 0.8 0.8*/
+}
+
+@keyframes moving {
+    0% {
+        margin-left: 0cm;
+        background-color: red;
+        border: red;
+    }
+     
+    20% {
+        margin-left: 3cm;
+        background-color: red;
+    }
+
+    50% {
+        margin-top: 1cm;
+        background-color: blue;
+    }
+
+    100% {
+        margin-bottom: 6cm;
+        background-color: black;
+    }
+}
+
+
+

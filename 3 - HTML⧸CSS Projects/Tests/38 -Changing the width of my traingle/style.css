@@ -1,0 +1,6 @@
+div {
+    height: 0.01cm;
+    width: 1cm;
+    border: 10px solid red;
+    border-left-color: gold;
+}

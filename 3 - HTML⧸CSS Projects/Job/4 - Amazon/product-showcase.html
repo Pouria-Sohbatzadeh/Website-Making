@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon: Our Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style-for-product-showcase.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <header class="header container" id="header">
+        <!-- normal container (w3-container) doesn't work, needs to be manualy done. -->
+        <a href="index.html"><div class="header__amazon-div menu-hover">
+            <img src="./assets/images/logo/logo.png" alt="Amazon Logo" class="header__amazon-logo">
+        </div></a>
+
+        <a href="index.html"><div class="header__delivery menu-hover">
+            <i class="header__delivery-icon fa-solid fa-location-dot"></i>
+            <div class="header__delivery-texts">
+                <span class="header__delivery-text header__delivery-text--grey">Deliver to</span>
+                <span class="header__delivery-text header__delivery-text--white">Iran</span>
+            </div>
+        </div></a>
+
+        <!-- Website Search. -->
+        <div class="header__search">
+
+            <!-- The <select> tag needs JS to dynamicly change its width when the <option> tag ends up being too long for the <select> tag to contain.  -->
+            <div class="header__categories-icon">
+                <select name="" id="" class="header__categories">
+                    <option value="">All</option>
+                    <option value="">Mobiles</option>
+                    <option value="">Mobile Accessories</option>
+                    <option value="">Laptops</option>
+                </select>
+            </div>
+            
+            
+        
+            <input type="text" placeholder="Search Amazon" class="header__search-input">
+    
+            <button class="header__send">
+                <i class="header__search-send-button fa-solid fa-magnifying-glass"></i>
+            </button>
+    
+        </div>
+
+        <ul class="header__language-display menu-hover">
+            <label class="header__chosenLan-label">
+                <input type="checkbox" class="header__chosenLan-input">
+                <li class="header__chosen-language">
+                    <div class="header__chosenLan-name-icon">
+                        <div class="header__chosenLan-img"><img src="./assets/images/language/american-flag.png" alt="American Flag" class="header__chosenLan-img-tag"></div>
+                        <span class="header__chosenLan-name">EN</span>
+                        <i class="header__languages-others fa-solid fa-angle-down"></i>
+                    </div>
+                    
+                    <ul class="header__language-submenu container">
+                            <li class="header__languageSub-learn">
+                                <span class="header__languageSub-learn-L">Change Language</span>
+                                <a class="header__languageSub-learn-R" href="#">Learn More</a>
+                            </li>
+
+                            <li class="header__languageSub-changer">
+                                <div class="languages">
+                                    <input type="radio" name="language">
+                                    <label for="language">English - EN</label>
+                                </div>
+                                
+                                <div class="languages">
+                                    <input type="radio" name="language">
+                                    <label for="language">español - ES</label>
+                                </div>
+                                
+                                <div class="languages">
+                                    <input type="radio" name="language">
+                                    <label for="language">العربية - AR</label>
+                                </div>
+                                
+                                <div class="languages">
+                                    <input type="radio" name="language">
+                                    <label for="language">Deutsch - DE</label>
+                                </div>
+                                
+                                <div class="languages">
+                                    <input type="radio" name="language">
+                                    <label for="language">עברית - HE</label>
+                                </div>
+                                
+                                <div class="languages">
+                                    <input type="radio" name="language">
+                                    <label for="language">한국어 - KO</label>
+                                </div>
+                                
+                                <div class="languages">
+                                    <input type="radio" name="language">
+                                    <label for="language">português - PT</label>
+                                </div>
+                                
+                                <div class="languages">
+                                    <input type="radio" name="language">
+                                    <label for="language">中文 (简体) - ZH</label>
+                                </div>
+                                
+                            </li>
+
+                            <div class="header__languageSub-seperationLine"></div>
+
+                            <li class="header__languageSub-learn">
+                                <span class="header__languageSub-learn-L">Change Language</span>
+                                <a class="header__languageSub-learn-R" href="#">Learn More</a>
+                            </li>
+
+                            <li class="header__language-currency">
+                                <span class="header__language-currency-L">$ - USD - US Dollar</span>
+                                <a class="header__language-currency-R">Change</a>
+                            </li>
+
+                            <div class="header__languageSub-seperationLine"></div>
+
+                            <li class="header__languageSub-statement">
+                                <div class="header__chosenLan-img"><img src="./assets/images/language/american-flag.png" alt="American Flag" class="header__chosenLan-img-tag"></div>
+                                <span class="header__languageSub-statementText">You're Shopping on Amazon.com</span>
+                            </li>
+
+                            <li class="header__languageSub-region"><a href="#" class="header__languageSub-region-a">Change country/region</a></li>
+                    </ul>
+                </li>
+            </label>
+        </ul>
+
+        <ul class="header__account menu-hover">
+            <label class="header__account-label">
+                <input type="checkbox" class="header__account-input">
+                <li class="header__account-invitation">
+                    <div class="header__AccountInvitation-headline">
+                        <span class="header__AccountInvitation-headlineT">Hello, Sign in</span>
+                        <span class="header__AccountInvitation-headlineB">Accounts & Lists<i class="header__AccountInvitation-expand fa-solid fa-angle-down"></i></span>
+                    </div>
+
+                    <!-- The submenu -->
+                    <ul class="header__account-box container">
+
+                        <li class="header__account-boxT">
+                            <a href="#"><button class="header__account-signup">
+                                <span>Sign In</span>
+                            </button></a>
+
+                            <div class="header__account-offers">
+                                <span>New customer?</span>
+                                <a href="#" class="header__account-offerA">Start Here</a>
+                            </div>
+                        </li>
+
+                        <div class="header__account-seperationLine">
+
+                        </div>
+
+                        <li class="header__account-boxB">
+                            <div class="header__list">
+                                <a href="#" class="header__list-you">Your List</a>
+                                <a href="#" class="list-small">Create a List</a>
+                                <a href="#" class="list-small">Find a List or Registry</a> 
+                            </div>
+                            
+                            <div class="header__user-account">
+                                <span class="header__user-account-headline">Your Account</span>
+                                
+                                <a href="#" class="user-account-options">Account</a>
+                                
+                                <a href="#" class="user-account-options">orders</a>
+                                
+                                <a href="#" class="user-account-options">Recommendations</a>
+                                
+                                <a href="#" class="user-account-options">Browsing</a>
+                                
+                                <a href="#" class="user-account-options">History</a>
+                                
+                                <a href="#" class="user-account-options">Watchlist</a>
+                                
+                                <a href="#" class="user-account-options">Video</a>
+                                
+                                <a href="#" class="user-account-options">Purchases & Rentals</a>
+                                
+                                <a href="#" class="user-account-options">Kindle Unlimited</a>
+                                
+                                <a href="#" class="user-account-options">Subscribe & Save Items</a>
+                                
+                                <a href="#" class="user-account-options">Membership & Subscription</a>
+                                
+                                <a href="#" class="user-account-options">Music Library</a>
+
+                            </div>
+                        </li>
+
+                    </ul>
+                </li>
+            </label>
+        </ul>
+
+        <a href="#" class="header__returns menu-hover">
+            <div class="header__returns-display">
+                <span class="header__returns-displayTT">Returns</span>
+             
+                <span class="header__returns-displayTB">& Orders</span>
+            </div>
+        </a>
+    
+        <a href="./shopping-cart.html"><div class="header__shopping-cart menu-hover">
+            <div class="header__shopping-indicator">
+                <span class="header__shopping-items">0</span>
+                <i class="header__cart-logo fa-solid fa-cart-shopping"></i>
+            </div>
+            <span class="header__shopping-text">Cart</span>
+        </div></a>
+    </header> 
+
+    <section class="options container">
+        <ul class="options__more-display options-hover">
+
+            <div class="options__more-label">
+                <input type="checkbox" itemid="toggle" class="options__more-input" id="toggle">
+                <!-- Submenu opener -->
+                <label for="toggle" class="options__more" for="toggle">
+                    <div class="options__more-div">
+                        <i class="options__more-logo fa-solid fa-bars"></i>
+                        <span>All</span>
+                    </div>
+                </label>
+                <!-- Submenu -->
+                <ul class="options__submenu">
+                    <li class="options__submenu-headliner container">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <span>Hello, sign in</span>
+                    </li>
+
+                    <div class="options__submenu-categories">
+
+                        <li class="options__submenu-category">
+                            <span class="options__headline">Digital Content & Devices</span>
+                            
+                            <div>
+                                
+                                <label class="options__amazonMusic-label">
+
+                                    <input type="checkbox" id="submenu" class="options__amazonMusic-input">
+
+                                    <!-- The trigger for the appearance of the steam subemnu -->
+                                    <div class="options__submenu-amazonMusic-link options__submenu-links" for="submenu">
+                                        <span>Amazon Music</span>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </div>
+
+                                    <!-- Amazon submenu -->
+                                     <label class="options__amazonMusicSub-label">
+                                        <input type="checkbox" id="amazon-submenu" class="options__amazonMusicSub-input"></input>
+
+                                        <div for="amazon-submenu" class="options__amazonMusicSub-relocator options__submenu-links">
+                                            <i class="options__amazonMusicSub-icon fa-solid fa-angle-left"></i>
+                                            <span>Main Menu</span>
+                                        </div>
+
+                                        <div class="">
+                                            <div class="options__headline">
+                                                <span>Stream Music</span>
+                                            </div>
+                
+                                            <div class="options__submenu-links">
+                                                <span>Amazon Unlimited</span>
+                                            </div>
+    
+                                            <div class="options__submenu-links">
+                                                <span>Free Streaming Music</span>
+                                            </div>
+                
+                                            <div class="options__submenu-links">
+                                                <span>Podcasts</span>
+                                            </div>
+    
+                                            <div class="options__submenu-links">
+                                                <span>Open Web Player</span>
+                                            </div>
+                
+                                            <div class="options__submenu-links">
+                                                <span>Download the app</span>
+                                            </div>
+                                        </div>
+    
+                                     </label>
+
+                                </label>
+                                
+    
+                                <div class="options__submenu-links">
+                                    <span>Kindle E -reader & Books</span>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+    
+                                <div class="options__submenu-links">
+                                    <span>Amazon Appstore</span>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <div class="options__seperating-line"></div>
+
+                        <li class="options__submenu-category">
+                            <span class="options__headline">Shop by Department</span>
+                            
+                            <div>
+                                <div class="options__submenu-links">
+                                    <span>Electronics</span>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+    
+                                <div class="options__submenu-links">
+                                    <span>Computer</span>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+    
+                                <div class="options__submenu-links">
+                                    <span>Smart Home</span>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+
+                                <div class="options__submenu-links">
+                                    <span>Arts & Crafts</span>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+    
+                                <div class="options__submenu-links">
+                                    <span>See all</span>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <div class="options__seperating-line"></div>
+
+                        <li class="options__submenu-category">
+                            <span class="options__headline">Programs & Features</span>
+
+                            <div>
+                                <div class="options__submenu-links">
+                                    <span>Gift Cards</span>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+    
+                                <div class="options__submenu-links">
+                                    <span>Shop By Intrest</span>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+    
+                                <div class="options__submenu-links">
+                                    <span>Amazon live</span>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+
+                                <div class="options__submenu-links">
+                                    <span>International Shopping</span>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+    
+                                <div class="options__submenu-links">
+                                    <span>See all</span>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+                            
+                        </li>
+
+                        <div class="options__seperating-line"></div>
+
+                        <li class="options__submenu-category">
+                            <span class="options__headline">Help & Settings</span>
+                            
+                            <div>
+                                <div class="options__submenu-links">
+                                    <span>Your Account</span>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+    
+                                <div class="options__submenu-links">
+                                    <span>Shop By Intrest</span>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+    
+                                <div class="options__submenu-links">
+                                    <div class="options__submenu-icon-carrier">
+                                        <i class="options__submenu-icon-globe fa-solid fa-globe"></i>
+                                        <span>English</span>
+                                    </div>
+                                    
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+
+                                <div class="options__submenu-links">
+                                    <div class="options__submenu-img-carrier">
+                                        <div class="footer__submenu-divImg"><img src="./assets/images/language/american-flag.png" alt="American Flag" class="footer__submenu-img"></div>
+                                        <span>United States</span>
+                                    </div>
+                                    
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+
+                                <div class="options__submenu-links">
+                                    <span>Customer Service</span>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+    
+                                <div class="options__submenu-links">
+                                    <span>Sign in</span>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        
+
+                    </div>
+                </ul>
+            </div>
+            
+        </ul>
+
+        <a href="#" class="options__deals option-pages options-hover"><span>Today's Deals</span></a>
+
+        <a href="#" class="options__customer-service option-pages options-hover"><span>Customer Service</span></a>
+
+        <a href="#" class="option-pages options-hover"><span>Registry</span></a>
+
+        <a href="#" class="options__gift-cards option-pages options-hover"><span>Gift Cards</span></a>
+
+        <a href="#" class="option-pages options-hover"><span>Sell</span></a>
+
+    </section>
+
+
+    <section class="advertisment">
+            <img src="./assets/images/product-showcase/advertisment.png" alt="Advertisment for International Shipping" class="advertisment__img">
+    </section>
+
+
+    <section class="product container">
+        <div class="product__explaination">
+            <div class="product__picture-div">
+                <img src="./assets/images/middle-of-webpage/phone.png" alt="a typical Iphone" class="product__picture">
+            </div>
+
+            <div class="product__explainations-all">
+                <div class="product__explaination-row-one">
+                    <span class="product__row-one-headline">Iphone</span>
+
+                    <div class="product__row-one-descriptions">
+                        <div class="product__row-one-utility">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ut quod saepe quia natus necessitatibus dolorem est repellendus rem possimus, fugiat optio esse labore recusandae accusamus, atque aliquam animi hic.</span>
+                        </div>
+
+                        <div class="product__row-one-user">
+                            <a href="#" class="product__row-one-storeLink"><span>Visit the acer Store</span></a>
+
+                            <div class="product__star-rating-search">
+                                <div class="product__star">
+                                    <span class="product__star-general">4.3</span>
+                                    <div>
+                                        <i class="product__general-stars fa-solid fa-star"></i>
+                                        <i class="product__general-stars fa-solid fa-star"></i>
+                                        <i class="product__general-stars fa-solid fa-star"></i>
+                                        <i class="product__general-stars fa-solid fa-star"></i>
+                                        <i class="product__general-stars fa-solid fa-star"></i>
+                                    </div>
+                                    <!-- The product's star giving ratio visual repesentation -->
+                                    <div class="product__star-ratio container">
+                                        <!-- top row, Shown with numbers. -->
+                                        <div class="product__starRatio-top-row">
+                                            <div class="product__starRatio-topRow-overall">
+                                                <div>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+    
+                                                <span class="product__starRatio-topRow-text">4.3 out of 5</span>
+                                            </div>
+    
+                                            <div class="product__starRatio-topRow-global">
+                                                <span>1,770 global ratings</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Bottom row, Shown with bars. -->
+                                        <div class="product__starRatio-bottom">
+                                            <div class="product__starRatio-bottom-starNumbers">
+    
+                                                <span>5 Star</span>
+    
+                                                <span>4 Star</span>
+    
+                                                <span>3 Star</span>
+    
+                                                <span>2 Star</span>
+    
+                                                <span>1 Star</span>
+    
+                                                <span>0 Star</span>
+    
+                                            </div>
+    
+                                            <div class="product__starRatio-bottom-bars">
+                                                <div class="product__starRatio-bottom-bar">
+                                                    <div class="product__starRatio-bar product__starRatio-bar-five"></div>
+                                                </div>
+    
+                                                <div class="product__starRatio-bottom-bar">
+                                                    <div class="product__starRatio-bar product__starRatio-bar-four"></div>
+                                                </div>
+    
+                                                <div class="product__starRatio-bottom-bar">
+                                                    <div class="product__starRatio-bar product__starRatio-bar-three"></div>
+                                                </div>
+    
+                                                <div class="product__starRatio-bottom-bar">
+                                                    <div class="product__starRatio-bar product__starRatio-bar-two"></div>
+                                                </div>
+    
+                                                <div class="product__starRatio-bottom-bar">
+                                                    <div class="product__starRatio-bar product__starRatio-bar-one"></div>
+                                                </div>
+    
+                                                <div class="product__starRatio-bottom-bar">
+                                                    <div class="product__starRatio-bar product__starRatio-bar-zero"></div>
+                                                </div>
+    
+                                            </div>
+    
+                                            <div class="product__starRatio-bottom-starPercent">
+                                                <span>65%</span>
+    
+                                                <span>17%</span>
+    
+                                                <span>7%</span>
+    
+                                                <span>3%</span>
+    
+                                                <span>8%</span>
+    
+                                                <span>2%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <a href="#" class="product__row-one-ratings">1,752 ratings</a>
+    
+                                <div class="product__rating-search-seperating"></div>
+    
+                                <a href="#" class="product__row-one-search">Search this page</a>
+                            </div>
+                            <span class="product__row-one-bought">6K+ bought in past month</span>
+    
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product__explaination-rowII">
+                    <div class="product__explaination-rowII-top">
+                        <div class="product__rowII-newPrice">
+                            <span class="product__newPrice-cutValue">-7%</span>
+                            <div class="product__newPrice-actualValue">
+                                <span class="product__newPrice-actualValue-percent">$</span>
+                                <span class="product__newPrice-actualValue-dollar">10000</span>
+                                <span class="product__newPrice-actualValue-cent">99</span>
+                            </div>
+                        </div>
+
+                        <div class="product__rowII-pricingDetails">
+                            <span class="product__rowII-oldPrice">List Price: <span class="product__rowII-oldPrice-doollars product__rowII-oldPrice-doollars--through">$321.99</span></span>
+                            
+                            <div class="product__rowII-shippingPlaces">
+                                <span>$91.31 Shipping & Import Fees Deposit to United States</span>
+                                <div class="product__rowII-shipping-label">
+                                    <input type="checkbox" class="product__rowII-shipping-input" id="shipping-detail">
+                                    <label class="product__rowII-shippingDetails" for="shipping-detail">
+                                        <span class="product__rowII-shippingDetails-trigger">Details</span>
+                                    </label>
+
+                                    <div class="product__shippingDetails-submenu container">
+                                        <div class="product__details-submenu-Ithrid">
+                                            <span>Shipping and Fee Details</span>
+                                            <label for="shipping-detail"><i class="fa-solid fa-xmark"></i></label>
+                                        </div>
+
+                                        <div class="product__submenu-seperatingLine"></div>
+
+                                        <div class="product__details-submenu-IIthrid">
+                                            <div class="product__submenu-IIthrid-rows">
+                                                <span>Price</span>
+                                                <span>$299.99</span>
+                                            </div>
+
+                                            <div class="product__submenu-IIthrid-rows">
+                                                <span>$64.32</span>
+                                                <span>$26.99</span>
+                                            </div>
+
+                                            <div class="product__submenu-IIthrid-rows">
+                                                <a href="./product-showcase.html" class="product__Details-deposite">Estimated Import Fees Deposit</a>
+                                                <span>$64.32</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="product__submenu-seperatingLine"></div>
+
+                                        <div class="product__details-submenu-IIIthrid">
+                                            <span>Total</span>
+                                            <span>$391.30</span>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <span>Available at a lower price from other sellers that may not offer free Prime shipping.</span>
+
+                            <div class="product__rowII-benefits">
+                                <div class="product__rowII-benefits-saving">
+                                    <span>Extra Savings</span>
+                                </div>
+                                <div class="product__rowII-benefits-offer">
+                                    <span class="product__benefits-offer-text">Amazon Music offer with this purchase 1 Applicable Promotion</span>
+                                    <div class="product__benefits-offer-box container">
+                                        <span>Amazon Music offer with this purchase <a href="./product-showcase.html" class="address">Shop Items</a></span>
+                                        <!-- address is a utility class name. -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product__rowII-seperating-line"></div>
+                    
+                    <div class="product__explaination-rowII-bottom">
+                        <div class="product__rowII-bottom-productType">
+                            <span>Style: <span class="product__productType product__productType--bold">R3 7320U</span></span>
+
+                            <div class="product__rowII-bottom-typePrices">
+                                <button class="product__typePrices-box">
+                                    <span class="type type--bold">R3 7320U</span>
+                                    <span class="prices">$299.99</span>
+                                </button>
+                                <button class="product__typePrices-box">
+                                    <span class="type type--bold">R7 5700U</span>
+                                    <span class="prices">$499.99</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="product__rowII-bottom-details">
+
+                           <div class="product__bottom-detail-rows">
+                                <span class="product__bottom-detail-category">Brand</span>
+                                <span class="product__bottom-detail-info">acer</span>
+                            </div>
+
+                           <div class="product__bottom-detail-rows">
+                                <span class="product__bottom-detail-category">Model Name</span>
+                                <span class="product__bottom-detail-info">Laptop</span>
+                            </div>
+
+                           <div class="product__bottom-detail-rows">
+                                <span class="product__bottom-detail-category">Screen Size</span>
+                                <span class="product__bottom-detail-info">15.6 inches</span>
+                            </div>
+
+                           <div class="product__bottom-detail-rows">
+                                <span class="product__bottom-detail-category">Color</span>
+                                <span class="product__bottom-detail-info">Silver</span>
+                            </div>
+
+                           <div class="product__bottom-detail-rows">
+                                <span class="product__bottom-detail-category">Hard Disc Drive</span>
+                                <span class="product__bottom-detail-info">128 GB</span>
+                            </div>
+
+                           <div class="product__bottom-detail-rows">
+                                <span class="product__bottom-detail-category">CPU Model</span>
+                                <span class="product__bottom-detail-info">Ryzen 3</span>
+                            </div>
+
+                           <div class="product__bottom-detail-rows">
+                                <span class="product__bottom-detail-category">Ram Memory Installed Size</span>
+                                <span class="product__bottom-detail-info">8 GB</span>
+                            </div>
+
+                            <div class="product__detail-rows-div-hold">
+                                <input type="checkbox" class="product__detail-rows-input" id="hide">
+                        
+                                <label class="product__detail-rows-trigger opener" for="hide"><span>See More</span></label>
+                        
+                                <div class="product__detail-rows-hidden">
+                                    <div class="product__hidden-detail-rows">
+                                        <span class="product__bottom-detail-category">Operating System</span>
+                                        <span class="product__bottom-detail-info">Windows 11 S</span>
+                                    </div>
+                        
+                                   <div class="product__hidden-detail-rows">
+                                        <span class="product__bottom-detail-category">Special Feature</span>
+                                        <span class="product__bottom-detail-info">Backlit Keyboard</span>
+                                    </div>
+                        
+                                   <div class="product__hidden-detail-rows">
+                                        <span class="product__bottom-detail-category">Graphics Card Description</span>
+                                        <span class="product__bottom-detail-info">Integrated</span>
+                                    </div>
+                        
+                                    <label for="hide" class="product__detail-rows-trigger product__detail-rows-trigger--icon-rotate"><span>See Less</span></label>
+                                </div>
+                            </div>
+                                                    
+                                
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__explaination-rowIII">
+                    <span class="product__explaination-rowIII-headline">About this item</span>
+
+                    <ul class="product__explaination-rowIII-qualities">
+                        <li class="qualities"><p>Purposeful Design: Travel with ease and look great doing it with the Aspire's 3 thin, light design.</p></li>
+                        <li class="qualities"><p>Ready-to-Go Performance: The Aspire 3 is ready-to-go with the latest AMD Ryzen 3 7320U Processor with Radeon Graphics—ideal for the entire family, with performance and productivity at the core.</p></li>
+                        <li class="qualities"><p>Visibly Stunning: Experience sharp details and crisp colors on the 15.6" Full HD IPS display with 16:9 aspect ratio and narrow bezels.</p></li>
+                        <li class="qualities"><p>Internal Specifications: 8GB LPDDR5 Onboard Memory; 128GB NVMe solid-state drive storage to store your files and media</p></li>
+                        <li class="qualities"><p>The HD front-facing camera uses Acer’s TNR (Temporal Noise Reduction) technology for high-quality imagery in low-light conditions. Acer PurifiedVoice technology with AI Noise Reduction filters out any extra sound for clear communication over online meetings.</p></li>
+                        <li class="qualities"><p>Wireless Wi-Fi 6 Convenience: Maintain a strong, consistent wireless signal with Wi-Fi 6 (aka 802.11ax) and 2x2 MU-MIMO technology.</p></li>
+                        <li class="qualities"><p>Improved Thermals: With a 78% increase in fan surface area, enjoy an improved thermal system and an additional 17% thermal capacity. Allowing for longer, more efficient work sessions while not plugged in.</p></li>
+                        
+                        <div class="product__explaination-rowIII-hold">
+                            <input type="checkbox" class="product__explaination-rowIII-input" id="info">
+                            <label class="product__rowIII-hiddenQualities-trigger" for="info">See More</label>
+
+                            
+                            <ul class="product__rowIII-hidden-qualities">
+                                <li class="qualities"><p>Ports For All Your Accessories: 1 - USB Type-C Port USB 3.2 Gen 2 (up to 10 Gbps) DisplayPort over USB Type-C & USB Charging, 2 - USB 3.2 Gen 1 Ports, 1 - HDMI 2.1 Port with HDCP support, 1 - Headphone/Speaker/Line-Out Jack, DC-in for AC adapter</p></li>
+                                <li class="qualities"><p>What's In the Box: Acer Aspire Laptop, AC Adapter, Power Cord</p></li>
+                                <li class="qualities"><p>Keyboard backlight not present on this model</p></li>
+                                <label class="product__rowIII-hiddenQualities-trigger product__rowIII-hiddenQualities-trigger--rotate-icon" for="info">See Less</label>
+                            </ul>
+                            
+                        </div>
+                    </ul>
+
+                    <a href="./product-showcase.html">
+                        <div class="product__rowIII-report">
+                            <i class="product__report-icon fa-regular fa-message"></i>
+                            <span class="product__rowIII-report-text address">Report an issue with this product or seller</span>
+                        </div>
+                    </a>
+
+                    <div class="product__rowIII-help">
+                        <p><span class="product__rowIII-help-headline">Note: </span>Products with electrical plugs are designed for use in the US. Outlets and voltage differ internationally and this product may require an adapter or converter for use in your destination. Please check compatibility before purchasing.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="product__order container">
+
+            <div class="product__order-buy">
+                <div class="product__order-buy-statments">
+                    <span class="product__buy-statment">Buy new:</span>
+                    <div class="product__buy-circle"></div>
+                </div>
+
+                <div class="product__order-buyPrice">
+                    
+                    <span class="product__buyPrice-icon">$</span>
+                    
+                    <span class="product__buyPrice-dollar product__buyPrice-dollar--bold">50</span>
+                    
+                    <span class="product__buyPrice-cent">99</span>
+
+                </div>
+            </div>
+
+            <div class="product__order-info">
+                
+                <span class="product__order-delivery">$91.31 Shipping & Import Fees Deposit to Iran Details Delivery: <span class="product__order-date product__order-date--bold">Wednesday, May 15</span></span>
+
+                
+                <a href=#header class="product__order-deliveryII-a"><div class="product__order-deliveryII">
+                    <i class="product__order-deliveryII-icon fa-solid fa-location-dot"></i>
+                    <span class="product__order-deliveryII-location address">Deliver to Iran</span>
+                </div></a>
+
+                
+                <div class="product__order-request">
+                    <span class="product__order-availability">In Stock</span>
+
+                
+                    <div class="product__order-request-confirm">
+                        <select class="product__order-quantity">
+                            <option value="">Quantity: 1</option>
+                            <option value="">Quantity: 2</option>
+                            <option value="">Quantity: 3</option>
+                            <option value="">Quantity: 4</option>
+                            <option value="">Quantity: 5</option>
+                            <option value="">Quantity: 6</option>
+                            <option value="">Quantity: 7</option>
+                            <option value="">Quantity: 8</option>
+                            <option value="">Quantity: 9</option>
+                            <option value="">Quantity: 10</option>
+                            <option value="">Quantity: 11</option>
+                            <option value="">Quantity: 12</option>
+                            <option value="">Quantity: 13</option>
+                            <option value="">Quantity: 14</option>
+                            <option value="">Quantity: 15</option>
+                            <option value="">Quantity: 16</option>
+                            <option value="">Quantity: 17</option>
+                            <option value="">Quantity: 18</option>
+                            <option value="">Quantity: 19</option>
+                            <option value="">Quantity: 20</option>
+                        </select>
+        
+
+                        
+                        <button class="product__order-confirm"></button>
+                        
+        
+                    </div>
+                </div>
+                
+
+                <div class="product__order-last-parts">
+                    <div class="product__order-shipping">
+                        <span>Ships from</span>
+                        <span class="amazon-com">Amazon.com</span>
+                    </div>
+    
+                    <div class="product__order-sold">
+                        <span>Sold by</span>
+                        <span class="amazon-com">Amazon.com</span>
+                    </div>
+                    
+                    <div class="product__order-returns">
+                        <span>Returns</span>
+                        <span class="product__order-returns-explain address">Eligible for Return, Refund or Replacement within 30 days of receipt</span>
+                    </div>
+    
+                    <div class="product__order-support">
+                        <input type="checkbox" id="support" class="product__order-support-input">
+                        <label for="support" class="product__order-more address">See more</label>
+                    
+                        <div class="product__order-supprt-hidden">
+                            <div class="product__support-hidden-texts">
+                                <span>Support</span>
+
+                                <a href="#" class="product__support-hidden-textsII address">Product support included</a>
+                            </div>
+                            <label for="support" class="product__order-more address">See less</label>
+                        </div>
+                    </div>
+
+    
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <a href=#header><div class="back-to-top container">
+        <span>Back to Top</span>
+    </div></a>
+
+    <footer class="footer container">
+        <!-- Tthe top 4 links -->
+        <div class="footer__top-links">
+            <div class="footer__top-links-boxes">
+                <span class="footer__headline">Get to Know Us</span>
+
+                <div class="footer__a-divs">
+                    <a href="./product-showcase.html" class="footer__a"><span>Careers</span></a>
+                    <a href="./product-showcase.html" class="footer__a"><span>Blog</span></a>
+                    <a href="./product-showcase.html" class="footer__a"><span>About Amazon</span></a>
+                    <a href="./product-showcase.html" class="footer__a"><span>Investor Relations</span></a>
+                    <a href="./product-showcase.html" class="footer__a"><span>Amazon Devices</span></a>
+                    <a href="./product-showcase.html" class="footer__a"><span>Amazon Science</span></a>
+                </div>
+            </div>
+
+            <div class="footer__top-links-boxes">
+                <span class="footer__headline">Make Money with Us</span>
+
+                <div class="footer__a-divs">
+                    <a href="./product-showcase.html" class="footer__a"><span>Sell products on Amazon</span></a>
+                    <a href="./product-showcase.html" class="footer__a"><span>Sell on Amazon Buisness</span></a>
+                    <a href="./product-showcase.html" class="footer__a"><span>Sell apps on Amazon</span></a>
+                    <a href="./product-showcase.html" class="footer__a"><span>Become an Affiliate</span></a>
+                    <a href="./product-showcase.html" class="footer__a"><span>Advertise Your Products</span></a>
+                    <a href="./product-showcase.html" class="footer__a"><span>Self-Publish with Us</span></a>
+                    <a href="./product-showcase.html" class="footer__a"><span>Host an Amazon Hubs</span></a>
+                    <a href="./product-showcase.html" class="footer__a footer__a--shorter-tablet"><span>See More, Make Money with Us</span></a>
+                </div>
+            </div>
+
+            <div class="footer__top-links-boxes">
+                <!-- Only shorten the width of footer__headline at tabel size and up. -->
+                <span class="footer__headline footer__headline--shorter-tablet">Amazon Payment Products</span>
+
+                <div class="footer__a-divs">
+                    <a href="./product-showcase.html" class="footer__a"><span>Amazon Buisness Card</span></a>
+                    <a href="./product-showcase.html" class="footer__a"><span>Shop with Points</span></a>
+                    <a href="./product-showcase.html" class="footer__a"><span>Reload Your Balance</span></a>
+                    <a href="./product-showcase.html" class="footer__a footer__a--shorter-tablet"><span>Amazon Currency Convertor</span></a>
+
+                </div>
+            </div>
+
+            <div class="footer__top-links-boxes">
+                <span class="footer__headline">Let Us Help You</span>
+
+                <div class="footer__a-divs footer__a-divs--shorter">
+                    <a href="./product-showcase.html" class="footer__a"><span>Amazon and COVID-19</span></a>
+                    <a href="./product-showcase.html" class="footer__a"><span>Your Account</span></a>
+                    <a href="./product-showcase.html" class="footer__a"><span>Your Orders</span></a>
+                    <a href="./product-showcase.html" class="footer__a footer__a--shorter-mobile"><span>Shipping Rates & Policies</span></a>
+                    <a href="./product-showcase.html" class="footer__a footer__a--shorter-mobile"><span>Returns & Replacements</span></a>
+                    <a href="./product-showcase.html" class="footer__a footer__a--shorter-tablet"><span>Manage Your Content and Devices</span></a>
+                    <a href="./product-showcase.html" class="footer__a"><span>Amazon Assistent</span></a>
+                    <a href="./product-showcase.html" class="footer__a"><span>Help</span></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- The bottom 4 links -->
+        <div class="footer__bottom-links">
+
+            <a href="#" class="footer__bottom-a"><div class="footer__amazon-div">
+                <img src="./assets/images/logo/logo.png" alt="Amazon Logo" class="footer__amazon-img">
+            </div></a>
+
+            <a href="#" class="footer__bottom-a"><div class="footer__bottom-language bottom-links-boxes">
+                <i class="footer__bottom-language-globe fa-solid fa-globe"></i>
+                <span>English</span>
+            </div></a>
+
+            <a href="#" class="footer__bottom-a"><div class="footer__currency bottom-links-boxes">
+                <span>$ USD - U.s Dolloar</span>
+            </div></a>
+
+            <a href="#" class="footer__bottom-a"><div class="footer__nation  bottom-links-boxes">
+                <div class="footer__nation-div"><img src="./assets/images/language/american-flag.png" alt="American Flag" class="footer__nation-img"></div>
+                <span>United States</span>
+            </div></a>
+
+            <br><br><br>
+        </div>
+    </footer>    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+</body>
+</html>

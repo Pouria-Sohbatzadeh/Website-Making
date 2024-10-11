@@ -1,0 +1,35 @@
+@import "./reset.css";
+
+.plain-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.plain-menu__options {
+    background-color: red;
+    color: white;
+}
+
+.plain-menu__label {
+    position: relative; 
+    background-color: green;
+}
+
+.plain-menu__input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.plain-menu__hockey {
+    background-color: blue;
+    color: greenyellow;
+    height: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.plain-menu__input:checked ~ .plain-menu__hockey {
+    height: auto;
+}

@@ -1,0 +1,19 @@
+/* ul {
+    display: inline-block;
+}
+
+span {
+    height: 10cm;
+    width: 10cm;
+}
+
+span :hover {
+    background-color: red;
+    color: white;
+    display: inline-block;
+} */
+
+li :hover {
+    background-color: red;
+    color: white;
+}

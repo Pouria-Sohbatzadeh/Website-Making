@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+}
+
+span {
+    background-color: crimson;
+    color: white;
+}
+
+span:hover {
+    background-color: blue;
+    color: rgb(255, 155, 5);
+}

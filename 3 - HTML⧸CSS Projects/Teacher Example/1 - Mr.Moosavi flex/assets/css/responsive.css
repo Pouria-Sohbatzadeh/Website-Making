@@ -1,0 +1,25 @@
+/* tablet */
+
+@media only screen and (max-width: 769px) {
+  .wrapper {
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .box {
+    width: 48%;
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 426px) {
+  .container {
+    padding: 0;
+  }
+  .wrapper {
+    width: 90%;
+  }
+  .box {
+    width: 100%;
+  }
+}

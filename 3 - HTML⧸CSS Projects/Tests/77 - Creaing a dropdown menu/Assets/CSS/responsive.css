@@ -1,0 +1,544 @@
+/* This is the tablet ver. */
+
+@media screen and (min-width: 768px) {
+    .deceleration-holder {
+        background-color: var(--header-color);
+        width: 100%;
+        height: 111.39px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    
+    .deceleration-holder__aligner {
+        width: 94%;
+        height: 85px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 13px 0px;
+    }
+    
+    .deceleration-holder__aligner-upper-text {
+        font-size: 18px;
+        font-weight: lighter;
+    }
+    
+    .deceleration-holder__aligner-upper-text--green {
+        color: var(--custom-green);
+        line-height: 27px;
+    }
+    
+    .deceleration-holder__aligner-upper-text--white {
+        color: var(--custom-white);
+    }
+    
+    .deceleration-holder__timer {
+        display: flex;
+        gap: 0px 24px;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 10px;
+        
+    }
+    
+    .timer-columns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: medium;
+    }
+    
+    .deceleration-holder__timer-big-text--green {
+        font-size: 20px;
+        color: var(--custom-green);
+        font-weight: bold;
+    }
+    
+    .deceleration-holder__timer-small-text--grey {
+        font-size: 14px;
+        color: var(--timer-gray);
+    }
+    
+    .deceleration-holder__learn {
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90px;
+        color: var(--custom-white);
+        border-bottom: 2px solid var(--custom-white);
+        transition: all 0.3s ease-in 0s;
+        height: 35px;
+        margin-left: 16px;
+        margin-top: 2px;
+        padding-bottom: 3px;
+        scale: 1;
+        transition: all 0.3s ease-in 0s;
+        /* background-color: red; */
+    }
+
+    .deceleration-holder__learn:hover {
+        font-size: 17px;
+        width: 100px;
+        scale: 1.01;
+        letter-spacing: 0.2px;
+        transition: all 0.3s ease-in 0s;
+    }     
+    
+    /* go back to FINISH THIS! */
+    .menu {
+        height: 79px;
+        width: 100%;
+        background-color: #fff;
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.13);
+        top: 0px;
+        z-index: 100;
+    
+    }
+    
+    .menu__aligner {
+        width: 93%;
+        height: 79px;
+        display: flex;
+        align-items: center;
+        /* background-color: blue; */
+    }
+    
+    .course {
+        height: 580px;
+        width: 100%;
+        background-image: url(../Image/Course/Course\ Background.png);
+        background-position: 50% 20%;
+        background-size: 192%;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 40px;
+        color: var(--custom-white);
+    }
+    
+    .course__aligner {
+        display: flex;
+        flex-direction: column;
+        height: 342.8px;
+        gap: 20px 0px;
+        width: 576px;
+        justify-content: space-between;
+        padding-top: 0px;
+    }
+    
+    .course__text {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        width: 95%;
+    }
+    
+    .course__concept {
+        text-transform: uppercase;
+        font-size: 24px;
+        color: #fff;
+    }
+    
+    .course__concept-and--bold {
+        font-size: 33.33px;
+        font-weight: 400;
+        color: #fff;
+    }
+    
+    .course__concept-and-events {
+        display: flex;
+        flex-direction: column;
+        gap: 10px 0px;
+        
+    }
+    
+    .course__events {
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: normal;
+        font-size: 21px;
+        width: 576px;
+    }
+    
+    .course__events-text {
+        line-height: 1.5;
+    }
+    
+    .course__starting {
+        font-size: 18px;
+        width: 214.53px;
+        height: 69px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--custom-white);
+        background-color: var(--custom-green-2);
+    }
+    
+    .course__starting:hover {
+        background-color: transparent;
+        border: 1px solid #fff;
+        transition: 0.2s linear 0s;
+    }
+    
+    .teaching {
+        width: 100%;
+        background-color: var(--teacher-background);
+        height: 1155.25px;
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    .teaching__aligner {
+        width: 696px;
+        gap: 35px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .teaching__teacher {
+        padding-top: 100px;
+    }
+    
+    .teaching__teacher-image {
+        width: 696px;
+    }
+    
+    .teaching__text {
+        display: flex;
+        flex-direction: column;
+        padding-left: 60px;
+    }
+    
+    .teaching__lg-text {
+        display: flex;
+        flex-direction: column;
+        color: var(--teacher-big-text-color);
+        text-transform: uppercase;
+        font-size: 43px;
+        font-weight: bolder;
+    }
+    
+    .teaching__small-text {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        color: var(--teacher-text-color);
+    }
+    
+    .teaching__small-text-above {
+        line-height: 1.5;
+        width: 516px;
+    }
+    
+    .teaching__small-text-below {
+        margin-top: 28px;
+        line-height: 1.5;
+        width: 516px;
+    }
+    
+    .teaching__learn-more {
+        color: var(--custom-green-2);
+        border-bottom: 2px solid var(--custom-green-2);
+        display: inline-block;
+        padding-bottom: 7px;
+        width: 90px;
+        transition: 0.2s linear 0s;
+    }
+    
+    .teaching__learn-more:hover {
+        letter-spacing: 0.3px;
+        width: 110px;
+        transition: 0.2s linear 0s;
+    }
+}
+
+/* This is the desktop ver. */
+@media screen and (min-width: 1912px) {
+    .deceleration-holder {
+        background-color: var(--header-color);
+        width: 100%;
+        height: 69.39px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    
+    .deceleration-holder__aligner {
+        width: 956px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 0px 0px;
+    }
+    
+    .deceleration-holder__aligner-upper-text {
+        font-size: 18px;
+        font-weight: lighter;
+        width: 1140px;
+    }
+    
+    .deceleration-holder__aligner-upper-text--green {
+        color: var(--custom-green);
+        line-height: 27px;
+    }
+    
+    .deceleration-holder__aligner-upper-text--white {
+        color: var(--custom-white);
+    }
+    
+    .deceleration-holder__timer {
+        display: flex;
+        gap: 0px 24px;
+        justify-content: center;
+        width: 450px;
+        margin-top: 5px;        
+    }
+    
+    .timer-columns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: medium;
+        scale: 0.97;
+    }
+    
+    .deceleration-holder__timer-big-text--green {
+        font-size: 20px;
+        color: var(--custom-green);
+        font-weight: bold;
+    }
+    
+    .deceleration-holder__timer-small-text--grey {
+        font-size: 14px;
+        color: var(--timer-gray);
+    }
+    
+    .deceleration-holder__learn {
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90px;
+        color: #fff;
+        border-bottom: 2px solid #fff;
+        transition: all 0.3s ease-in 0s;
+    }
+
+    .deceleration-holder__learn:hover {
+        font-size: 17px;
+        width: 100px;
+        scale: 1.01;
+        letter-spacing: 0.2px;
+        transition: all 0.3s ease-in 0s;
+    }    
+    
+    
+    /* go back to FINISH THIS! */
+    
+    .menu {
+        height: 79px;
+        width: 100%;
+        background-color: #fff;
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.13);
+        top: 0px;
+        z-index: 100;
+    
+    }
+    
+    .menu__aligner {
+        width: 93%;
+        height: 79px;
+        display: flex;
+        align-items: center;
+        /* background-color: blue; */
+    }
+    
+    
+    
+    .course {
+        height: 750px;
+        width: 100%;
+        background-color: brown;
+        background-image: url(../Image/Course/Course\ Background.png);
+        background-size: 1913px;
+        background-position: 55% 50%;
+        background-repeat: no-repeat;
+        padding-left: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        color: var(--custom-white);
+    }
+    
+    .course__aligner {
+        display: flex;
+        flex-direction: column;
+        height: 347.39px;
+        gap: 30px 0px;
+        padding-top: 10px;
+        width: 1312px;
+        /* background-color: red; */
+    }
+    
+    .course__text {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 95%;
+    }
+    
+    .course__concept {
+        text-transform: uppercase;
+        font-size: 24px;
+        /* The education and school text has ended up a little off, For the sake of my neck I'm just going to take a shortcut... */
+        /* Deactivate these and you'll see what I mean by "a little off.", It's literally 4 accursed pixels */
+        position: relative;
+        bottom: 4px;
+        
+    }
+    
+    .course__concept-and--bold {
+        font-size: 35px;
+        font-weight: 900;
+        color: #fff;
+        
+    }
+    
+    .course__concept-and-events {
+        display: flex;
+        flex-direction: column;
+        gap: 10px 0px;
+        font-size: 20px;
+    }
+    
+    .course__events {
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: normal;
+        font-size: 20px;
+        width: 636px;
+
+    }
+    
+    .course__events-text {
+        line-height: 1.5;
+    }
+    
+    .course__starting {
+        font-size: 18px;
+        width: 214.53px;
+        height: 69px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--custom-white);
+        background-color: var(--custom-green-2);
+    }
+    
+    .course__starting:hover {
+        background-color: transparent;
+        border: 1px solid #fff;
+        transition: 0.2s linear 0s;
+    }
+
+    .teaching {
+        width: 100%;
+        background-color: var(--teacher-background);
+        height: 897.75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 651.47px;
+    }
+    
+    .teaching__aligner {
+        height: 452.47px;
+        width: 100%;
+        gap: 41px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 80px;
+        align-items: center;
+    }
+    
+    .teaching__teacher {
+        padding-top: 0px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .teaching__teacher-image {
+        width: 636px;
+    }
+    
+    .teaching__text {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .teaching__lg-text {
+        display: flex;
+        flex-direction: column;
+        color: var(--teacher-big-text-color);
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    
+    .teaching__small-text {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        color: var(--teacher-text-color);
+    }
+    
+    .teaching__small-text-above {
+        line-height: 1.5;
+    }
+    
+    .teaching__small-text-below {
+        margin-top: 28px;
+        line-height: 1.5;
+    }
+    
+    .teaching__learn-more {
+        color: var(--custom-green-2);
+        border-bottom: 2px solid var(--custom-green-2);
+        display: inline-block;
+        padding-bottom: 7px;
+        width: 90px;
+    }
+    
+    .teaching__learn-more:hover {
+        letter-spacing: 0.3px;
+        width: 110px;
+        transition: 0.2s linear 0s;
+    }
+
+}
+

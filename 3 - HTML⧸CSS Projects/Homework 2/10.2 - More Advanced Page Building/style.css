@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+}
+
+.section1 {
+    background-color: rgb(26, 7, 199);
+    width: 100%;
+    height: 12cm;
+}
+
+.channels {
+    background-color: rgba(0, 0, 0, 0.829);
+    display: inline-block;
+    margin-top: 9%;
+    width: 2%;
+    text-align: center;
+    height: 3cm;
+}
+
+.facebook {
+    margin-top: 25%;
+    color: white;
+}
+
+.twitter {
+    margin-top: 45%;
+}
+
+.youtube {
+    margin-top: 55%;
+}
+
+
+.facebook a {
+    text-decoration: none;
+}
+
+.person {
+    display: inline-block;
+    margin-left: 40%;
+    position: relative;
+    bottom: -20%;
+    text-align: right;
+}
+
+.name {
+    color: #fdd55c;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2cm;
+}
+
+.Occupation {
+    font-size: 150%;
+    font-weight: bold;
+    color: white;
+}
+
+.activity {
+    margin-top: 8%;
+    display: inline-block;
+    text-align: left;
+    
+}
+
+.activity-place {
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 90%;
+}
+
+.activity-work {
+    position: relative;
+    top: 0.6cm;
+    left: 3.2cm;
+    font-size: 90%;
+    color: rgb(0, 0, 0);
+}
+
+.former-work {
+    position: relative;
+    top: 38px;
+    left: 2.6cm;
+}
+
+.white-text {
+    color: white;
+}
+
+.former-work p {
+    color: black;
+}
+
+.education {
+    position: relative;
+    top: 0.8cm;
+    left: 4cm;
+}
+
+.details {
+    display: inline-block;
+    margin-right: 41%;
+}
+
+.former-work-detailes {
+    text-decoration: none;
+    position: relative;
+    bottom: 13px;
+    right: 55px;
+    background-color: white;
+    border-radius: 38%;
+}
+
+.education-detailes {
+    text-decoration: none;
+    position: relative;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 38%;
+    
+}
+
+.my-image {
+    display: inline-block;
+}

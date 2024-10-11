@@ -1,0 +1,11 @@
+@import "./reset.css";
+@import "./font.css";
+
+.image-holder__image {
+    height: 280px;
+}
+
+.image-holder__text {
+    font-size: 70px;
+    font-family: Pokemon Classic;
+}

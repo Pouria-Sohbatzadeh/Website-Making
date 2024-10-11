@@ -1,0 +1,51 @@
+.card-1 {
+    height: 5cm;
+    width: 5cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.card-2 {
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.card-front, .card-back {
+    height: 100%;
+    width: 100%;
+    color: white;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.card-front {
+    background-color: red;
+}
+
+.card-back {
+    background-color: blue;
+    transform: rotateY(-180deg);
+}
+
+.card-2:hover .card-front {
+    transform: rotateY(-360deg);
+    transition: transform 5s;
+}
+
+.card-2:hover .card-back {
+    transform: rotateY(-540deg);
+    transition: transform 5s;
+}
+
+/* .card-2:hover {
+    transform: rotateY(-360deg);
+    transition: transform 5s;
+} */
+/* By rotating an Organazation Tag you rotate the content inside of it as well. */

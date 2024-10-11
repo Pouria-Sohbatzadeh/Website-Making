@@ -1,0 +1,35 @@
+.box {
+    position: relative;/* Needed for the visual repesentation to be added */
+    
+    height: 300px;
+    width: 300px;
+    background-color: red;
+    transform-origin: 30% 70%;/* The location I've set for my content's pivot point. */
+
+    transition: .8s linear 0s;
+   
+}
+
+.box:hover {
+    rotate: 45deg; /* An example of the changes that react to the pivot point's change of location */
+    transition: .8s linear 0s; /* To better see the effects of transform-origin:  has on the pivot point and the content's rotation field in this example. */
+}
+
+
+/* The visual repesentation of the pivot point's location. */
+.box::after {
+    content: "";
+    position: absolute;
+    border-radius: 100%;/* For no other reason than to make the visual repesentation look good. */
+    background-color: black;
+
+    height: 20px;
+    width: 20px;
+    /* The value of height:  and width:  must be equal, And try to make the visual repesentation as small as possible though for the best accuracy. */
+
+
+    /* Now in order to match the values of transform-origin: */
+    left: 30%; /* You must put the 1st value of transform-origin: in the left:  attribute */ 
+    top: 70%;/* You must put the 2nd value of transform-origin: in the top:  attribute */ 
+    /* Now we can properly see the pivot point that our content change location, rotate, scale and skew in regards to. */
+}

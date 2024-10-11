@@ -1,0 +1,25 @@
+label {
+    position: absolute;
+}
+
+input {
+    height: 0cm;
+    width: 0cm;
+    position: relative;
+    opacity: 0;
+}
+
+img {
+    height: 3cm;
+    width: 2cm;
+    position: absolute;
+    left: 4px; 
+    cursor: pointer;   
+}
+
+input[type="checkbox"]:checked + img {
+    scale: 2 2;
+    top: 1.5cm;
+    left: 5cm;
+}
+

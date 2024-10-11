@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.patreon__partners {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    background-color: gold;
+    width: 337.5px;
+    /* width: 100%; */
+    white-space: nowrap;
+}
+
+.patreon__partners-slider {
+    display: inline-block;
+    align-items: center;
+    animation: slide 5s linear 0s infinite;
+}
+
+
+.logos {
+    height: 35px;
+    margin-left: 30px;
+}
+
+.patreon__partners-logos-haier {
+    height: 25px;
+}   

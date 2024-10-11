@@ -1,0 +1,34 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+/* helper styles */
+.container {
+    max-width: 1200px;/* Our content will have width up until the when it needs to be bigger than 1200px to fill our webpage. */
+    padding: 40px 40px 40px 40px;/* Allows us to align the content inside the box, like my own aligner, Just without the width. */
+    margin: 0 auto;/* Centeres the content horizantaly in the webpage */
+
+}
+/* main styles */
+.header {
+    background-color: gold;
+}
+.main {
+    background-color: tomato;
+}
+.footer {
+    background-color: dodgerblue;
+}
+.header__title, .main__title, .footer__title {
+    font-weight: bold;
+    padding: 1rem 0;
+}
+.header__text,
+.main__text,
+.footer__text {
+    line-height: 1.6;
+}

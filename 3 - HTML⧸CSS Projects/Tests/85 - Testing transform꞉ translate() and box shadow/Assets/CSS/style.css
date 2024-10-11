@@ -1,0 +1,22 @@
+@import "./variable\ \(color\).css";
+
+.box {
+    margin-left: 240px;
+    /* This is to just get the box some space away from the walls of the webpage. */
+    
+    height: 200px;
+    width: 200px;
+    background-color: var(--decent-red);
+    border: 5px solid black;
+    /* The above is just the shape of the box. */
+
+    /* Now for the tests */
+    transform: translate(50px ,100px);
+    /* Yep just as I figured, The 1st value changes the location from left to right (positive value) and right to left (negative value). the 2nd changes the location top to
+    bottom (positive value) and bottom to top (negative value). With Z being as useless as normal. */
+
+    box-shadow: 30px 30px 6px 8px var(--beautiful-blue);
+    /* And likewise for the box-shadow:  style attribute, 1st value left to right, Second top to bottom, 3rd the blur of the shadow, And the 4th its size, Though more 
+    accurate to say the shadow is bigger than the content by the written amount. */
+    /* 8px resulted in the shadow being 8 pixels bigger than the content in both height and width. */
+}

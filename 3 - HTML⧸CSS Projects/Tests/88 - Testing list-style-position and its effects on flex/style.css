@@ -1,0 +1,36 @@
+@import "./reset.css";
+/* Both the list and the div tag are precisely in the center, All thanks to reset, Now see what happens when you cut off the connection to "reset.css", By either
+deleting it or commenting (ctrl + /) it. And then reactivate it. */
+
+
+.menu-holder {
+    background-color: gold;
+    color: blue;
+    margin: 40px 0px 0px 0px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-holder__names {
+    list-style-position: inside;
+    margin-left: 20px;
+}
+
+.members {
+    list-style-type: circle;
+}
+
+.menu-holder__submenu {
+    margin-left: 20px;
+}
+/* The submenu however is out of synce thanks to reset, Use margin/padding-left:  on the submenu and the menu itself to fix this. Just make sure the values are equal  */
+/* If you want the menu itself, Just make sure its margin-left:  value is greater */
+
+.menu-holder__box {
+    width: 36.47px;
+    height: 40px;
+    background-color: red;
+}
+
