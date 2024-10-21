@@ -1,3 +1,0 @@
-
-Download-all-starter-code
-https://github.com/jonasschmedtmann/complete-javascript-course
