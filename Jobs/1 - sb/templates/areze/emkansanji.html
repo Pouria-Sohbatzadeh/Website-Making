@@ -1,0 +1,96 @@
+{% extends "parent/base.html" %}
+{% load static %}
+{% block title %}فرم ارسال عارضه یابی{% endblock title %}
+
+{% block content %}
+<div id="main-wrapper" class="main-wrapper">
+
+    <div class="edu-breadcrumb-area">
+        <div class="container">
+            <div class="breadcrumb-inner">
+                <div class="page-title">
+                    <h1 class="title">درخواست عارضه یابی سازمانی</h1>
+
+                </div>
+                <ul class="edu-breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">خانه</a></li>
+                    <li class="separator"><i class="icon-angle-left"></i></li>
+                    <li class="breadcrumb-item active" aria-current="page">درخواست عارضه یابی سازمانی</li>
+
+                </ul>
+            </div>
+        </div>
+        <ul class="shape-group">
+            <li class="shape-1">
+                <span></span>
+            </li>
+            <li class="shape-2 scene"><img data-depth="2" src="{% static 'images/about/shape-13.png' %}" alt="shape"></li>
+            <li class="shape-3 scene"><img data-depth="-2" src="{% static 'images/about/shape-15.png' %}" alt="shape"></li>
+            <li class="shape-4">
+                <span></span>
+            </li>
+            <li class="shape-5 scene"><img data-depth="2" src="{% static 'images/about/shape-07.png' %}" alt="shape"></li>
+
+        </ul>
+    </div>
+
+    <!--=====================================-->
+    <!--=	   تماس با من Area Start	   =-->
+    <!--=====================================-->
+    <section class="contact-us-area">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-xl-4 col-lg-6">
+                    <div class="contact-us-info">
+                        <h3 class="heading-title">درخواست عارضه یابی سازمانی</h3>
+                        <p>بسیاری از سازمان ها از مشکلاتی ساختاری و فرایندی رنج می برند. بسیاری از این شرکت ها و سازمان ها حتی نمی دانند که در چه بخش هایی دچار مشکلات و در اصطلاح عارضه هستند.
+
+                            ایزوسیستم به شرکت هایی که به دنبال بهره مندی از مزایای صدور گواهینامه های ایزو بوده و نیازمند راهنمایی در این حوزه هستند پیشنهاد می دهد که یک جلسه عارضه یابی در شرکت خود صورت دهند.
+                            
+                            روال عارضه یابی به این ترتیب است که به مدت یک روز یک مشاور سیستم های کیفی به محل کارفرما اعزام شده و اقدام به بررسی های لازم از دیدگاه سیستمی و استانداردهای مدیریتی می نماید. در انتها گزارشی از مشکلات سیستماتیک و پیشنهادات ایزوسیستم ارائه می گردد.</p>
+                    </div>
+                </div>
+                <div class="offset-xl-2 col-lg-6">
+                    <div class="contact-form form-style-2">
+                        <div class="section-title">
+                            <h4 class="title">فرم درخواست عارضه یابی سازمانی</h4>
+                            <p>برای ارسال درخواست عارضه یابی سازمیانی فرم زیر را تکمیل کنید.</p>
+                        </div>
+                        <form method="post">
+                            <div class="row row--10">
+                                <div class="form-group col-12">
+                                    {% csrf_token %}
+                                    {{ form.as_p }}
+                                    {% if form.errors %}
+                                        <div class="errors">
+                                            <p>فرم به درستی تکمیل نشده است:</p>
+                                            <ul>
+                                                {% for field in form %}
+                                                    {% for error in field.errors %}
+                                                        <li>{{ error }}</li>
+                                                    {% endfor %}
+                                                {% endfor %}
+                                            </ul>
+                                        </div>
+                                    {% endif %}
+                                </div>    
+                                <div class="form-group col-12">
+                                    <button class="rn-btn edu-btn btn-medium submit-btn" type="submit" id="btn-areze">درخواست</button>
+                                </div>  
+                            </div>      
+                            <br/><br/><br/>
+                        </form>
+                        
+                        <ul class="shape-group">
+                            <li class="shape-1 scene"><img data-depth="1" src="{% static 'images/about/shape-13.png' %}" alt="Shape"></li>
+                            <li class="shape-2 scene"><img data-depth="-1" src="{% static 'images/counterup/shape-02.png' %}" alt="Shape"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+{% endblock content %}

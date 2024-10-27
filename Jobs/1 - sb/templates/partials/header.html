@@ -1,0 +1,220 @@
+{% load static %}
+
+		<!--=====================================-->
+		<!--=		Header Area Start	   	=-->
+		<!--=====================================-->
+		<header class="edu-header header-style-7 no-topbar">
+			<div id="edu-sticky-placeholder"></div>
+			<div class="header-mainmenu">
+				<div class="container-fluid">
+					<div class="header-navbar">
+						<div class="header-brand">
+							<div class="logo">
+								<a href="/">
+									<!-- <img class="logo-light" src="{% static "images/logo/logo-dark.png" %}" alt="Corporate Logo"> -->
+									<!-- <img class="logo-dark" src="{% static "images/logo/logo-white.png" %}" alt="Corporate Logo"> -->
+								</a>
+							</div>
+						</div>
+						<div class="header-mainnav">
+							<nav class="mainmenu-nav">
+								<ul class="mainmenu">
+									<li class=""><a href="/">خانه</a>
+									</li>
+									<li class=""><a href="{% url 'Courses' %}">دوره‌ها</a>
+									</li>
+									<li class="has-droupdown">
+										<a>خدمات</a> 
+											<ul class="submenu">
+												<li class=""><a href="{% url 'areze' %}">عارضه یابی</a>
+												</li>
+												<li class=""><a href="{% url 'emkan' %}">امکان‌سنجی</a>
+												</li>
+												<li class=""><a href="{% url 'tejari' %}">تجاری سازی</a>
+												</li>
+												<li class=""><a href="{% url 'arzesh' %}">ارزش گذاری</a>
+												</li>
+											</ul>
+									</li>
+										<li class="has-droupdown">
+											{% if user.is_authenticated %}
+												<a href="{% url 'profile' %}">{{ user.username }} {% if user.profile.avatar.url %} <img src="{{ user.profile.avatar.url }}"  alt="profile" width="25" height="30"> {% else %}  {% endif %}</a> 
+												<ul class="submenu">
+													{% if user.is_authenticated %}
+													<li class=""><a href="{% url 'signout' %}">خروج</a>
+													</li>
+													{% else %}
+													<li class=""><a href="{% url 'signup' %}">ثبت نام</a>
+													</li>
+													<li class=""><a href="{% url 'signin' %}">ورود</a>
+													</li>
+													{% endif %}
+												</ul>
+											{% else %}
+												<a href="{% url 'signin' %}">پروفایل</a> 
+												<ul class="submenu">
+													{% if user.is_authenticated %}
+													<li class=""><a href="{% url 'signout' %}">خروج</a>
+													</li>
+													{% else %}
+													<li class=""><a href="{% url 'signup' %}">ثبت نام</a>
+													</li>
+													<li class=""><a href="{% url 'signin' %}">ورود</a>
+													</li>
+													{% endif %}
+												</ul>
+											{% endif %}
+										</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="header-right">
+							<ul class="header-action">
+								<li class="search-bar">
+									<div class="input-group">
+										<form method="post" action="{% url 'course_search' %}" class="search-form" novalidate>
+											{% csrf_token %}
+											<span class="input-group-text" id="search">
+											{{ csf.text }}
+											
+											<button class="submit-button" type="submit"><i class="icon-2"></i></button>
+					
+											</span>
+											
+										</form>
+									</div>
+								</li>
+								<li class="icon search-icon">
+									<a href="javascript:void(0)" class="search-trigger">
+										<i class="icon-2"></i>
+									</a>
+								</li>
+								<li class="header-btn">
+									<a href="{% url 'areze' %}" class="edu-btn btn-medium btn-curved">درخواست تدوین طرح توجیهی<i class="icon-west"></i></a>
+								</li>
+								<li class="mobile-menu-bar d-block d-xl-none">
+									<button class="hamberger-button">
+										<i class="icon-54"></i>
+									</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="popup-mobile-menu">
+				<div class="inner">
+					<div class="header-top">
+						<div class="logo">
+							<a href="{% url 'home' %}">
+								<!-- <img class="logo-light" src="{% static 'images/logo/logo-dark.png' %}" alt="Corporate Logo"> -->
+								<!-- <img class="logo-dark" src="{% static 'images/logo/logo-white.png' %}" alt="Corporate Logo"> -->
+							</a>
+						</div>
+						<div class="close-menu">
+							<button class="close-button">
+								<i class="icon-73"></i>
+							</button>
+						</div>
+					</div>
+					<ul class="mainmenu">
+						<li><a href="{% url 'home' %}">خانه</a>
+						</li>
+						<li class=""><a href="{% url 'Courses' %}">دوره‌ها</a>
+							
+						</li>
+
+						<li class="has-droupdown">
+							<a>خدمات</a> 
+								<ul class="submenu">
+									<li class=""><a href="{% url 'areze' %}">عارضه یابی</a>
+									</li>
+									<li class=""><a href="{% url 'emkan' %}">امکان‌سنجی</a>
+									</li>
+									<li class=""><a href="{% url 'tejari' %}">تجاری سازی</a>
+									</li>
+									<li class=""><a href="{% url 'arzesh' %}">ارزش گذاری</a>
+									</li>
+								</ul>
+						</li>
+						
+						<li class="has-droupdown">
+							{% if user.is_authenticated %}
+								<a href="{% url 'profile' %}">{{ user.username }} {% if user.profile.avatar.url %} <img src="{{ user.profile.avatar.url }}"  alt="profile" width="25" height="30"> {% else %}  {% endif %}</a> 
+								<ul class="submenu">
+									{% if user.is_authenticated %}
+									<li class=""><a href="{% url 'signout' %}">خروج</a>
+									</li>
+									{% else %}
+									<li class=""><a href="{% url 'signup' %}">ثبت نام</a>
+									</li>
+									<li class=""><a href="{% url 'signin' %}">ورود</a>
+									</li>
+									{% endif %}
+								</ul>
+							{% else %}
+								<a href="{% url 'signin' %}">پروفایل</a> 
+								<ul class="submenu">
+									{% if user.is_authenticated %}
+									<li class=""><a href="{% url 'signout' %}">خروج</a>
+									</li>
+									{% else %}
+									<li class=""><a href="{% url 'signup' %}">ثبت نام</a>
+									</li>
+									<li class=""><a href="{% url 'signin' %}">ورود</a>
+									</li>
+									{% endif %}
+								</ul>
+							{% endif %}
+						</li>
+						{% comment %} <li class="has-droupdown"><a href="#">تماس</a>
+							<ul class="submenu">
+								<li><a href="contact-us.html">تماس با ما</a></li>
+								<li><a href="contact-me.html">تماس با من</a></li>
+							</ul>
+						</li> {% endcomment %}
+					</ul>
+				</div>
+			</div>
+			<!-- Start Search Popup  -->
+			<div class="edu-search-popup">
+				<div class="content-wrap">
+					<div class="site-logo">
+						<!-- <img class="logo-light" src="{% static 'images/logo/logo-dark.png' %}" alt="Corporate Logo"> -->
+						<!-- <img class="logo-dark" src="{% static 'images/logo/logo-white.png' %}" alt="Corporate Logo"> -->
+					</div>
+					<div class="close-button">
+						<button class="close-trigger"><i class="icon-73"></i></button>
+					</div>
+					<div class="inner">
+						<form method="post" action="{% url 'course_search' %}" novalidate>
+							{% csrf_token %}
+							<span class="input-group-text" id="search">
+							{{ csf.text }}
+							
+								<button type="submit" class="search-btn"><i class="icon-2" style="font-size: 18px; margin-right: 5px;"></i></button>
+
+							</span>
+							
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- End Search Popup  -->
+		</header>
+		<!--=====================================-->
+		<!--=	   Hero Banner Area Start	  =-->
+		<!--=====================================-->
+		<!-- {% if messages %}
+        <div class="messages">
+            {% for message in messages %}
+			<div class="alert alert-success",id="messages">
+				{{ message }}
+			  </div>
+                    
+                
+            {% endfor %}
+        </div>
+    	{% endif %} -->
+		
+	

@@ -1,0 +1,144 @@
+{% extends "parent/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<body class="sticky-header">
+	<!--[if lte IE 9]>
+	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+	<![endif]-->
+
+	<div id="edublink-preloader">
+		<div class="loading-spinner">
+			<div class="preloader-spin-1"></div>
+			<div class="preloader-spin-2"></div>
+		</div>
+		<div class="preloader-close-btn-wraper">
+			<span class="btn btn-primary preloader-close-btn">لغو پیش بارگذاری</span>
+		</div>
+	</div>
+
+	<div class="edu-breadcrumb-area">
+		<div class="container">
+			<div class="breadcrumb-inner">
+				<div class="page-title">
+					<h1 class="title">{{ user.username }}پروفایل</h1>
+				</div>
+				<ul class="edu-breadcrumb">
+					<li class="breadcrumb-item"><a href="{% url 'home' %}">خانه</a></li>
+					<li class="separator"><i class="icon-angle-left"></i></li>
+					<li class="breadcrumb-item active" aria-current="page">پروفایل کاربر</li>
+				</ul>
+			</div>
+		</div>
+		<ul class="shape-group">
+			<li class="shape-1">
+				<span></span>
+			</li>
+			<li class="shape-2 scene"><img data-depth="2" src="{% static 'images/about/shape-13.png' %}" alt="shape"></li>
+			<li class="shape-3 scene"><img data-depth="-2" src="{% static 'images/about/shape-15.png' %}" alt="shape"></li>
+			<li class="shape-4">
+				<span></span>
+			</li>
+			<li class="shape-5 scene"><img data-depth="2" src="{% static 'images/about/shape-07.png' %}" alt="shape"></li>
+		</ul>
+	</div>
+
+	<section class="cart-page-area edu-section-gap">
+		<div class="container">
+			<h2>دوره ها</h2>
+			<div class="table-responsive">
+				<table class="table cart-table">
+					<thead>
+						<tr>
+							<th scope="col">نام دوره</th>
+							<th scope="col">توضیحات</th>
+							<th scope="col">معلم</th>
+							<th scope="col">قیمت</th>
+							<th scope="col">حذف</th>
+						</tr>
+					</thead>
+					<tbody>
+						{% if courses %}
+							{% for course in courses %}
+							<tr>
+								<td><a href="{% url 'CourseDetails' course.id %}">{{ course.title }}</a></td>
+								<td>{{ course.description }}</td>
+								<td>{{ course.teacher.name }}</td>
+								<td>{{ course.price }} تومان</td>
+								<td><a href="{% url 'delete_course_from_profile' course.id %}" class="btn btn-danger">حذف</td>
+									
+							</tr>
+
+  
+							{% endfor %}
+						{% else %}
+							<tr>
+								<td colspan="4">دوره ای اضافه نشده است</td>
+							</tr>
+						{% endif %}
+					</tbody>
+					<table class="table cart-table">
+						<thead>
+							<tr>
+								<th scope="col">نام </th>
+								<th scope="col">کامنت</th>
+								{% comment %} <th scope="col">مربوط به</th> {% endcomment %}
+								{% comment %} <th scope="col">قیمت</th> {% endcomment %}
+								<th scope="col">حذف</th>
+							</tr>
+						</thead>
+						<tbody>
+							{% if comments %}
+							{% for com in comments %}
+							{% comment %} {% for course in courses %} {% endcomment %}
+								<tr>
+									{% comment %} <td><a href="{% url 'CourseDetails' course.id %}">{{ course.title }}</a></td> {% endcomment %}
+									<td>{{ com.user }}</td>
+									<td>{{ com.content }}</td>
+									{% comment %} <td><a href="{% url 'CourseDetails' course.id %}">{{ course.title }}</a></td> {% endcomment %}
+									{% comment %} <td>{{ course.price }} تومان</td> {% endcomment %}
+									<td><a href="{% url 'delete_comment_from_profile' com.id %}" class="btn btn-danger">حذف</td>
+								</tr>
+		
+								{% endfor %}	
+								{% comment %} {% endfor %} {% endcomment %}
+							{% else %}
+								<tr>
+									<td colspan="4">کامنتی اضافه نشده</td>
+								</tr>
+							{% endif %}
+						</tbody>
+					</table>
+				</table>
+			</div>
+		</div>
+	</section>
+
+    <h1>Upload Your Avatar</h1>
+
+    <form method="post" enctype="multipart/form-data">
+		<div class="profile">
+			<div class="form-group col-12">
+				{% csrf_token %}
+				<p>{{ form }}</p>
+			</div>
+			<div class="form-group col-12">
+				<button class="rn-btn edu-btn btn-medium submit-btn" type="submit" id="btn-areze">ثبت</button>
+			</div> 
+		</div>		
+    </form>	
+
+	<form method="post" action="{% url 'delete_acc' %}">
+        {% csrf_token %}
+        <button type="submit" name="button1" value="clicked">Button 1</button>
+        
+    </form>
+
+	<div class="rn-progress-parent">
+		<svg class="rn-back-circle svg-inner" width="100%" height="100%" viewBox="-1 -1 102 102">
+			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+		</svg>
+	</div>
+
+{% endblock content %}

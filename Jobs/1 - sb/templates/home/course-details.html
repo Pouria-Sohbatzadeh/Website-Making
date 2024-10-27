@@ -1,0 +1,306 @@
+{% extends "parent/base.html" %}
+{% load static %}
+{% load humanize %}
+{% load custom_filters %}
+{% block title %}معرفی دوره بیزنس لب{% endblock title %}
+
+{% block content %}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<div id="main-wrapper" class="main-wrapper">
+    <div class="edu-breadcrumb-area breadcrumb-style-6">
+        <div class="container">
+            <div class="breadcrumb-inner">
+                <ul class="edu-breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">خانه</a></li>
+                    <li class="separator"><i class="icon-angle-left"></i></li>
+                    <li class="breadcrumb-item"><a href="course-one.html">دوره‌ها</a></li>
+                    <li class="separator"><i class="icon-angle-left"></i></li>
+                    <li class="breadcrumb-item active" aria-current="page">جزئیات دوره</li>
+                </ul>
+                <div class="page-title">
+                    <h2 class="title">{{ course.title }}</h2>
+                </div>
+                <ul class="course-meta">
+                    <li><i class="icon-58"></i>توسط {{ course.teacher }}</li>
+                </ul>
+            </div>
+        </div>
+        <ul class="shape-group">
+            <li class="shape-1">
+                <span></span>
+            </li>
+            <li class="shape-2 scene"><img data-depth="2" src="{% static 'images/others/shape-79.png'%}" alt="shape"></li>
+            <li class="shape-3 scene"><img data-depth="-2" src="{% static 'images/about/shape-15.png'%}" alt="shape"></li>
+            <li class="shape-4">
+                <span></span>
+            </li>
+            <li class="shape-5 scene"><img data-depth="2" src="{% static 'images/about/shape-07.png'%}" alt="shape"></li>
+        </ul>
+    </div>
+
+    
+    <!--=====================================-->
+    <!--=	 Courses Details Area Start	=-->
+    <!--=====================================-->
+    <section class="edu-section-gap course-details-area">
+        <div class="container">
+            <div class="row row--30">
+                <div class="col-lg-8">
+                    <div class="course-details-content course course-details-4">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" href="#overview-tab-id">نمای کلی</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" href="#carriculam-tab-id">برنامه درسی</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" href="#instructor-tab-id">مربی</a>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" href="#review-tab-id">نظرات</a>
+                            </li>
+                        </ul>
+
+                        <div class="course-content-wrapper">
+                            <div class="tab-pane" id="overview-tab-id">
+                                <div class="course-tab-content">
+                                    <div class="course-overview">
+                                        <h3 class="heading-title">توضیحات دوره</h3>
+                                        <p>{{ course.description }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="carriculam-tab-id">
+                                <div class="course-tab-content">
+                                    <div class="course-curriculam">
+                                        <h3 class="heading-title">برنامه درسی دوره</h3>
+                                        <p>{{ coursesyllabus.description }}</p>
+                                        <div class="course-lesson">
+                                            <h5 class="title">{{ coursesyllabus.time_period }}</h5>
+                                            <ul>
+                                                {% for syllabus_name in syllabus_names %}
+                                                <li>{{ syllabus_name.title }}</li>
+                                            {% endfor %}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane">
+                                <div class="course-tab-content" id="instructor-tab-id">
+                                    <div class="course-instructor">
+                                        <div class="thumbnail">
+                                            <img src="{{course.teacher.image.url}}" alt="Author Images">
+                                        </div>
+                                        <div class="author-content">
+                                            <h6 class="title">{{ course.teacher }}</h6>
+                                            <span class="subtitle">{{ course.teacher.role }}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="course-sidebar-3 sidebar-top-position">
+                        <div class="edu-course-widget widget-course-summery">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <img src="{{ course.image_course.url }}" alt="Courses">
+                                    <!-- <a href="https://www.youtube.com/watch?v=PICj5tr9hcc" class="play-btn video-popup-activation"><i class="icon-18"></i></a> -->
+                                </div>
+                                <div class="content">
+                                    <h4 class="widget-title">دوره شامل:</h4>
+                                    <ul class="course-item">
+                                        <li>
+                                            <span class="label"><i class="icon-60"></i>قیمت:</span>
+                                            <span class="value price">{{ course.price | intcomma }} </span>
+                                        </li>
+                                        <li>
+                                            <span class="label"><i class="icon-62"></i>مربی:</span>
+                                            <span class="value">{{ course.teacher }}</span>
+                                        </li>
+                                        <li>
+                                            <span class="label"><i class="icon--61"></i>مدت:</span>
+                                            <span class="value">{{ course.coursesyllabus.time_period }}</span>
+                                        </li>
+                                        <li>
+                                            <span class="label"><i class="icon-63"></i>ثبت‌نام:</span>
+                                            <span class="value">{{ course.course_capacity }} دانشجو</span>
+                                        </li>
+                                        <li>
+                                            <span class="label"><i class="icon-64"></i>گواهینامه:</span>
+                                            {% if course.certificate == "Y" %}
+                                                <span class="value">بله</span>
+                                            {% endif %}
+                                            {% if course.certificate == "N" %}
+                                                <span class="value">خیر</span>
+                                            {% endif %}        
+                                        </li>
+                                    </ul>
+                                    <div class="read-more-btn">
+                                        {% if user.is_authenticated %}
+                                        <form id="add-course-form" method="POST" action="{% url 'add_to_profile' %}">
+                                            {% csrf_token %}
+                                            <input type="hidden" name="course_id" value="{{ course.id }}">
+                                            <button type="submit" class="edu-btn">
+                                                <i class="icon-west"></i>اضافه کردن به پروفایل
+                                            </button>
+                                        </form>
+                                    {% else %}
+                                        <a href="{% url 'signin' %}" class="edu-btn">شما نیاز به ورود دارید<i class="icon-west"></i></a>
+                                    {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <style>
+                    .star-rating {
+                        direction: rtl;
+                        font-size: 2rem;
+                        display: inline-block;
+                    }
+                    .star-rating input {
+                        display: none;
+                    }
+                    .star-rating label {
+                        color: #ddd;
+                        cursor: pointer;
+                        transition: color 0.2s ease-in-out;
+                    }
+                    .star-rating input:checked ~ label,
+                    .star-rating label:hover,
+                    .star-rating label:hover ~ label {
+                        color: #f5b301;
+                    }
+                    .star-rating label:hover ~ label {
+                        color: #ddd;
+                    }
+                    .icon-23 {
+                        color: #f5b301;
+                    }
+                </style>
+                <h1>{{ course.title }}</h1>
+                <p>{{ course.description }}</p>
+            
+                <h3 class="heading-title">امتیاز دوره</h3>
+                <p>{{ average_rating|floatformat:1 }} میانگین امتیاز بر اساس رتبه {{ comments|length }}</p>
+                <div class="row g-0 align-items-center">
+                    <div class="col-sm-4">
+                        <div class="rating-box">
+                            <div class="rating-number">{{ average_rating|floatformat:1 }}</div>
+                            <div class="rating">
+                                {% for i in average_rating|default:0|range_filter %}
+                                    <i class="icon-23"></i>
+                                {% endfor %}
+                            </div>
+                            <span>({{ comments|length }} نظر)</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="review-wrapper">
+                            {% for rating, percentage in rating_percentages.items %}
+                                <div class="single-progress-bar">
+                                    <div class="rating-text">
+                                        {{ rating }} <i class="icon-23"></i>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: {{ percentage }}%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span class="rating-value">{{ percentage|floatformat:0 }}%</span>
+                                </div>
+                            {% endfor %}
+                           
+
+                        </div>
+                    </div>
+                </div>
+                <div class="comment-form-area">
+                    <h3 class="heading-title">یک نظر بنویسید</h3>
+                        {% if user.is_authenticated %}
+                            <form method="post" class="comment-form">
+                                {% csrf_token %}
+                                <div class="rating-icon">
+                                    <h6 class="title">امتیاز در اینجا</h6>
+                                    <div class="rating">
+                                        <div class="star-rating">
+                                            {% for i in "54321" %}
+                                                <input type="radio" id="star{{ i }}" name="rating" value="{{ i }}">
+                                                <label for="star{{ i }}"><i class="fas fa-star"></i></label>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row g-5">
+                                    <div class="form-group col-lg-6">
+                                        {{ form.content.label_tag }}<br>
+                                        {{ form.content }}
+                                    </div>
+                                </div>
+                                <div class="form-group col-12">
+                                    <button type="submit" class="edu-btn submit-btn">ثبت نظر <i class="icon-west"></i></button>
+                                </div>
+                            </form>
+
+                        {% else %}
+                            <a href="{% url 'signin' %}" class="edu-btn">شما نیاز به ورود دارید<i class="icon-west"></i></a>
+                        {% endif %}
+                </div>   
+                <div class="comment-area">
+                    <h3 class="heading-title">نظرات</h3>
+                    <div class="comment-list-wrapper">
+
+                        {% for comment in comments|slice:":5" %}
+                            <div class="comment">
+                                <div class="thumbnail">
+                                    <img src="{{ comment.user.profile.avatar.url }}" alt="Comment Images">
+                                </div>
+                                <div class="comment-content">
+                                    <div class="rating">
+                                        {% for i in comment.rating|default:0|range_filter %}
+                                            <i class="icon-23"></i>
+                                        {% endfor %}
+                                    </div>
+                                    <h5 class="title">{{ comment.user.username }}</h5>
+                                    <span class="date">{{ comment.created_at }}</span>
+                                    <p>{{ comment.content }}</p>
+                                </div>
+                                
+                                <form method="post" action="{% url 'CourseDetails' course.id %}">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="comment_id" value="{{ comment.id }}">
+                                    {{ reply.as_p }}
+                                    <button type="submit">Reply</button>
+                                </form>
+                                
+                            <!-- Display replies -->
+                            {% for reply in comment.replycomment.all %}
+                                <div class="reply">
+                                    <p><strong>{{ reply.user.username }}</strong>: {{ reply.reply }}</p>
+                                </div>
+                            {% endfor %}
+                            </div>
+                        {% endfor %}
+                        <style>
+                            .show_more_button {
+                                margin: 10px;
+                            }
+                        </style>    
+                        {% if comments|length != 0 %}
+                            <a href="{% url 'course_comments' course.pk %}" class="show_more_button">دیدن تمامی نظرات</a>
+                        {% endif %}
+                    </div>        
+                </div> 
+
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock content %}
