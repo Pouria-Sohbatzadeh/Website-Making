@@ -1,0 +1,66 @@
+@import url(reset.css);
+@import url(color.css);
+@import url(utility.css);
+@import url(animation.css);
+
+body {
+    color: white;
+}
+/* Delete this later */
+
+.header {
+    display: flex;
+}
+
+.header__user {
+    display: flex;
+    align-items: center;
+}
+
+.header__user-profile {
+    position: relative;
+    display: flex;
+}
+
+.header__user-profile-input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.header__user-profile-label {
+    cursor: pointer;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 100%;
+    border: 2px solid transparent;
+}
+
+.header__user-profile-input:focus ~ .header__user-profile-label {
+    animation: click .2s linear 0s;
+}
+
+.header__user-profile-img {
+    position: absolute;
+    width: 110%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header__header__user-choices {
+    position: absolute;
+    top: 100%;
+    display: none;
+    width: 300px;
+    height: 749px;
+    background-color: rgb(40,40,40);
+    border-radius: 12px;
+}
+
+.header__user-profile-input:checked ~ .header__header__user-choices {
+    display: flex;
+}

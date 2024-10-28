@@ -1,0 +1,9 @@
+@keyframes click {
+    0% {
+        border: 2px solid rgb(0, 108, 158);
+    }
+
+    100% {
+        border: 2px solid rgb(0, 108, 158);
+    }
+}

@@ -1,0 +1,10 @@
+div {
+    height: 140px;
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+
+img {
+    height: 140%; /* Even the height is hidden thanks to overflow-x:  being set to hidden */
+    
+}
